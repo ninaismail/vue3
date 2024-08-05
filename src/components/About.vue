@@ -1,0 +1,30 @@
+<script setup>
+import { RouterLink } from 'vue-router'
+
+</script>
+<template>
+    <section class="relative flex flex-col items-center justify-center w-full h-full py-20 bg-bg2">
+        <img src="/images/backgrounds/about.webp" alt="About Bissar Concepts" width="1214" height="152" center cover responsive loading="lazy" class="absolute top-14"/>
+        <div class="flex flex-wrap items-center justify-between w-10/12 h-full gap-6 mx-auto lg:gap-0">
+            <div class="flex flex-col justify-between w-full gap-y-2 lg:w-1/2">
+                <div class="min-h-[20vh]">
+                    <h1 class="text-accent1 lg:text-[32px] text-[28px] font-[700]">
+                        Creating Bespoke Spaces that are Distinctive,
+                        Compelling and Timeless.
+                    </h1>
+                    <p class="tracking-wide text-accent1 font-[600] text-justify">With hundreds of projects spanning across the Gulf Cooperation council (GCC),
+                        mainly KSA & UAE, Levant North Africa and Europe.</p>          
+                </div>
+                <RouterLink
+                id="go-to-portfolio-page"
+                aria-label="go to portfolio page"
+                to="/portfolio"
+                class="w-fit cursor-pointer px-4 py-3 font-[400] text-center rounded-[2px] text-accent1 bg-bg1 hover:brightness-125 uppercase"
+                >discover more</RouterLink>
+            </div>
+            <div class="w-full lg:w-1/2">
+                <img src="/images/about/self_portrait.webp" alt="Bissar Concepts" width="367" height="441" center cover responsive loading="lazy" class="relative mx-auto md:ms-auto md:me-0 z-1"/>
+            </div>
+        </div>
+    </section>
+</template>

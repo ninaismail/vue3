@@ -17,7 +17,7 @@ const toggleOpen = () => {
 }
 </script>
 <template>
-    <header class="w-full h-[64px] shadow-sm bg-bg1 mx-auto fixed z-1 top-0 left-0 p-6 flex justify-between items-center gap-3 px-6"
+    <header class="w-full h-[64px] shadow-md bg-bg1 mx-auto fixed z-[10] inset-0 p-6 flex justify-between items-center gap-3"
     :class="{'h-fit' : isOpen}">
         <RouterLink id="Home" aria-label="go to home" to="/">
         <img :src="logo" alt="Bissar Concepts logo" width="147" height="37" cover center responsive loading="eager"/>    

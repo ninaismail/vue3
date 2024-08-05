@@ -8,10 +8,12 @@ export default {
       },
       colors : {
         "accent1": "black",
-        "bg1": "white"
+        "accent2": "#D9D9D9",
+        "bg1": "white",
+        "bg2": "#EBF0F9",
       },
       backgroundOpacity: {
-        10: '0.1'
+        10: '0.1',
       },
       backgroundImage: {
         'hero': 'url(/images/hero/hero.webp)'
