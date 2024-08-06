@@ -11,6 +11,7 @@ export default {
         "accent2": "#D9D9D9",
         "bg1": "white",
         "bg2": "#EBF0F9",
+        "bg3": "#E9E9E9"
       },
       backgroundOpacity: {
         10: '0.1',

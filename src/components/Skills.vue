@@ -1,5 +1,3 @@
-<script setup>
-</script>
 <template>
     <section class="relative flex flex-col items-center justify-center w-full h-full min-h-screen gap-10 py-20 bg-bg2">
         <img src="/images/backgrounds/skills.webp" alt="Skills - Bissar Concepts" width="1214" height="152" center cover responsive loading="lazy" class="absolute top-14"/>
@@ -35,7 +33,7 @@
             </div>
             <img src="/images/skills/skill3.webp" alt="Bissar Concepts" width="340" height="348" center cover responsive loading="lazy" class="mx-auto aspect-square"/>
             <div class="flex flex-col items-center justify-center gap-2 border-4 border-accent2 max-w-[340px] max-h-[348px] aspect-square rounded-[2px] md:ms-auto md:me-0">
-                <div class="flex flex-col items-center justify-center px-6 mx-auto gap-y-2">
+                <div class="flex flex-col items-center justify-center px-6 mx-auto text-center gap-y-2">
                     <h1 class="text-accent1 lg:text-[24px] text-[20px] font-[700]">
                         Luxury Homes Contract
                     </h1>
