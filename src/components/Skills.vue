@@ -1,10 +1,10 @@
 <script setup>
 </script>
 <template>
-    <section class="flex flex-col items-center justify-center w-full h-full min-h-screen gap-10 py-20 bg-bg2">
-        <img src="/images/backgrounds/skills.webp" alt="About Bissar Concepts" width="1214" height="152" center cover responsive loading="lazy" class="absolute top-14"/>
+    <section class="relative flex flex-col items-center justify-center w-full h-full min-h-screen gap-10 py-20 bg-bg2">
+        <img src="/images/backgrounds/skills.webp" alt="Skills - Bissar Concepts" width="1214" height="152" center cover responsive loading="lazy" class="absolute top-14"/>
         <div class="flex flex-col items-center justify-center w-10/12 px-6 mx-auto gap-y-2">
-            <h1 class="text-accent1 lg:text-[32px] text-[28px] font-[700] text-center lg:w-1/2">
+            <h1 class="text-accent1 lg:text-[32px] text-[28px] font-[700] text-center lg:w-1/3">
                 An edge of sophistication to
                 simplicity, a whiff of modernism
                 to the traditional.</h1>
