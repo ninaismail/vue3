@@ -4,7 +4,7 @@ import logo from '/Bissar_Logo.webp'
 import Socials from '../Socials.vue'
 const footerlinks = [
   { id: 1, 
-    name: 'OUR SERVICES',
+    name: 'Our Services',
     to:'',
     submenu: [
     { id: 1, name: "Industrial Design", to:"/" },
@@ -37,27 +37,27 @@ const footerlinks = [
 
 <template>
     <footer class="relative flex flex-col items-center justify-center gap-10 pt-20 sm:pt-40 bg-bg3">
-      <div class="flex flex-wrap justify-between 2xl:w-8/12 lg:w-10/12 w-11/12 gap-6 max-lg:px-6 lg:gap-0">
-        <div class="flex flex-col w-full gap-2 mb-10 lg:w-4/12 lg:mb-0">
+      <div class="flex flex-wrap justify-between w-11/12 gap-6 2xl:w-8/12 lg:w-10/12 lg:gap-0">
+        <div class="flex flex-col w-full gap-2.5 mb-10 lg:w-4/12 lg:mb-0">
             <img :src="logo" alt="Bissar Concepts Logo" width="147" height="37" center cover responsive loading="lazy"/>
             <p class="tracking-wide font-[200] max-sm:text-[14px] text-justify">Authenticity, uniqueness and originality are at the core of our designs.
             No matter the projects, the scale or the style,  we always have the vision to create beautiful spaces that inspire, elevate and bring comfort.</p>
             <Socials small black/>
         </div>
-        <ul role="list" class="flex flex-wrap justify-between w-full lg:w-7/12 gap-3 space-y-3 list-style-none">
-            <li v-for="(item, key) in footerlinks" :key="key" class="w-full sm:w-1/2 md:w-1/3">
-            <h1 class="text-lg font-[400] mb-3 uppercase">
-              <span v-if="item.name" class="pb-2 border-b border-6 border-white">{{ item.name }}</span>
-            </h1>
-            <div v-for="(subitem, subkey) in item.submenu" :key="subkey" class="pb-3">
-                <RouterLink :id="subitem.name" :aria-label="'go to ' + subitem.name" :to="{path: item.to, hash: subitem?.to}" 
-                class="font-[200] hover:brightness-75 max-sm:text-[14px]">
-                {{ subitem.name }}</RouterLink>
-            </div>                
-            </li>
+        <ul role="list" class="flex flex-wrap justify-between w-full gap-3 space-y-3 lg:w-7/12 list-style-none">
+          <li v-for="(item, key) in footerlinks" :key="key" class="w-full space-y-3 sm:w-1/2 md:w-1/4">
+          <h1 class="text-lg font-[700] mb-3">
+            <span v-if="item.name" class="pb-2 border-b border-white border-6">{{ item.name }}</span>
+          </h1>
+          <div v-for="(subitem, subkey) in item.submenu" :key="subkey">
+              <RouterLink :id="subitem.name" :aria-label="'go to ' + subitem.name" :to="{path: item.to, hash: subitem?.to}" 
+              class="font-[200] hover:brightness-75 max-sm:text-[14px]">
+              {{ subitem.name }}</RouterLink>
+          </div>                
+          </li>
         </ul>
       </div>
-      <div class="text-center min-h-[50px] w-full flex gap-4 flex-wrap max-lg:px-6 items-center justify-center border-t py-3 border-white">
+      <div class="text-center min-h-[50px] w-full flex gap-3 flex-wrap items-center justify-center border-t py-3 border-white">
         <p class="tracking-wide text-[14px]">Copyright ©2023 BISSAR CONCEPTS by The Cabinet. All Rights Reserved.</p>
         <p class="tracking-wide text-[14px]">
         <RouterLink

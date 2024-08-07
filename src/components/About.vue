@@ -6,8 +6,8 @@ import { RouterLink } from 'vue-router'
     <section class="relative flex flex-col items-center justify-center w-full h-full py-20 sm:py-40 bg-bg2">
         <img src="/images/backgrounds/about.webp" alt="About Bissar Concepts" width="1214" height="152" center cover responsive loading="lazy" class="absolute top-14"/>
         <div class="flex flex-wrap items-center justify-between w-10/12 h-full gap-6 mx-auto 2xl:w-8/12 lg:gap-0">
-            <div class="flex flex-col justify-between w-full gap-3 lg:w-7/12">
-                <div class="min-h-[20vh] space-y-3">
+            <div class="flex flex-col justify-between w-full lg:w-7/12">
+                <div class="space-y-3 mb-[64px]">
                     <h1 class="lg:text-[32px] text-[28px] font-[700]">
                         Creating Bespoke Spaces that are Distinctive, Compelling and Timeless.
                     </h1>

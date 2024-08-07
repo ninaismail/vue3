@@ -4,8 +4,8 @@ import Socials from '../components/Socials.vue'
 </script>
 <template>
   <section class="flex flex-col justify-center w-full h-screen bg-center bg-cover items-between bg-hero">
-    <div class="flex flex-col justify-between w-11/12 px-6 mx-auto 2xl:w-8/12 lg:w-10/12 gap-3 space-y-3">
-      <div class="min-h-[20vh]">
+    <div class="flex flex-col justify-between w-11/12 mx-auto 2xl:w-8/12 lg:w-10/12">
+      <div class="space-y-3 mb-[64px]">
       <h1 class="text-white lg:text-[32px] text-[28px] font-[700]">
         Home of Luxury
       </h1>
