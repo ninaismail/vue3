@@ -44,7 +44,7 @@ const footerlinks = [
             No matter the projects, the scale or the style,  we always have the vision to create beautiful spaces that inspire, elevate and bring comfort.</p>
             <Socials small black/>
         </div>
-        <ul role="list" class="flex flex-wrap justify-between w-full lg:w-7/12 gap-y-3 list-style-none">
+        <ul role="list" class="flex flex-wrap justify-between w-full lg:w-7/12 gap-3 space-y-3 list-style-none">
             <li v-for="(item, key) in footerlinks" :key="key" class="w-full sm:w-1/2 md:w-1/3">
             <h1 class="text-lg font-[400] mb-3 uppercase">
               <span v-if="item.name" class="pb-2 border-b border-6 border-white">{{ item.name }}</span>
