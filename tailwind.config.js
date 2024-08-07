@@ -7,12 +7,11 @@ export default {
         body: ['Montserrat']
       },
       colors : {
-        "accent1": "black",
         "accent2": "#D9D9D9",
-        "bg1": "white",
         "bg2": "#EBF0F9",
         "bg3": "#E9E9E9",
-        "bg4": "#CCBB99"
+        "gold": "#CCBB99",
+        "olive": "#53554A"
       },
       backgroundOpacity: {
         10: '0.1',
