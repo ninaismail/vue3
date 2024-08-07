@@ -19,7 +19,7 @@ import { RouterLink } from 'vue-router'
                 id="go-to-portfolio-page"
                 aria-label="go to portfolio page"
                 to="/portfolio"
-                class="w-fit cursor-pointer px-4 py-3 font-[400] text-center rounded-[2px] text-accent1 bg-bg1 hover:brightness-125 uppercase"
+                class="w-fit cursor-pointer px-4 py-3 font-[400] text-center rounded-[2px] text-accent1 bg-bg4 hover:brightness-125 uppercase"
                 >discover more</RouterLink>
             </div>
             <div class="w-full lg:w-1/2">

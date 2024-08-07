@@ -8,7 +8,7 @@
                 to the traditional.</h1>
             <p class="tracking-wide text-accent1 font-[600] text-justify lg:w-2/3" style="text-align-last: center;">By taking a fresh approach to design, we create viable and dynamic spaces that are as unique as the individuality of each of our clients.</p>          
         </div>
-        <div class="grid w-10/12 grid-cols-3 gap-6 mx-auto">
+        <div class="grid w-10/12 grid-cols-1 gap-6 mx-auto lg:grid-cols-3 md:grid-cols-2">
             <img src="/images/skills/skill1.webp" alt="Bissar Concepts" width="340" height="348" center cover responsive loading="lazy" class="aspect-square"/>
             <div class="flex flex-col items-center justify-center gap-2 border-4 border-accent2 max-w-[340px] max-h-[348px] aspect-square rounded-[2px] mx-auto">
                 <div class="flex flex-col items-center justify-center px-6 mx-auto gap-y-2">

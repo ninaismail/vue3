@@ -32,16 +32,17 @@ const footerlinks = [
     ]
   }
 ]
+
 </script>
 
 <template>
     <footer class="relative flex flex-col items-center justify-center gap-10 pt-20 sm:pt-40 bg-bg3">
-      <div class="flex flex-wrap justify-between w-10/12 gap-6 px-6 my-10 lg:gap-0">
+      <div class="flex flex-wrap justify-between w-10/12 gap-6 max-lg:px-6 lg:gap-0">
         <div class="flex flex-col w-full gap-2 mb-10 lg:w-4/12 lg:mb-0">
             <img :src="logo" alt="Bissar Concepts Logo" width="147" height="37" center cover responsive loading="lazy"/>
             <p class="tracking-wide text-accent1 font-[200] max-sm:text-[14px] text-justify">Authenticity, uniqueness and originality are at the core of our designs.
             No matter the projects, the scale or the style,  we always have the vision to create beautiful spaces that inspire, elevate and bring comfort.</p>
-            <Socials color="accent1"/>
+            <Socials small black/>
         </div>
         <ul role="list" class="flex flex-wrap justify-between w-full lg:w-7/12 gap-y-3 list-style-none">
             <li v-for="(item, key) in footerlinks" :key="key" class="w-full sm:w-1/2 md:w-1/3">
@@ -56,7 +57,7 @@ const footerlinks = [
             </li>
         </ul>
       </div>
-      <div class="text-center min-h-[50px] w-full flex gap-4 flex-wrap items-center justify-center border-t border-bg1">
+      <div class="text-center min-h-[50px] w-full flex gap-4 flex-wrap max-lg:px-6 items-center justify-center border-t py-3 border-bg1">
         <p class="tracking-wide text-accent1 text-[14px]">Copyright ©2023 BISSAR CONCEPTS by The Cabinet. All Rights Reserved.</p>
         <p class="tracking-wide text-accent1 text-[14px]">
         <RouterLink
