@@ -6,7 +6,7 @@
                 An edge of sophistication to
                 simplicity, a whiff of modernism
                 to the traditional.</h1>
-            <p class="tracking-wide text-accent1 font-[600] text-justify lg:w-2/3" style="text-align-last: center;">By taking a fresh approach to design, we create viable and dynamic spaces that are as unique as the individuality of each of our clients.</p>          
+            <p class="tracking-wide hyphens text-accent1 font-[600] text-centerlg:w-2/3 ">By taking a fresh approach to design, we create viable and dynamic spaces that are as unique as the individuality of each of our clients.</p>          
         </div>
         <div class="grid w-10/12 grid-cols-1 gap-6 mx-auto lg:grid-cols-3 md:grid-cols-2">
             <img src="/images/skills/skill1.webp" alt="Bissar Concepts" width="340" height="348" center cover responsive loading="lazy" class="aspect-square"/>
@@ -15,7 +15,7 @@
                     <h1 class="text-accent1 lg:text-[24px] text-[20px] font-[700]">
                         Custom Designs
                     </h1>
-                    <p class="tracking-wide text-accent1 font-[600] text-justify" style="text-align-last: center;">Our services uplift your home
+                    <p class="tracking-wide hyphens text-accent1 font-[600] text-center">Our services uplift your home
                     with a touch of luxury and
                     sophistication.
                     </p>          
@@ -28,7 +28,7 @@
                     <h1 class="text-accent1 lg:text-[24px] text-[20px] font-[700]">
                         Exquisite Furniture
                     </h1>
-                    <p class="tracking-wide text-accent1 font-[600] text-justify" style="text-align-last: center;">From the world to your home, our curated furniture selection elevates your space.</p>          
+                    <p class="tracking-wide hyphens text-accent1 font-[600] text-center">From the world to your home, our curated furniture selection elevates your space.</p>          
                </div>
             </div>
             <img src="/images/skills/skill3.webp" alt="Bissar Concepts" width="340" height="348" center cover responsive loading="lazy" class="mx-auto aspect-square"/>
@@ -37,7 +37,7 @@
                     <h1 class="text-accent1 lg:text-[24px] text-[20px] font-[700]">
                         Luxury Homes Contract
                     </h1>
-                    <p class="tracking-wide text-accent1 font-[600] text-justify" style="text-align-last: center;">Adding the last touches to your home with an eye for detail and high-end finishing. </p>          
+                    <p class="tracking-wide hyphens text-accent1 font-[600] text-center">Adding the last touches to your home with an eye for detail and high-end finishing. </p>          
               </div>
             </div>
         </div>

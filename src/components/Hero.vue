@@ -7,7 +7,7 @@ import Socials from '../components/Socials.vue'
     <div class="flex flex-col justify-between w-10/12 px-6 mx-auto gap-y-2">
       <div class="min-h-[20vh]">
       <h1 class="text-bg1 lg:text-[32px] text-[28px] font-[700]">
-        Home of Luxery
+        Home of Luxury
       </h1>
       <p class="tracking-wide text-bg1 font-[600] text-justify">what's your style?</p>          
       </div>

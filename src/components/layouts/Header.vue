@@ -45,8 +45,8 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div @mouseover="handleMouseOver" @mouseleave="handleMouseLeave" class="fixed z-[10] inset-0 w-full h-[64px] shadow-md">
-    <header v-show="!isHidden || isMouseOver" role="header" class="items-center justify-between gap-3 p-6 mx-auto duration-500 bg-bg1 lg:flex"
+  <div @mouseover="handleMouseOver" @mouseleave="handleMouseLeave" class="fixed z-[10] inset-0 w-full h-[64px]">
+    <header v-show="!isHidden || isMouseOver" role="header" class="items-center justify-between gap-3 p-6 mx-auto duration-500 shadow-md bg-bg1 lg:flex"
       :class="{'h-fit' : isOpen}">
     <RouterLink id="Home" aria-label="go to home" to="/" class="lg:ps-[8.67%] ps-0">
       <img :src="logo" alt="Bissar Concepts logo" width="147" height="37" cover center responsive loading="eager"/>    
