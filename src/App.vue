@@ -5,7 +5,9 @@ import { RouterView } from 'vue-router'
 </script>
 
 <template>
+  <main>
   <Header/>
-  <RouterView />
-  <Footer/>
+    <RouterView />
+  <Footer/>    
+  </main>
 </template>

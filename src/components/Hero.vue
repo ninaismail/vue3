@@ -6,10 +6,10 @@ import Socials from '../components/Socials.vue'
   <section class="flex flex-col justify-center w-full h-screen bg-center bg-cover items-between bg-hero">
     <div class="flex flex-col justify-between w-11/12 mx-auto 2xl:w-8/12 lg:w-10/12">
       <div class="space-y-3 mb-[64px]">
-      <h1 class="text-white lg:text-[32px] text-[28px] font-[700]">
-        Home of Luxury
-      </h1>
-      <p class="tracking-wide text-white font-[600] text-justify">what's your style?</p>          
+        <h1 class="text-white uppercase lg:text-[64px] md:text-[52px] text-[40px] font-[700]">
+          Home <br class="max-lg:hidden"/>of Luxury
+        </h1>
+        <p class="tracking-wide text-white font-[600] text-justify">what's your style?</p>          
       </div>
       <RouterLink
         id="go-to-portfolio-page"

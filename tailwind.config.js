@@ -17,11 +17,18 @@ export default {
         10: '0.1',
       },
       backgroundImage: {
-        'hero': 'url(/images/hero/hero.webp)'
+        'hero': 'url(/images/hero/hero.webp)',
       },
       aspectRatio: {
         '3.87/1': '3.87 / 1'
-      }
+      },      
+      transitionProperty: {
+        'width': 'width',
+        'height': 'height',
+      },
+      width: {
+        'custom': 'calc(100% - 27rem)', // Subtracts 27rem (mx-108) from 100%
+      },
     }
   },
   plugins: [],

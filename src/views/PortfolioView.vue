@@ -1,0 +1,21 @@
+<script setup>
+import InnerHero from '../components/InnerHero.vue'
+import banner from '/images/innerhero/portfolio.webp'
+import works from '/images/backgrounds/works.webp'
+import Tabs from '../components/Tabs.vue';
+import { getProjects } from '../utils/api_function';
+
+
+const projects = getProjects();
+
+// Extract the categories from the projects and then create a Set to get unique categories
+let uniqueCats = [...new Set(projects.map(project => project.category))];
+
+console.log(uniqueCats);
+</script>
+<template>
+    <InnerHero :pagebanner="banner" pagetitle="Portfolio" 
+    pagedescription="We design your dream house to your taste, ultimately creating a space that reflects your identity."/>
+    <Tabs :data="projects" :uniqueCats="uniqueCats" :bg="works" title="Your sanctuary, our vision." />
+</template>
+
