@@ -17,7 +17,7 @@ const isHover = ref(null)
 <template>
     <section class="flex flex-col items-center justify-center w-full h-full py-20 sm:py-40 bg-bg2">
         <BackgroundTitle :bg="bg" :title="title"/>
-        <div class="w-11/12 mx-auto 2xl:w-8/12 lg:w-10/12">
+        <div class="w-11/12 mx-auto 2xl:w-8/12 lg:w-10/12 mb-[16px]">
             <nav class="items-center justify-center flex-wrap gap-8 min-h-[42px] mb-[16px] flex">
                 <button
                 id="all" 
@@ -50,5 +50,12 @@ const isHover = ref(null)
                 </RouterLink>
             </div>
         </div>
+        <RouterLink
+        id="go-to-portfolio-page"
+        aria-label="go to portfolio page"
+        to="/portfolio"
+
+        class="w-fit cursor-pointer px-4 py-3 font-[400] text-center rounded-[2px] bg-gold hover:bg-olive hover:text-white uppercase"
+        >View Projects</RouterLink>
     </section>
 </template>
