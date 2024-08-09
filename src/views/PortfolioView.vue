@@ -9,13 +9,13 @@ import { getProjects } from '../utils/api_function';
 const projects = getProjects();
 
 // Extract the categories from the projects and then create a Set to get unique categories
-let uniqueCats = [...new Set(projects.map(project => project.category))];
+let uniqueTypes = [...new Set(projects.map(project => project.type))];
 
-console.log(uniqueCats);
+console.log(uniqueTypes);
 </script>
 <template>
     <InnerHero :pagebanner="banner" pagetitle="Portfolio" 
     pagedescription="We design your dream house to your taste, ultimately creating a space that reflects your identity."/>
-    <Tabs :data="projects" :uniqueCats="uniqueCats" :bg="works" title="Your sanctuary, our vision." />
+    <Tabs :data="projects" :uniqueTypes="uniqueTypes" :bg="works" title="Your sanctuary, our vision." />
 </template>
 

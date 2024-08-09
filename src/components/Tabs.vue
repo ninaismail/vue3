@@ -3,14 +3,27 @@ import { RouterLink } from 'vue-router'
 import { ref } from 'vue';
 import BackgroundTitle from './BackgroundTitle.vue'
 
- defineProps({
+const props = defineProps({
     data: Array,
     title: String,
     subtitle: String,
     bg: String,
-    uniqueCats: Array
+    uniqueTypes: Array
 })
-const isClicked = ref(false);
+const isClicked = ref('All');
+const filteredData = ref(props.data)
+console.log('filteredData', filteredData.value)
+console.log('selected type', isClicked.value)
+const filterData = (type) => {
+  isClicked.value = type;
+
+  // If 'All' is selected, show all data, otherwise filter by the selected type
+  if (type === 'All') {
+    filteredData.value = props.data;
+  } else {
+    filteredData.value = props.data.filter(item => item.type === type);
+  }
+};
 const isHover = ref(null)
 
 </script>
@@ -20,25 +33,28 @@ const isHover = ref(null)
         <div class="w-11/12 mx-auto 2xl:w-8/12 lg:w-10/12 mb-[16px]">
             <nav class="items-center justify-center flex-wrap gap-8 min-h-[42px] mb-[16px] flex">
                 <button
-                id="all" 
+                :id="item + (isClicked === 'All' ? '-active' : '')" 
                 :aria-label="'show all'" 
-                class="relative uppercase cursor-pointer font-[600] hover:font-[700] text-center py-2 flex flex-col justify-center items-center before:bg-gold before:transition-all before:duration-600 before:absolute before:bottom-0 before:left-1/2 before:transform before:-translate-x-1/2 hover:before:w-12 hover:before:h-[2px]"
+                @click="filterData('All')"
+                :class="{'font-[700] before:h-[2px]' : isClicked === 'All'}"
+                class="relative uppercase cursor-pointer font-[600] hover:font-[700] text-center py-2 flex flex-col justify-center items-center before:bg-gold before:transition-all before:duration-600 before:absolute before:bottom-0 before:left-1/2 before:transform before:-translate-x-1/2 before:w-12 before:h-[1px] hover:before:h-[2px]"
                 >
                  All
                 </button>
-                <RouterLink v-for="(item, key) in uniqueCats" :key="key" 
-                :id="item + (isClicked === item.id ? '-active' : '')" 
-                :aria-label="'show ' + item" :to="'#'+item" 
+                <button role="tabs" v-for="(item, key) in props.uniqueTypes" :key="key"
+                :id="item + (isClicked === item ? '-active' : '')" 
+                :aria-label="'show ' + item"
                 :activeClass="'font-[700] before:absolute before:bottom-0 before:left-1/2 before:w-12 before:h-[2px] before:bg-gold before:transform before:-translate-x-1/2'"
                 :exactActiveClass="'font-[700] before:absolute before:bottom-0 before:left-1/2 before:w-12 before:h-[2px] before:bg-gold before:transform before:-translate-x-1/2'"
-                class="relative uppercase cursor-pointer font-[600] hover:font-[700] text-center py-2 flex flex-col justify-center items-center before:bg-gold before:transition-all before:duration-600 before:absolute before:bottom-0 before:left-1/2 before:transform before:-translate-x-1/2 hover:before:w-12 hover:before:h-[2px]"
+                class="relative uppercase cursor-pointer font-[600] hover:font-[700] text-center py-2 flex flex-col justify-center items-center before:bg-gold before:transition-all before:duration-600 before:absolute before:bottom-0 before:left-1/2 before:transform before:-translate-x-1/2 before:w-12 before:h-[1px] hover:before:h-[2px]"
+                @click="filterData(item)"
                 >
                     {{ item }}
-                </RouterLink>
+                </button role="tabs">
             </nav>
             <div class="grid grid-cols-3 gap-6">
-                <RouterLink v-for="(item, key) in data" :key="key" 
-                :id="item.title + (isClicked === item.id ? '-active' : '')" 
+                <RouterLink v-for="(item, key) in filteredData" :key="key" 
+                :id="item.title + (isClicked === item.type ? '-active' : '')" 
                 :aria-label="'go to ' + item.title" :to="item.slug" 
                 class="relative col-span-3 duration-500 transform bg-center bg-cover lg:col-span-1 md:col-span-2 w-fit h-fit"
                 @mouseenter="isHover = key" @mouseleave="isHover = false">
