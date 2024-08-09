@@ -36,14 +36,14 @@ const isHover = ref(null)
                     {{ item }}
                 </RouterLink>
             </nav>
-            <div class="grid grid-cols-1 gap-6 lg:grid-cols-3 md:grid-cols-2">
+            <div class="grid grid-cols-3 gap-6">
                 <RouterLink v-for="(item, key) in data" :key="key" 
                 :id="item.title + (isClicked === item.id ? '-active' : '')" 
                 :aria-label="'go to ' + item.title" :to="item.slug" 
-                class="relative col-span-3 duration-500 transform bg-center bg-cover lg:col-span-1 md:col-span-2"
+                class="relative col-span-3 duration-500 transform bg-center bg-cover lg:col-span-1 md:col-span-2 w-fit h-fit"
                 @mouseenter="isHover = key" @mouseleave="isHover = false">
                     <img :src="item.image" :alt="item.title"  width="340" height="348" center cover responsive loading="lazy"/>
-                    <div v-if="isHover === key" class="flex flex-col justify-center items-center mx-auto gap-y-4 min-h-[20vh] absolute z-1 inset-0 w-full h-full z-1 bg-black/50 px-6">
+                    <div v-if="isHover === key" class="flex flex-col justify-center mx-auto gap-y-4 min-h-[20vh] absolute z-1 inset-0 w-full h-full z-1 bg-black/50 px-6">
                         <h1 class="text-white lg:text-[32px] text-[28px] font-[700]">
                             {{ item.title }}
                         </h1>
