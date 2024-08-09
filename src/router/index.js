@@ -1,10 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import PortfolioView from '../views/PortfolioView.vue'
+import PortfolioView from '../views/portfolio-projects/PortfolioView.vue'
+import PortfolioProjectDetailsView from '@/views/portfolio-projects/PortfolioProjectDetailsView.vue'
 
 const routes = [
   { path: '/', component: HomeView},
   { path: '/portfolio', component: PortfolioView},
+  { path: '/portfolio/:slug', component: PortfolioProjectDetailsView},
 ]
  
 const router = createRouter({

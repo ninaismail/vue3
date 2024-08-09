@@ -1,12 +1,12 @@
 <script setup>
-import InnerHero from '../components/InnerHero.vue'
+import InnerHero from '../../components/InnerHero.vue'
 import banner from '/images/innerhero/portfolio.webp'
 import works from '/images/backgrounds/works.webp'
-import Tabs from '../components/Tabs.vue';
-import { getProjects } from '../utils/api_function';
+import Tabs from '../../components/Tabs.vue';
+import { getProtfolioProjects } from '../../utils/api_function';
 
 
-const projects = getProjects();
+const projects = getProtfolioProjects();
 
 // Extract the categories from the projects and then create a Set to get unique categories
 let uniqueTypes = [...new Set(projects.map(project => project.type))];

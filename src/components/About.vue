@@ -3,7 +3,7 @@ import { RouterLink } from 'vue-router'
 
 </script>
 <template>
-    <section class="relative flex flex-col items-center justify-center w-full h-full py-20 sm:py-40 bg-bg2">
+    <section class="relative flex flex-col items-center justify-center w-full h-full py-20 sm:py-40">
         <img src="/images/backgrounds/about.webp" alt="About Bissar Concepts" width="1214" height="152" center cover responsive loading="lazy" class="absolute top-14"/>
         <div class="flex flex-wrap items-center justify-between w-10/12 h-full gap-6 mx-auto 2xl:w-8/12 lg:gap-0">
             <div class="flex flex-col justify-between w-full lg:w-7/12">

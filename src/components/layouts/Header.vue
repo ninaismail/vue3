@@ -53,13 +53,13 @@ onUnmounted(() => {
 <template>
   <div @mouseover="handleMouseOver" @mouseleave="handleMouseLeave" class="fixed z-[10] inset-0 w-full h-[64px]">
     <header v-show="!isHidden || isMouseOver" role="header" class="py-6 transition-all bg-white shadow-md duration-600 max-sm:px-6"
-      :class="{'h-fit' : isOpen}">
+    :class="{'h-fit' : isOpen}">
     <div class="items-center justify-between w-11/12 mx-auto 2xl:w-8/12 lg:w-10/12 lg:flex">
       <RouterLink id="Home" aria-label="go to home" to="/" class="w-2/12">
         <img :src="logo" alt="Bissar Concepts logo" width="147" height="37" cover center responsive loading="eager"/>    
       </RouterLink>
       <!-- Descktop -->
-      <nav class="items-center justify-center hidden gap-8 w-7/12 min-h-[42px] h-full lg:flex">
+      <nav class="items-center justify-center hidden mx-auto gap-8 w-7/12 min-h-[42px] h-full lg:flex">
       <RouterLink 
         v-for="(item, key) in navlinks" 
         :key="key" 
@@ -74,7 +74,7 @@ onUnmounted(() => {
       </RouterLink>
 
       </nav>
-      <form id="search-bar" class="relative flex items-center h-[42px] transition-all duration-600 w-2/12" :class="isClicked ? 'border border-offwhite ' : 'border-0'">
+      <form id="search-bar" class="relative flex items-center h-[42px] transition-all duration-600" :class="isClicked ? 'border border-offwhite ' : 'border-0'">
         <input type="search" 
         placeholder="Search..." 
         class="relative px-5 py-3 font-[200] rounded-[2px] h-full outline-none duration-600 transition-[width]"
