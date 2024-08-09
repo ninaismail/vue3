@@ -60,15 +60,19 @@ onUnmounted(() => {
       </RouterLink>
       <!-- Descktop -->
       <nav class="items-center justify-center hidden gap-8 w-7/12 min-h-[42px] h-full lg:flex">
-        <RouterLink v-for="(item, key) in navlinks" :key="key" 
+      <RouterLink 
+        v-for="(item, key) in navlinks" 
+        :key="key" 
         :id="item.name + (isClicked === item.id ? '-active' : '')" 
-        :aria-label="'go to ' + item.name" :to="item.to" 
-        :activeClass="'font-[700] border-b-[2px] border-gold'"
-        :exactActiveClass="'font-[700] border-b-[2px] border-gold'"
-        class="relative uppercase cursor-pointer font-[600] hover:font-[700] text-center group py-2 flex flex-col justify-center items-center">
-          <span class="group-hover:font-[700]">{{ item.name }}</span>
-          <span class="w-0 h-0 mx-auto bg-gold group-hover:h-[2px] group-hover:w-12 transition-all duration-600"></span>        
-        </RouterLink>
+        :aria-label="'go to ' + item.name" 
+        :to="item.to" 
+        :activeClass="'font-[700] before:absolute before:bottom-0 before:left-1/2 before:w-12 before:h-[2px] before:bg-gold before:transform before:-translate-x-1/2'"
+        :exactActiveClass="'font-[700] before:absolute before:bottom-0 before:left-1/2 before:w-12 before:h-[2px] before:bg-gold before:transform before:-translate-x-1/2'"
+        class="relative uppercase cursor-pointer font-[600] hover:font-[700] text-center py-2 flex flex-col justify-center items-center before:w-0 before:h-0 before:bg-gold before:transition-all before:duration-600 before:absolute before:bottom-0 before:left-1/2 before:transform before:-translate-x-1/2 hover:before:w-12 hover:before:h-[2px]"
+      >
+        {{ item.name }}
+      </RouterLink>
+
       </nav>
       <form id="search-bar" class="relative flex items-center h-[42px] transition-all duration-600 w-2/12" :class="isClicked ? 'border border-offwhite ' : 'border-0'">
         <input type="search" 
@@ -90,15 +94,18 @@ onUnmounted(() => {
         </Transition>
       </button>
       <nav v-if="isOpen" class="flex flex-col w-full py-5 mt-5 space-y-4 lg:hidden">
-        <RouterLink v-for="(item, key) in navlinks" :key="key" 
+        <RouterLink 
+        v-for="(item, key) in navlinks" 
+        :key="key" 
         :id="item.name + (isClicked === item.id ? '-active' : '')" 
-        :aria-label="'go to ' + item.name" :to="item.to"
-        :activeClass="'font-[700] border-b-[2px] border-gold'"
-        :exactActiveClass="'font-[700] border-b-[2px] border-gold'"
-        class="relative uppercase cursor-pointer min-w-[193px] font-[600] hover:font-[700] text-center group py-2 flex flex-col justify-center items-center">
-          <span class="group-hover:font-[700]">{{ item.name }}</span>
-          <span class="w-0 h-0 mx-auto bg-gold group-hover:h-[2px] group-hover:w-12 transition-[width] duration-600"></span>        
-        </RouterLink>
+        :aria-label="'go to ' + item.name" 
+        :to="item.to" 
+        :activeClass="'font-[700] before:absolute before:bottom-0 before:left-1/2 before:w-12 before:h-[2px] before:bg-gold before:transform before:-translate-x-1/2'"
+        :exactActiveClass="'font-[700] before:absolute before:bottom-0 before:left-1/2 before:w-12 before:h-[2px] before:bg-gold before:transform before:-translate-x-1/2'"
+        class="relative uppercase cursor-pointer font-[600] hover:font-[700] text-center py-2 flex flex-col justify-center items-center before:w-0 before:h-0 before:bg-gold before:transition-all before:duration-600 before:absolute before:bottom-0 before:left-1/2 before:transform before:-translate-x-1/2 hover:before:w-12 hover:before:h-[2px]"
+      >
+        {{ item.name }}
+      </RouterLink>
       </nav>
     </div>
     </header>  

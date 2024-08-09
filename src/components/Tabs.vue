@@ -22,16 +22,18 @@ const isHover = ref(null)
                 <button
                 id="all" 
                 :aria-label="'show all'" 
-                class="relative uppercase cursor-pointer font-[500] hover:font-[700] text-center group py-2 flex flex-col justify-center items-center">
-                    <span class="group-hover:font-[700]">All</span>
-                    <span class="w-12 h-[1px] mx-auto bg-gold group-hover:h-[2px] transition-[height] duration-600"></span>        
+                class="relative uppercase cursor-pointer font-[600] hover:font-[700] text-center py-2 flex flex-col justify-center items-center before:bg-gold before:transition-all before:duration-600 before:absolute before:bottom-0 before:left-1/2 before:transform before:-translate-x-1/2 hover:before:w-12 hover:before:h-[2px]"
+                >
+                 All
                 </button>
                 <RouterLink v-for="(item, key) in uniqueCats" :key="key" 
                 :id="item + (isClicked === item.id ? '-active' : '')" 
                 :aria-label="'show ' + item" :to="'#'+item" 
-                class="relative uppercase cursor-pointer font-[500] hover:font-[700] text-center group py-2 flex flex-col justify-center items-center">
-                    <span class="group-hover:font-[700]">{{ item }}</span>
-                    <span class="w-12 h-[1px] mx-auto bg-gold group-hover:h-[2px] transition-[height] duration-600"></span>        
+                :activeClass="'font-[700] before:absolute before:bottom-0 before:left-1/2 before:w-12 before:h-[2px] before:bg-gold before:transform before:-translate-x-1/2'"
+                :exactActiveClass="'font-[700] before:absolute before:bottom-0 before:left-1/2 before:w-12 before:h-[2px] before:bg-gold before:transform before:-translate-x-1/2'"
+                class="relative uppercase cursor-pointer font-[600] hover:font-[700] text-center py-2 flex flex-col justify-center items-center before:bg-gold before:transition-all before:duration-600 before:absolute before:bottom-0 before:left-1/2 before:transform before:-translate-x-1/2 hover:before:w-12 hover:before:h-[2px]"
+                >
+                    {{ item }}
                 </RouterLink>
             </nav>
             <div class="grid grid-cols-1 gap-6 lg:grid-cols-3 md:grid-cols-2">
