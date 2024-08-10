@@ -37,25 +37,24 @@ const isHover = ref(null)
                 :aria-label="'show all'" 
                 @click="filterData('All')"
                 :class="{'font-[700] before:h-[2px]' : isClicked === 'All'}"
-                class="relative uppercase cursor-pointer font-[600] hover:font-[700] text-center py-2 flex flex-col justify-center items-center before:bg-gold before:transition-all before:duration-600 before:absolute before:bottom-0 before:left-1/2 before:transform before:-translate-x-1/2 before:w-12 before:h-[1px] hover:before:h-[2px]"
+                class="relative uppercase cursor-pointer font-[400] hover:font-[700] text-center py-2 flex flex-col justify-center items-center before:bg-gold before:transition-all before:duration-600 before:absolute before:bottom-0 before:left-1/2 before:transform before:-translate-x-1/2 before:w-12 before:h-[1px] hover:before:h-[2px]"
                 >
                  All
                 </button>
-                <button role="tabs" v-for="(item, key) in props.uniqueTypes" :key="key"
+                <button role="tab" v-for="(item, key) in props.uniqueTypes" :key="key"
                 :id="item + (isClicked === item ? '-active' : '')" 
                 :aria-label="'show ' + item"
-                :activeClass="'font-[700] before:absolute before:bottom-0 before:left-1/2 before:w-12 before:h-[2px] before:bg-gold before:transform before:-translate-x-1/2'"
-                :exactActiveClass="'font-[700] before:absolute before:bottom-0 before:left-1/2 before:w-12 before:h-[2px] before:bg-gold before:transform before:-translate-x-1/2'"
-                class="relative uppercase cursor-pointer font-[600] hover:font-[700] text-center py-2 flex flex-col justify-center items-center before:bg-gold before:transition-all before:duration-600 before:absolute before:bottom-0 before:left-1/2 before:transform before:-translate-x-1/2 before:w-12 before:h-[1px] hover:before:h-[2px]"
+                :class="{'font-[700] before:h-[2px]' : isClicked === item}"
+                class="relative uppercase cursor-pointer font-[400] hover:font-[700] text-center py-2 flex flex-col justify-center items-center before:bg-gold before:transition-all before:duration-600 before:absolute before:bottom-0 before:left-1/2 before:transform before:-translate-x-1/2 before:w-12 before:h-[1px] hover:before:h-[2px]"
                 @click="filterData(item)"
                 >
                     {{ item }}
-                </button role="tabs">
+                </button>
             </nav>
             <div class="grid grid-cols-3 gap-6">
                 <RouterLink v-for="(item, key) in filteredData" :key="key" 
                 :id="item.title + (isClicked === item.type ? '-active' : '')" 
-                :aria-label="'go to ' + item.title" :to="'portfolio/' + item.slug"
+                :aria-label="'go to ' + item.title" :to="`${$route.path}/${item.slug}`"
                 class="relative col-span-3 duration-500 transform bg-center bg-cover lg:col-span-1 md:col-span-2 w-fit h-fit"
                 @mouseenter="isHover = key" @mouseleave="isHover = false">
                     <img :src="item.thumbnail" :alt="item.title"  width="340" height="348" center cover responsive loading="lazy"/>
@@ -72,8 +71,7 @@ const isHover = ref(null)
         id="go-to-portfolio-page"
         aria-label="go to portfolio page"
         to="/portfolio"
-
         class="w-fit cursor-pointer px-4 py-3 font-[400] text-center rounded-[2px] bg-gold hover:bg-olive hover:text-white uppercase"
-        >View Projects</RouterLink>
+        >Load More</RouterLink>
     </section>
 </template>
