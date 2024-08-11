@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import PortfolioView from '../views/portfolio-projects/PortfolioView.vue'
-import PortfolioProjectDetailsView from '@/views/portfolio-projects/PortfolioProjectDetailsView.vue'
-import CollaborationsView from '@/views/collaborations-projects/CollaborationsView.vue'
-import CollaborationsProjectDetailsView from '@/views/collaborations-projects/CollaborationsProjectDetailsView.vue'
-import ContactView from '@/views/ContactView.vue'
+import PortfolioProjectDetailsView from '../views/portfolio-projects/PortfolioProjectDetailsView.vue'
+import CollaborationsView from '../views/collaborations-projects/CollaborationsView.vue'
+import CollaborationsProjectDetailsView from '../views/collaborations-projects/CollaborationsProjectDetailsView.vue'
+import ContactView from '../views/ContactView.vue'
 
 const routes = [
   { path: '/', component: HomeView},

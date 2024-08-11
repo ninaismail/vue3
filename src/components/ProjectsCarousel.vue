@@ -8,15 +8,16 @@ const props = defineProps({
   initialSlug: String
 })
 
-const currentIndex = ref(0);
-
+const currentSlide = ref(0);
+const carousel = ref(null);
+console.log('currentSlide',currentSlide)
 // Watch for changes to initialSlug to set the correct initial slide
 watch(
   () => props.initialSlug,
   (newSlug) => {
     const initialIndex = props.data.findIndex(item => item.slug === newSlug);
     if (initialIndex !== -1) {
-      currentIndex.value = initialIndex;
+      currentSlide.value = initialIndex;
     }
   },
   { immediate: true }
@@ -25,7 +26,8 @@ watch(
 
 <template>
   <Carousel 
-      v-model:current-slide="currentIndex"
+      ref="carousel" 
+      v-model="currentSlide"
       :wrap-around="true" 
       :arrows="true"
   >
