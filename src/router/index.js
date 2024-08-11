@@ -10,7 +10,7 @@ const routes = [
   { path: '/', component: HomeView},
   { path: '/portfolio', component: PortfolioView},
   { path: '/contact', component: ContactView},
-  { path: '/portfolio/:slug', component: PortfolioProjectDetailsView},
+  { path: '/portfolio/:slug',  component: PortfolioProjectDetailsView},
   { path: '/collaborations', component: CollaborationsView},
   { path: '/collaborations/:slug', component: CollaborationsProjectDetailsView},
 ]
