@@ -5,10 +5,12 @@ import PortfolioProjectDetailsView from '../views/portfolio-projects/PortfolioPr
 import CollaborationsView from '../views/collaborations-projects/CollaborationsView.vue'
 import CollaborationsProjectDetailsView from '../views/collaborations-projects/CollaborationsProjectDetailsView.vue'
 import ContactView from '../views/ContactView.vue'
+import EditorialView from '@/views/EditorialView.vue'
 
 const routes = [
   { path: '/', component: HomeView},
   { path: '/portfolio', component: PortfolioView},
+  { path: '/editorial', component: EditorialView},
   { path: '/contact', component: ContactView},
   { path: '/portfolio/:slug',  component: PortfolioProjectDetailsView},
   { path: '/collaborations', component: CollaborationsView},

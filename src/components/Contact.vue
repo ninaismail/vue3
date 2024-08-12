@@ -131,7 +131,7 @@ const handleSubmit = () => {
             <h1 class="lg:text-[64px] md:text-[52px] text-[40px] font-[700]">
             Contact Us
             </h1>
-            <p class="tracking-wide lg:text-[32px] text-[28px] font-[600] text-justify">Our offices around the World</p>          
+            <p class="tracking-wide lg:text-[36px] text-[28px] md:text-[32px] font-[600] text-justify">Our offices around the World</p>          
             <form  class="flex flex-col gap-8" @submit.prevent="handleSubmit">
                 <div class="w-full space-y-2">
                     <label for="Name" class="font-[400]">Name</label>

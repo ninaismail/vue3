@@ -391,3 +391,87 @@ export function getCollabsProjectBySlug(slug) {
   let projects = getCollabsProjects();
   return projects.find(project => project.slug === slug);
 }
+export function getEditorial() {
+  return [
+    { 
+      id: 1, 
+      title: 'Editorial Art Gallery', 
+      image: '/images/editorial/images/editorial.webp'
+    },
+    { 
+      id: 2, 
+      title: 'Editorial Art Gallery', 
+      image: '/images/editorial/images/editorial.webp'
+    },    
+    { 
+      id: 3, 
+      title: 'Editorial Art Gallery', 
+      image: '/images/editorial/images/editorial.webp'
+    },    
+    { 
+      id: 4, 
+      title: 'Editorial Art Gallery', 
+      image: '/images/editorial/images/editorial.webp'
+    },     
+    { 
+      id: 5, 
+      title: 'Editorial Art Gallery', 
+      image: '/images/editorial/images/editorial.webp'
+    },     
+    { 
+      id: 6, 
+      title: 'Editorial Art Gallery', 
+      image: '/images/editorial/images/editorial.webp'
+    },      
+    { 
+      id: 7, 
+      title: 'Editorial Art Gallery', 
+      image: '/images/editorial/images/editorial.webp'
+    },     
+    { 
+      id: 8, 
+      title: 'Editorial Art Gallery', 
+      image: '/images/editorial/images/editorial.webp'
+    }, 
+    { 
+      id: 9, 
+      title: 'Editorial Art Gallery', 
+      image: '/images/editorial/images/editorial.webp'
+    },     
+    { 
+      id: 10, 
+      title: 'Editorial Art Gallery', 
+      image: '/images/editorial/images/editorial.webp'
+    }, 
+    { 
+      id: 11, 
+      title: 'Editorial Art Gallery', 
+      image: '/images/editorial/images/editorial.webp'
+    }, 
+  ]
+}
+
+export function getAccordion() {
+  return [
+    { 
+      id: 1, 
+      title: 'APPROACH', 
+      content: 'Armed with boundless creativity and an unwavering passion for interior design, Zaher Bissar embarked on a journey back in 2008, founding Bissar Concepts. His commitment to crafting spaces that echo an artistic vision and a relentless pursuit of beauty has captivated clients and admirers alike. Bissar Concept’s portfolio grew, each project bearing the imprint of its unique design. With time, what began as a solitary venture evolved into a thriving company, reflecting the intricate charm of interior design.'
+    },
+    { 
+      id: 2, 
+      title: 'Story', 
+      content: 'Armed with boundless creativity and an unwavering passion for interior design, Zaher Bissar embarked on a journey back in 2008, founding Bissar Concepts. His commitment to crafting spaces that echo an artistic vision and a relentless pursuit of beauty has captivated clients and admirers alike. Bissar Concept’s portfolio grew, each project bearing the imprint of its unique design. With time, what began as a solitary venture evolved into a thriving company, reflecting the intricate charm of interior design.'
+    },    
+    { 
+      id: 3, 
+      title: 'APPROACH', 
+      content: 'Armed with boundless creativity and an unwavering passion for interior design, Zaher Bissar embarked on a journey back in 2008, founding Bissar Concepts. His commitment to crafting spaces that echo an artistic vision and a relentless pursuit of beauty has captivated clients and admirers alike. Bissar Concept’s portfolio grew, each project bearing the imprint of its unique design. With time, what began as a solitary venture evolved into a thriving company, reflecting the intricate charm of interior design.'
+    },    
+    { 
+      id: 4, 
+      title: 'Philosophy', 
+      content: 'Armed with boundless creativity and an unwavering passion for interior design, Zaher Bissar embarked on a journey back in 2008, founding Bissar Concepts. His commitment to crafting spaces that echo an artistic vision and a relentless pursuit of beauty has captivated clients and admirers alike. Bissar Concept’s portfolio grew, each project bearing the imprint of its unique design. With time, what began as a solitary venture evolved into a thriving company, reflecting the intricate charm of interior design.'
+    }
+  ]
+}

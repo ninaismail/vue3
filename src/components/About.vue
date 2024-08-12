@@ -8,7 +8,7 @@ import { RouterLink } from 'vue-router'
         <div class="flex flex-wrap items-center justify-between w-10/12 h-full gap-6 mx-auto 2xl:w-8/12 lg:gap-0">
             <div class="flex flex-col justify-between w-full lg:w-7/12">
                 <div class="space-y-3 mb-[64px]">
-                    <h1 class="lg:text-[32px] text-[28px] font-[700]">
+                    <h1 class="lg:text-[36px] text-[28px] md:text-[32px] font-[700]">
                         Creating Bespoke Spaces that are Distinctive, Compelling and Timeless.
                     </h1>
                     <p class="tracking-wide font-[600] text-justify">With hundreds of projects spanning across the Gulf Cooperation council (GCC),

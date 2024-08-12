@@ -4,6 +4,8 @@ import 'vue3-carousel/dist/carousel.css';
 
 defineProps({
   images: Array,
+  alt: String,
+  isEditorial: Boolean
 })
 </script>
 
@@ -11,7 +13,7 @@ defineProps({
 <template>
     <Carousel :wrap-around="true" :arrows="true" class="w-full h-full mx-auto mb-[16px]">
         <Slide v-for="(item, key) in images" :key="key" class="rounded-[2px] my-10">
-            <img :src="item" alt="Bissar Concepts" width="1440" height="568" center cover responsive loading="eager"/>
+            <img :src="isEditorial ? item.image : item" :alt="'Bissar Concepts -' + isEditorial ? item.title : alt" width="1440" height="568" center cover responsive loading="eager"/>
         </Slide>
         <template #addons>
             <Navigation/>
