@@ -11,7 +11,7 @@ defineProps({
 
 
 <template>
-    <Carousel :wrap-around="true" :arrows="true" class="w-full h-full mx-auto mb-[16px]">
+    <Carousel class="w-full h-full mx-auto mb-[16px]">
         <Slide v-for="(item, key) in images" :key="key" class="rounded-[2px] my-10">
             <img :src="isEditorial ? item.image : item" :alt="'Bissar Concepts -' + isEditorial ? item.title : alt" width="1440" height="568" center cover responsive loading="eager"/>
         </Slide>
@@ -22,24 +22,11 @@ defineProps({
     </Carousel>
 </template>
 
-<!-- <style scoped>
-.carousel__slide{
-  display: block !important;
-  text-align: left !important;
-  margin: 10px !important;  
+<style scoped>
+.carousel__pagination {
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
 }
-.maskleft {
-  -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
-  mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
-  mask-size: cover; 
-  mask-position: center;
-}
-
-
-@media (max-width: 640px) {
-  .carousel__slide {
-    width: 97% !important;
-    margin: 5px !important;  
-  }
-}
-</style> -->
+</style>

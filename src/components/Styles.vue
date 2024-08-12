@@ -7,7 +7,7 @@ const isHover = ref(null)
 
 </script>
 <template>
-    <section class="relative grid w-full h-full max-h-screen grid-cols-3">
+    <section class="relative grid w-full h-full grid-cols-3 mb-[16px]">
         <div v-for="(item, key) in data" :key="key" class="relative col-span-3 duration-500 transform bg-center bg-cover lg:col-span-1 md:col-span-2"
         @mouseenter="isHover = key" @mouseleave="isHover = false">
             <img :src="item.image" :alt="item.name" width="100%" height="100%" center cover responsive loading="lazy"/>

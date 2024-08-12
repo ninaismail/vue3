@@ -126,13 +126,13 @@ const handleSubmit = () => {
 </script>
 
 <template>
-    <section class="flex flex-wrap justify-between w-10/12 h-full gap-6 py-20 mx-auto sm:py-40 2xl:w-8/12 lg:gap-0">
-        <div class="w-full h-full space-y-3 lg:w-6/12">
+    <section class="flex flex-wrap justify-between w-10/12 h-full gap-6 mx-auto pt-28 2xl:w-8/12 mb-[16px] lg:gap-0">
+        <div class="w-full h-full lg:w-6/12">
             <h1 class="lg:text-[64px] md:text-[52px] text-[40px] font-[700]">
             Contact Us
             </h1>
-            <p class="tracking-wide lg:text-[36px] text-[28px] md:text-[32px] font-[600] text-justify">Our offices around the World</p>          
-            <form  class="flex flex-col gap-8" @submit.prevent="handleSubmit">
+            <p class="tracking-wide lg:text-[36px] text-[28px] md:text-[32px] font-[600]">Our offices around the World</p>          
+            <form  class="flex flex-col gap-8 mt-[32px]" @submit.prevent="handleSubmit">
                 <div class="w-full space-y-2">
                     <label for="Name" class="font-[400]">Name</label>
                     <input type="text" id="Name" name="Name" aria-labelledby="Name"

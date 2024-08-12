@@ -30,7 +30,7 @@ const isHover = ref(null)
 <template>
     <section class="flex flex-col items-center justify-center w-11/12 py-20 mx-auto 2xl:w-8/12 lg:w-10/12 sm:py-40">
         <BackgroundTitle :bg="bg" :title="title"/>
-        <div class="mb-[16px]">
+        <div class="mb-[16px] w-full mx-auto">
             <nav class="items-center justify-center flex-wrap gap-8 min-h-[42px] mb-[16px] flex">
                 <button
                 :id="item + (isClicked === 'All' ? '-active' : '')" 
@@ -55,7 +55,7 @@ const isHover = ref(null)
                 <RouterLink v-for="(item, key) in filteredData" :key="key" 
                 :id="item.title + (isClicked === item.type ? '-active' : '')" 
                 :aria-label="'go to ' + item.title" :to="`${$route.path}/${item.slug}`"
-                class="relative col-span-3 duration-500 transform bg-center bg-cover lg:col-span-1 md:col-span-2 w-fit h-fit"
+                class="relative mx-auto col-span-3 duration-500 transform bg-center bg-cover lg:col-span-1 md:col-span-2 w-fit h-fit rounded-[2px]"
                 @mouseenter="isHover = key" @mouseleave="isHover = false">
                     <img :src="item.thumbnail" :alt="item.title"  width="340" height="348" center cover responsive loading="lazy"/>
                     <div v-if="isHover === key" class="flex flex-col justify-center mx-auto gap-y-4 min-h-[20vh] absolute z-1 inset-0 w-full h-full z-1 bg-black/50 px-6">
