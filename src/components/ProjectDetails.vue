@@ -1,14 +1,15 @@
 <script setup>
 import GalleryCarousel from './GalleryCarousel.vue';
 
-defineProps({
-    item: Object
-})
+ defineProps({
+  item: Object,
+});
+
 </script>
 <template>
-    <section class="relative flex flex-col items-center justify-center w-11/12 h-full py-20 mx-auto lg:w-10/12 2xl:w-8/12 sm:py-40">
+    <section class="flex flex-col items-center justify-center w-11/12 h-full mx-auto lg:w-10/12 2xl:w-8/12 mb-[16px]">
         <GalleryCarousel :images="item.images" :slt="item.title"/>
-        <div class="flex flex-wrap items-center justify-between gap-6 lg:gap-0">
+        <div class="flex flex-wrap items-center justify-between w-full h-full gap-6 lg:gap-0">
             <div class="space-y-3 mb-[64px] w-full lg:w-8/12">
                 <h1 class="lg:text-[36px] text-[28px] md:text-[32px]">
                     <span class="font-[700]">{{ item.title }}</span>&nbsp;

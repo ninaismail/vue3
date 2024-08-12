@@ -1,23 +1,23 @@
 <script setup>
+import RelatedProjects from '../../components/RelatedProjects.vue';
 import InnerHero from '../../components/InnerHero.vue';
-import banner from '/images/innerhero/projectdetails.webp'
-import ProjectsCarousel from '../../components/ProjectsCarousel.vue';
 import ProjectDetails from '../../components/ProjectDetails.vue'
-import { getCollabsProjects, getCollabsProjectBySlug } from '../../utils/api_function'
+import ProjectsCarousel from '../../components/ProjectsCarousel.vue'
+import { getCollabsProjects } from '../../utils/api_function'
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
 
 const projects = getCollabsProjects();
-const collabproject = getCollabsProjectBySlug(route.params.slug);
-
+console.log(projects)
 </script>
 <template>
-    <InnerHero :pagebanner="banner" :pagetitle="collabproject.title" 
-    :pagedescription="collabproject.location + ' ' + collabproject.year"/>
-    <ProjectsCarousel :data="projects" :initialSlug="route.params.slug">
+  <ProjectsCarousel :data="projects" :initialSlug="route.params.slug">
     <template #default="{ item }">
+      <InnerHero :pagebanner="item.banner" :pagetitle="item.title" 
+      :pagedescription="item.location + ' ' + item.year"/>
       <ProjectDetails :item="item" />
+      <RelatedProjects :data="projects" :filter="item.location"/>
     </template>
   </ProjectsCarousel>
 </template>

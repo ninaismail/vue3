@@ -9,6 +9,7 @@ export function getProtfolioProjects() {
       year: 2020,
       location: 'Riyadh',
       description : `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.`,      
+      banner:'/images/innerhero/projectdetails.webp',
       thumbnail: '/images/projects/portfolio/thumbnails/works1.webp',
       images: [
         '/images/projects/portfolio/images/image.webp',
@@ -34,8 +35,9 @@ export function getProtfolioProjects() {
       completion_date: '2022-11-08',
       architects: 'Zaher Bissar',
       year: 2022,
-      location: 'Miami, FL',
+      location: 'Riyadh',
       description : `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.`,
+      banner:'/images/innerhero/projectdetails.webp',
       thumbnail: '/images/projects/portfolio/thumbnails/works2.webp',
       images: [
         '/images/projects/portfolio/images/image.webp',
@@ -58,8 +60,9 @@ export function getProtfolioProjects() {
       completion_date: '2021-09-23',
       architects: 'Zaher Bissar',
       year: 2021,
-      location: 'New York, NY',
+      location: 'Riyadh',
       description : `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.`,
+      banner:'/images/innerhero/projectdetails.webp',
       thumbnail: '/images/projects/portfolio/thumbnails/works3.webp',
       images: [
         '/images/projects/portfolio/images/image.webp',
@@ -85,6 +88,7 @@ export function getProtfolioProjects() {
       year: 2020,
       location: 'Chicago, IL',
       description : `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.`,
+      banner:'/images/innerhero/projectdetails.webp',
       thumbnail: '/images/projects/portfolio/thumbnails/works4.webp',
       images: [
         '/images/projects/portfolio/images/image.webp',
@@ -111,6 +115,7 @@ export function getProtfolioProjects() {
       year: 2019,
       location: 'San Francisco, CA',
       description : `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.`,
+      banner:'/images/innerhero/projectdetails.webp',
       thumbnail: '/images/projects/portfolio/thumbnails/works5.webp',
       images: [
         '/images/projects/portfolio/images/image.webp',
@@ -138,6 +143,7 @@ export function getProtfolioProjects() {
       year: 2018,
       location: 'Austin, TX',
       description : `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.`,
+      banner:'/images/innerhero/projectdetails.webp',
       thumbnail: '/images/projects/portfolio/thumbnails/works6.webp',
       images: [
         '/images/projects/portfolio/images/image.webp',
@@ -164,6 +170,7 @@ export function getProtfolioProjects() {
     //   year: 2021,
     //   location: 'Seattle, WA',
     //   description : `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.`,
+    //   banner:'/images/innerhero/projectdetails.webp',
     //   thumbnail: '/images/projects/portfolio/thumbnails/works1.webp',
     //   images: [
     //     '/images/projects/portfolio/images/image.webp',
@@ -187,6 +194,7 @@ export function getProtfolioProjects() {
     //   year: 2022,
     //   location: 'Malibu, CA',
     //   description : `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.`,
+    //   banner:'/images/innerhero/projectdetails.webp',
     //   thumbnail: '/images/projects/portfolio/thumbnails/works2.webp',
     //   images: [
     //     '/images/projects/portfolio/images/image.webp',
@@ -211,6 +219,7 @@ export function getProtfolioProjects() {
     //   year: 2023,
     //   location: 'Dubai, UAE',
     //   description : `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.`,
+    //   banner:'/images/innerhero/projectdetails.webp',
     //   thumbnail: '/images/projects/portfolio/thumbnails/works3.webp',
     //   images: [
     //     '/images/projects/portfolio/images/image.webp',
@@ -229,10 +238,12 @@ export function getProtfolioProjects() {
     // }
   ];
 }
+
 export function getPortfolioProjectBySlug(slug) {
   let projects = getProtfolioProjects();
   return projects.find(project => project.slug === slug);
 }
+
 export function getCollabsProjects() {
   return [
     { 
@@ -244,6 +255,7 @@ export function getCollabsProjects() {
       year: 2023,
       location: 'Dubai, UAE',
       description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
+      banner:'/images/innerhero/projectdetails.webp',
       thumbnail: '/images/projects/collaborations/thumbnails/collabs1.webp',
       images: [
         '/images/projects/collaborations/images/image.webp',
@@ -269,8 +281,9 @@ export function getCollabsProjects() {
       completion_date: '2022-08-15',
       architects: ['Zaher Bissar', 'Emily Turner'],
       year: 2022,
-      location: 'New York, NY',
+      location: 'Dubai, UAE',
       description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
+      banner:'/images/innerhero/projectdetails.webp',
       thumbnail: '/images/projects/collaborations/thumbnails/collabs2.webp',
       images: [
         '/images/projects/collaborations/images/image.webp',
@@ -295,8 +308,9 @@ export function getCollabsProjects() {
       completion_date: '2021-11-02',
       architects: ['Zaher Bissar', 'John Doe', 'Alice Green'],
       year: 2021,
-      location: 'Paris, France',
+      location: 'Dubai, UAE',
       description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+      banner:'/images/innerhero/projectdetails.webp',
       thumbnail: '/images/projects/collaborations/thumbnails/collabs3.webp',
       images: [
         '/images/projects/collaborations/images/image.webp',
@@ -323,6 +337,7 @@ export function getCollabsProjects() {
       year: 2020,
       location: 'London, UK',
       description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+      banner:'/images/innerhero/projectdetails.webp',
       thumbnail: '/images/projects/collaborations/thumbnails/collabs4.webp',
       images: [
         '/images/projects/collaborations/images/image.webp',
@@ -348,6 +363,7 @@ export function getCollabsProjects() {
     //   year: 2019,
     //   location: 'Berlin, Germany',
     //   description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    //    banner:'/images/innerhero/projectdetails.webp',
     //   thumbnail: '/images/projects/collaborations/thumbnails/collabs1.webp',
     //   images: [
     //     '/images/projects/collaborations/images/image.webp',
@@ -371,6 +387,7 @@ export function getCollabsProjects() {
     //   year: 2018,
     //   location: 'Tokyo, Japan',
     //   description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    //    banner:'/images/innerhero/projectdetails.webp',
     //   thumbnail: '/images/projects/collaborations/thumbnails/collabs2.webp',
     //   images: [
     //     '/images/projects/collaborations/images/image.webp',
@@ -387,10 +404,12 @@ export function getCollabsProjects() {
     // }
   ];
 }
+
 export function getCollabsProjectBySlug(slug) {
   let projects = getCollabsProjects();
   return projects.find(project => project.slug === slug);
 }
+
 export function getEditorial() {
   return [
     { 

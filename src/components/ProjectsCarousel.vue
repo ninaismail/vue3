@@ -25,13 +25,13 @@ watch(
 </script>
 
 <template>
-  <Carousel 
+  <Carousel
       ref="carousel" 
       v-model="currentSlide"
       :wrap-around="true" 
       :arrows="true"
-  >
-      <Slide v-for="(item, key) in props.data" :key="key">
+      class="w-full h-full mx-auto mb-[16px]">
+      <Slide v-for="(item, key) in props.data" :key="key" class="w-full h-full my-10">
           <slot :item="item"/>
       </Slide>
       <template #addons>
@@ -43,6 +43,7 @@ watch(
 
 <style scoped>
 .carousel__slide{
+  display: block !important;
   text-align: left !important;
 }
 </style>
