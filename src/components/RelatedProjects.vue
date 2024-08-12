@@ -14,14 +14,14 @@ const isHover = ref(null)
         <h1 class="lg:text-[36px] text-[28px] md:text-[32px] font-[700]">
             Related Projects
         </h1>
-        <div class="flex flex-wrap items-center justify-between">
+        <div class="w-full lg:columns-3 md:columns-2 columns-1">
             <div v-for="(item, key) in data" :key="key">
             <RouterLink v-if="filter === item.location"
             :id="item.title + (isHover === key ? '-active' : '')" 
             :aria-label="'go to ' + item.title" :to="`/${item.category.toLowerCase()}/${item.slug}`"
-            class="relative flex-1 aspect-square"
+            class="relative w-full aspect-square"
             @mouseenter="isHover = key" @mouseleave="isHover = false">
-                <img :src="item.thumbnail" :alt="item.title"  width="340" height="348" center cover responsive loading="lazy"/>
+                <img :src="item.thumbnail" :alt="item.title"  width="340" height="348" center cover responsive loading="lazy" class="w-full h-full"/>
                 <div v-if="isHover === key" class="flex flex-col justify-center mx-auto gap-y-4 min-h-[20vh] absolute z-1 inset-0 w-full h-full z-1 bg-black/50 px-6">
                     <h1 class="text-white lg:text-[36px] text-[28px] md:text-[32px] font-[700]">
                         {{ item.title }}
