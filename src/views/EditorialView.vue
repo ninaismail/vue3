@@ -8,7 +8,7 @@ const images = getEditorial();
 const accordion = getAccordion();
 </script>
 <template>
-    <section class="w-11/12 mx-auto 2xl:w-8/12 lg:w-10/12 sm:pt-28 my-[16px]">
+    <section class="w-11/12 mx-auto 2xl:w-8/12 lg:w-10/12 pt-28 mb-[16px]">
         <h1 class="lg:text-[36px] text-[28px] md:text-[32px] font-[700] text-center sm:w-2/3 mx-auto">
             Creating Bespoke Spaces that are Distinctive, Compelling and Timeless.
         </h1>

@@ -10,12 +10,12 @@ const isHover = ref(null)
 </script>
 
 <template>
-    <section class="w-11/12 h-full mx-auto space-y-3 lg:w-10/12 2xl:w-8/12">
+    <section class="w-11/12 mx-auto space-y-3 lg:w-10/12 2xl:w-8/12">
         <h1 class="lg:text-[36px] text-[28px] md:text-[32px] font-[700]">
             Related Projects
         </h1>
         <div class="w-full lg:columns-3 md:columns-2 columns-1">
-            <div v-for="(item, key) in data" :key="key">
+            <div v-for="(item, key) in data" :key="key" class="w-full h-full">
             <RouterLink v-if="filter === item.location"
             :id="item.title + (isHover === key ? '-active' : '')" 
             :aria-label="'go to ' + item.title" :to="`/${item.category.toLowerCase()}/${item.slug}`"
