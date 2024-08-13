@@ -14,6 +14,7 @@ export default {
       },
       backgroundOpacity: {
         10: '0.1',
+        77: '0.77',
       },
       backgroundImage: {
         'hero': 'url(/images/hero/hero.webp)',
