@@ -86,11 +86,11 @@ onUnmounted(() => {
       </RouterLink>
       </nav>
       <form id="search-bar" class="relative hidden lg:flex items-center h-[42px] transition-all duration-600" :class="isClicked ? 'border border-offwhite ' : 'border-0'">
-        <input type="search" 
+        <input type="text" 
         placeholder="Search..." 
         class="relative px-5 py-3 font-[200] rounded-[2px] h-full outline-none duration-600 transition-[width]"
         :class="isClicked ? 'w-52' : 'w-0'">
-        <svg role="bottom" @click="toggleClicked" width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute w-6 h-6 cursor-pointer right-3 top-3">
+        <svg role="bottom" @click="toggleClicked" width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute w-6 h-6 cursor-pointer right-3 top-2.5">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M23.353 22.896L22.646 23.603L16.993 17.95C15.401 19.375 13.305 20.25 11 20.25C6.029 20.25 2 16.219 2 11.249C2 6.27902 6.029 2.24902 11 2.24902C15.971 2.24902 20 6.27902 20 11.249C20 13.554 19.126 15.651 17.7 17.243L23.353 22.896Z" stroke="black"/>
         </svg>
       </form>
@@ -118,11 +118,11 @@ onUnmounted(() => {
         {{ item.name }}
       </RouterLink>
       <form id="search-bar" class="relative flex items-center border border-offwhite h-[42px]">
-        <input type="search" 
+        <input type="text" 
         placeholder="Search..." 
         class="relative px-5 py-3 font-[200] rounded-[2px] h-full outline-none"
         :class="isClicked ? 'w-52' : 'w-0'">
-        <svg role="bottom" width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute w-6 h-6 cursor-pointer right-3 top-3">
+        <svg role="bottom" width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute w-6 h-6 cursor-pointer right-3 top-2.5">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M23.353 22.896L22.646 23.603L16.993 17.95C15.401 19.375 13.305 20.25 11 20.25C6.029 20.25 2 16.219 2 11.249C2 6.27902 6.029 2.24902 11 2.24902C15.971 2.24902 20 6.27902 20 11.249C20 13.554 19.126 15.651 17.7 17.243L23.353 22.896Z" stroke="black"/>
         </svg>
       </form>

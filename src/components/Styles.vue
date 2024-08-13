@@ -7,7 +7,7 @@ const isHover = ref(null)
 
 </script>
 <template>
-    <section class="relative grid w-full h-full grid-cols-3 mb-[16px]">
+    <section class="relative grid w-full h-full grid-cols-3">
         <div v-for="(item, key) in data" :key="key" class="relative col-span-3 duration-500 transform bg-center bg-cover lg:col-span-1 md:col-span-2"
         @mouseenter="isHover = key" @mouseleave="isHover = false">
             <img :src="item.image" :alt="item.name" width="100%" height="100%" center cover responsive loading="lazy"/>
@@ -18,12 +18,12 @@ const isHover = ref(null)
                 <h1 class="text-white lg:text-[36px] text-[28px] md:text-[32px] font-[700]">
                     {{ item.name }}
                 </h1>
-                <h2 class="tracking-wide text-white font-[600] text-justify" style="text-align-last: center;">{{ item.summary }}</h2>   
-                <p class="tracking-wide text-white font-[600] text-justify" style="text-align-last: center;">{{ item.description }}</p>          
+                <h2 class="tracking-wide text-white font-[600] text-justify lg:w-2/3" style="text-align-last: center;">{{ item.summary }}</h2>   
+                <p class="tracking-wide text-white font-[600] text-justify lg:w-2/3" style="text-align-last: center;">{{ item.description }}</p>          
             </div>
         </div>
-        <svg width="5" height="116" viewBox="0 0 5 116" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute mx-auto transform translate-x-1/2 top-[93%] left-1/2 z-[2]">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.66675 0.85498H2.77786V114.86H1.66675V0.85498Z" fill="#CCBB99" stroke="#CCBB99"/>
-        </svg>    
+        <svg width="5" height="116" viewBox="0 0 5 116" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute mx-auto transform translate-x-1/2 lg:top-[93%] top-[96%] left-1/2 z-[2]">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.66675 0.85498H2.77786V114.86H1.66675V0.85498Z" fill="#CCBB99" stroke="#CCBB99"/>
+        </svg>
     </section>
 </template>

@@ -126,7 +126,7 @@ const handleSubmit = () => {
 </script>
 
 <template>
-    <section class="flex flex-wrap justify-between w-10/12 h-full gap-6 mx-auto pt-28 2xl:w-8/12 mb-[16px] lg:gap-0">
+    <section class="flex flex-wrap justify-between w-10/12 h-full gap-6 pt-40 pb-20 mx-auto 2xl:w-8/12 lg:gap-0">
         <div class="w-full h-full lg:w-6/12">
             <h1 class="lg:text-[64px] md:text-[52px] text-[40px] font-[700]">
             Contact Us

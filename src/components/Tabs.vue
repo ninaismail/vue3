@@ -39,7 +39,7 @@ filterData('All');
 </script>
 
 <template>
-    <section class="flex flex-col items-center justify-center w-11/12 mb-[16px] mx-auto 2xl:w-8/12 lg:w-10/12">
+    <section class="flex flex-col items-center justify-center w-11/12 py-20 mx-auto 2xl:w-8/12 lg:w-10/12">
         <BackgroundTitle :bg="bg" :title="title"/>
         <div class="mb-[16px] w-full mx-auto">
             <nav class="items-center justify-center flex-wrap gap-8 min-h-[42px] mb-[16px] flex">
@@ -47,16 +47,16 @@ filterData('All');
                 :id="'All' + (isClicked === 'All' ? '-active' : '')" 
                 :aria-label="'show all'" 
                 @click="filterData('All')"
-                :class="{'font-[700] before:h-[2px]' : isClicked === 'All'}"
-                class="relative uppercase cursor-pointer font-[400] hover:font-[700] text-center py-2 flex flex-col justify-center items-center before:bg-gold before:transition-all before:duration-600 before:absolute before:bottom-0 before:left-1/2 before:transform before:-translate-x-1/2 before:w-12 before:h-[1px] hover:before:h-[2px]"
+                :class="{'font-[700] before:absolute before:bottom-0 before:left-1/2 before:w-12 before:h-[2px] before:bg-gold before:transform before:-translate-x-1/2' : isClicked === 'All'}"
+                class="relative text-center uppercase cursor-pointer font-[600] hover:font-[700] py-2 flex flex-col before:w-0 before:h-0 before:bg-gold before:transition-all before:duration-600 before:absolute before:bottom-0 before:left-1/2 before:transform before:-translate-x-1/2 hover:before:w-12 hover:before:h-[2px]"
                 >
                  All
                 </button>
                 <button role="tab" v-for="(item, key) in props.uniqueTypes" :key="key"
                 :id="item + (isClicked === item ? '-active' : '')" 
                 :aria-label="'show ' + item"
-                :class="{'font-[700] before:h-[2px]' : isClicked === item}"
-                class="relative uppercase cursor-pointer font-[400] hover:font-[700] text-center py-2 flex flex-col justify-center items-center before:bg-gold before:transition-all before:duration-600 before:absolute before:bottom-0 before:left-1/2 before:transform before:-translate-x-1/2 before:w-12 before:h-[1px] hover:before:h-[2px]"
+                :class="{'font-[700] before:absolute before:bottom-0 before:left-1/2 before:w-12 before:h-[2px] before:bg-gold before:transform before:-translate-x-1/2' : isClicked === item}"
+                class="relative text-center uppercase cursor-pointer font-[600] hover:font-[700] py-2 flex flex-col before:w-0 before:h-0 before:bg-gold before:transition-all before:duration-600 before:absolute before:bottom-0 before:left-1/2 before:transform before:-translate-x-1/2 hover:before:w-12 hover:before:h-[2px]"
                 @click="filterData(item)"
                 >
                     {{ item }}

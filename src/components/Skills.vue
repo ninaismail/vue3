@@ -1,13 +1,15 @@
+<script setup>
+import BackgroundTitle from './BackgroundTitle.vue';
+defineProps({
+    bg: String,
+    title: String,
+    subtitle: String,
+})
+</script>
+
 <template>
-    <section class="relative flex flex-col items-center justify-center w-full h-full min-h-screen gap-10 mx-auto my-[16px]">
-        <img src="/images/backgrounds/skills.webp" alt="Skills - Bissar Concepts" width="1214" height="152" center cover responsive loading="lazy" class="absolute top-14"/>
-        <div class="flex flex-col items-center justify-center w-11/12 gap-3 px-6 mx-auto space-y-3 2xl:w-8/12 lg:w-10/12">
-            <h1 class="lg:text-[36px] text-[28px] md:text-[32px] font-[700] text-center lg:w-3/4">
-                An edge of sophistication to
-                simplicity, a whiff of modernism
-                to the traditional.</h1>
-            <p class="tracking-wide hyphens font-[600] text-center lg:w-1/2">By taking a fresh approach to design, we create viable and dynamic spaces that are as unique as the individuality of each of our clients.</p>          
-        </div>
+    <section class="relative flex flex-col items-center justify-center w-11/12 h-full min-h-screen gap-10 py-20 mx-auto">
+        <BackgroundTitle :bg="bg" :title="title" :subtitle="subtitle" />
         <div class="grid items-center justify-center w-11/12 grid-cols-1 gap-6 mx-auto 2xl:w-8/12 lg:w-10/12 lg:grid-cols-3 md:grid-cols-2">
             <img src="/images/skills/skill1.webp" alt="Bissar Concepts" width="340" height="348" center cover responsive loading="lazy" class="mx-auto aspect-square rounded-[2px]"/>
             <div class="flex flex-col items-center justify-center gap-2 border-4 border-accent2 max-w-[340px] max-h-[348px] aspect-square rounded-[2px] mx-auto">

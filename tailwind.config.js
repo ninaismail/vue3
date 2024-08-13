@@ -7,9 +7,8 @@ export default {
         body: ['Montserrat']
       },
       colors : {
-        "accent2": "#D9D9D9",
-        "bg2": "#EBF0F9",
-        "bg3": "#E9E9E9",
+        "affwhite": "#D9D9D9",
+        "grey": "#E9E9E9",
         "gold": "#CCBB99",
         "olive": "#53554A"
       },

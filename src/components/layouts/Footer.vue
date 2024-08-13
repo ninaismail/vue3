@@ -36,7 +36,7 @@ const footerlinks = [
 </script>
 
 <template>
-    <footer class="relative flex flex-col items-center justify-center gap-10 pt-20 sm:pt-40 bg-bg3">
+    <footer class="relative flex flex-col items-center justify-center gap-10 pt-20 bg-[#E9E9E9]">
       <div class="flex flex-wrap justify-between w-11/12 gap-6 2xl:w-8/12 lg:w-10/12 lg:gap-0">
         <div class="flex flex-col w-full gap-2.5 mb-10 lg:w-4/12 lg:mb-0">
             <img :src="logo" alt="Bissar Concepts Logo" width="147" height="37" center cover responsive loading="lazy"/>
