@@ -9,7 +9,8 @@ const props = defineProps({
     subtitle: String,
     bg: String,
     uniqueTypes: Array,
-    limit: Number
+    limit: Number,
+    cat: String
 })
 
 const isHover = ref(null)
@@ -62,18 +63,24 @@ filterData('All');
                     {{ item }}
                 </button>
             </nav>
-            <div class="grid grid-cols-3 gap-6">
+            <div class="grid grid-cols-3 gap-6 gap-y-10">
                 <RouterLink v-for="(item, key) in filteredData" :key="key" 
                 :id="item.title + (isClicked === item.type ? '-active' : '')" 
                 :aria-label="'go to ' + item.title" :to="`${$route.path}/${item.slug}`"
                 class="relative mx-auto col-span-3 duration-500 transform bg-center bg-cover lg:col-span-1 md:col-span-2 w-fit h-fit rounded-[2px]"
                 @mouseenter="isHover = key" @mouseleave="isHover = false">
                     <img :src="item.thumbnail" :alt="item.title"  width="340" height="348" center cover responsive loading="lazy"/>
-                    <div v-if="isHover === key" class="flex flex-col justify-center mx-auto gap-y-4 min-h-[20vh] absolute z-1 inset-0 w-full h-full z-1 bg-[#53554A] bg-opacity-77 px-6">
+                    <div v-if="isHover === key && cat === 'portfolio'" class="flex flex-col justify-center mx-auto gap-y-4 min-h-[20vh] absolute z-1 inset-0 w-full h-full z-1 bg-[#53554A] bg-opacity-77 px-6">
                         <h1 class="relative text-white lg:text-[24px] font-[700] pb-2 before:absolute before:bottom-0 before:-left-6 before:w-full before:h-[4px] before:bg-gold">
                             {{ item.title }}
                         </h1>
                         <h2 class="tracking-wide text-white font-[600]">{{ item.location }}&nbsp;{{ item.year }}</h2>   
+                    </div>
+                    <div v-else-if="cat === 'collabs'" class="absolute flex flex-col justify-center w-3/4 text-center transform -translate-x-1/2 bg-white border -bottom-6 h-fit border-gold left-1/2">
+                        <h1 class="lg:text-[20px] p-2 font-[700] border-b border-gold">
+                            {{ item.title }}
+                        </h1>
+                        <h2 class="tracking-wide font-[600]">{{ item.location }}&nbsp;{{ item.year }}</h2>   
                     </div>
                 </RouterLink>
             </div>

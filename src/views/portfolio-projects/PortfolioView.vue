@@ -17,6 +17,6 @@ console.log(uniqueTypes);
 <template>
     <InnerHero :pagebanner="banner" pagetitle="Portfolio" 
     pagedescription="We design your dream house to your taste, ultimately creating a space that reflects your identity."/>
-    <Tabs :data="projects" :uniqueTypes="uniqueTypes" :bg="works" title="Your sanctuary, our vision." :limit="6" />
+    <Tabs :data="projects" :uniqueTypes="uniqueTypes" :bg="works" title="Your sanctuary, our vision." :limit="6" cat="portfolio" />
 </template>
 
