@@ -16,6 +16,26 @@ const isHidden = ref(false);
 const isMouseOver = ref(false);
 const isOpen = ref(false);
 const isClicked = ref(false);
+let lastScrollY = window.scrollY;
+
+const showHeader = () => {
+  const currentScrollY = window.scrollY;
+
+  if (currentScrollY > 10) {
+    // Scrolling down
+    if (currentScrollY > lastScrollY && !isMouseOver.value) {
+      isHidden.value = true;
+    } else {
+      // Scrolling up or hovering over the header
+      isHidden.value = false;
+    }
+  } else {
+    isHidden.value = false;
+  }
+
+  // Update the last known scroll position
+  lastScrollY = currentScrollY;
+};
 
 const toggleOpen = () => {
   isOpen.value = !isOpen.value;
@@ -23,14 +43,6 @@ const toggleOpen = () => {
 
 const toggleClicked = () => {
   isClicked.value = !isClicked.value;
-};
-
-const showHeader = () => {
-  if (window.scrollY > 10) {
-    isHidden.value = true;
-  } else {
-    isHidden.value = false;
-  }
 };
 
 const handleMouseOver = () => {
