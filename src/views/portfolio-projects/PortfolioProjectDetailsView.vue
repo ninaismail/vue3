@@ -9,5 +9,5 @@ const projects = getProtfolioProjects();
 console.log(projects)
 </script>
 <template>
-  <ProjectsCarousel :data="projects" :initialSlug="route.params.slug"/>
+  <ProjectsCarousel :data="projects" :initialSlug="route.params.slug" cat="portfolio"/>
 </template>
