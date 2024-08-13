@@ -8,32 +8,43 @@ const props = defineProps({
     title: String,
     subtitle: String,
     bg: String,
-    uniqueTypes: Array
+    uniqueTypes: Array,
+    limit: Number
 })
+
+const isHover = ref(null)
 const isClicked = ref('All');
-const filteredData = ref(props.data)
-console.log('filteredData', filteredData.value)
-console.log('selected type', isClicked.value)
+const filteredData = ref([]);
+const visibleData = ref(props.data);
+const itemsToShow = ref(props.limit);
+
 const filterData = (type) => {
   isClicked.value = type;
-
-  // If 'All' is selected, show all data, otherwise filter by the selected type
+  
+  // Update the filtered data based on the type and apply the initial slice
   if (type === 'All') {
-    filteredData.value = props.data;
+    filteredData.value = visibleData.value.slice(0, itemsToShow.value);
   } else {
-    filteredData.value = props.data.filter(item => item.type === type);
+    filteredData.value = visibleData.value.filter(item => item.type === type).slice(0, itemsToShow.value);
   }
 };
-const isHover = ref(null)
 
+const loadMore = () => {
+  itemsToShow.value += props.limit; 
+  filterData(isClicked.value); 
+};
+
+// Initial filtering
+filterData('All');
 </script>
+
 <template>
     <section class="flex flex-col items-center justify-center w-11/12 mb-[16px] mx-auto 2xl:w-8/12 lg:w-10/12">
         <BackgroundTitle :bg="bg" :title="title"/>
         <div class="mb-[16px] w-full mx-auto">
             <nav class="items-center justify-center flex-wrap gap-8 min-h-[42px] mb-[16px] flex">
                 <button
-                :id="item + (isClicked === 'All' ? '-active' : '')" 
+                :id="'All' + (isClicked === 'All' ? '-active' : '')" 
                 :aria-label="'show all'" 
                 @click="filterData('All')"
                 :class="{'font-[700] before:h-[2px]' : isClicked === 'All'}"
@@ -67,11 +78,12 @@ const isHover = ref(null)
                 </RouterLink>
             </div>
         </div>
-        <RouterLink
-        id="go-to-portfolio-page"
-        aria-label="go to portfolio page"
-        to="/portfolio"
+        <button
+        v-if="filteredData.length === props.limit && props.limit >=6"
+        @click="loadMore()"
+        id="load-more-projects"
+        aria-label="load more projects"
         class="w-fit cursor-pointer px-4 py-3 font-[400] text-center rounded-[2px] bg-gold hover:bg-olive hover:text-white uppercase"
-        >Load More</RouterLink>
+        >Load More</button>
     </section>
 </template>

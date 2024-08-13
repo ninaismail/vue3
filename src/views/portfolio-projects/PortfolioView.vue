@@ -12,10 +12,11 @@ const projects = getProtfolioProjects();
 let uniqueTypes = [...new Set(projects.map(project => project.type))];
 
 console.log(uniqueTypes);
+
 </script>
 <template>
     <InnerHero :pagebanner="banner" pagetitle="Portfolio" 
     pagedescription="We design your dream house to your taste, ultimately creating a space that reflects your identity."/>
-    <Tabs :data="projects" :uniqueTypes="uniqueTypes" :bg="works" title="Your sanctuary, our vision." />
+    <Tabs :data="projects" :uniqueTypes="uniqueTypes" :bg="works" title="Your sanctuary, our vision." :limit="6"/>
 </template>
 

@@ -60,7 +60,7 @@ const nextSlideTitle = computed(() => {
       <div class="flex items-center justify-between gap-2 mt-4 border-t border-black mb-[16px] w-11/12 h-full mx-auto lg:w-10/12 2xl:w-8/12">
         <button @click="goPrev" class="flex items-center gap-2 group">
           <span class="p-3 bg-gold group-hover:bg-olive focuse:bg-olive">
-            <svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg" class=" group-hover:text-white focus:text-white">
             <path d="M10.3779 19.6877L1.37793 10.1877L10.3779 0.687745" stroke="black" stroke-width="2"/>
             </svg> 
           </span>
@@ -69,7 +69,7 @@ const nextSlideTitle = computed(() => {
         <button @click="goNext" class="flex items-center gap-2 group">
           <span class="font-[800]">{{ nextSlideTitle }}</span>
           <span class="p-3 bg-gold group-hover:bg-olive focuse:bg-olive">
-            <svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="transform -scale-x-100">
+            <svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="transform -scale-x-100 group-hover:text-white focus:text-white">
             <path d="M10.3779 19.6877L1.37793 10.1877L10.3779 0.687745" stroke="black" stroke-width="2"/>
             </svg> 
           </span>
