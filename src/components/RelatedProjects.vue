@@ -29,7 +29,7 @@ const isHover = ref(null)
                         </h1>
                         <h2 class="tracking-wide text-white font-[600]">{{ item.location }}&nbsp;{{ item.year }}</h2>   
                     </div>
-                    <div v-else-if="cat === 'collabs'" class="absolute flex flex-col justify-center w-3/4 text-center transform -translate-x-1/2 bg-white border -bottom-6 h-fit border-gold left-1/2">
+                    <div v-else-if="cat === 'collabs'" class="absolute bottom-0 flex flex-col justify-center w-3/4 mb-3 text-center transform -translate-x-1/2 bg-white border h-fit border-gold left-1/2">
                         <h1 class="lg:text-[20px] p-2 font-[700] border-b border-gold">
                             {{ item.title }}
                         </h1>
