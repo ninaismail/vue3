@@ -8,7 +8,7 @@ defineProps({
 <template>
     <div class="relative mb-[64px] mx-auto">
         <img :src="bg" :alt="'Bissar Concepts - ' + title" width="1214" height="152" center cover responsive loading="lazy" class="mx-auto"/>
-        <h1 v-if="title" class="lg:text-[36px] text-[28px] md:text-[32px] font-[700] absolute w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[2]">
+        <h1 v-if="title" class="lg:text-[36px] text-center text-[28px] md:text-[32px] font-[700] absolute w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[2]">
             {{ title }}
         </h1>
         <h2 v-if="subtitle" class="tracking-wide text-white font-[600] text-justify" style="text-align-last: center;">{{ subtitle }}</h2>   
