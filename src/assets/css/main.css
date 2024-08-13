@@ -29,3 +29,6 @@ body {
   --vc-nav-height: 100% !important;
   --vc-nav-background: rgba(0, 0, 0, 0.5) !important;
 }
+.carousel__prev, .carousel__next{
+  margin: 0 0!important;
+}

@@ -29,21 +29,4 @@ defineProps({
     transform: translateX(-50%);
 }
 
-.carousel__arrow--prev,
-.carousel__arrow--next {
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border-radius: 50%;
-    cursor: pointer;
-}
-.carousel__prev, .carousel__next {
-    margin:0 !important;
-}
-.carousel__arrow--prev {
-    left: 0px;
-}
-
-.carousel__arrow--next {
-    right: 0px;
-}
 </style>
