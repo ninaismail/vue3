@@ -36,12 +36,14 @@ defineProps({
     border-radius: 50%;
     cursor: pointer;
 }
-
+.carousel__prev, .carousel__next {
+    margin:0 !important;
+}
 .carousel__arrow--prev {
-    left: 20px;
+    left: 0px;
 }
 
 .carousel__arrow--next {
-    right: 20px;
+    right: 0px;
 }
 </style>

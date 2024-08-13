@@ -26,5 +26,6 @@ body {
   --vc-pgn-height: 12px !important;
   --vc-pgn-border-radius: 16px !important;
   --vc-nav-width: 3rem !important;
-  --vc-nav-height: 3rem !important;
+  --vc-nav-height: 100% !important;
+  --vc-nav-background: rgba(0, 0, 0, 0.5) !important;
 }
