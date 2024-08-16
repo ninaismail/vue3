@@ -10,7 +10,8 @@ import { VueRecaptchaPlugin } from 'vue-recaptcha'
 const app = createApp(App)
 
 app.use(VueRecaptchaPlugin, {
-  v2SiteKey: '6Ld4AMYpAAAAAEHy1RBcaHKU9T4bMG1OfQyRYajN',
+  v2SiteKey: '6LeoRigqAAAAALoCDM3YKRQoSuwfASRZ6xcuDWfg'
+  // '6LcX3AsqAAAAAKG0sYoZ3G3oQxqvLE8VeXHfnN_P'(local),
 })
 
 const head = createHead()

@@ -113,6 +113,7 @@ const handleSubmit = () => {
                 Email: '',
                 Message: ''
             };
+            
         loading.value = false;
         }).catch(error => {
             console.error('Errors:', error.response.data.errors);
@@ -121,6 +122,7 @@ const handleSubmit = () => {
             loading.value = false;
         });
     } 
+    hasErrorMessages.value = false;
 };
 
 </script>
@@ -175,11 +177,11 @@ const handleSubmit = () => {
                     >
                     {{loading === true ?  'Sending...' : 'Send Message'}}
                     </button>            
-                    <p v-if="loading === false" class="text-green-500">Thank you for your message, we'll get back to you soon.</p>                
+                    <p v-if="loading === false && hasErrorMessages === false" class="text-green-500">Thank you for your message, we'll get back to you soon.</p>                
                 </div>
 
                 <!-- Errors after submit -->
-                <ul v-if="hasErrorMessages === true" class="p-4 list-disc bg-red-200 border-b-red-600 border-b-s-4 marker:text-red-600" role="list">
+                <ul v-if="hasErrorMessages === true && ErrorMessages.length > 0" class="p-4 list-disc bg-red-200 border-b-red-600 border-b-s-4 marker:text-red-600" role="list">
                     <li v-for="(item, key) in ErrorMessages" :key="key" className="list-item mx-2">{{ item[0] }}</li>
                 </ul>
             </form>
