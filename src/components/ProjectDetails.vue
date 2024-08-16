@@ -39,9 +39,9 @@ import GalleryCarousel from './GalleryCarousel.vue';
                         <h2 class="tracking-wide font-[700]">Project Type:</h2>
                         <h2 class="tracking-wide font-[700]">{{ item.type }}</h2>
                     </div>                    
-                    <div class="flex items-center justify-between">
+                    <div class="flex flex-wrap items-center justify-between">
                         <h2 class="tracking-wide font-[700]">Architects:</h2>
-                        <h2 class="tracking-wide font-[700]">{{ item.architects }}</h2>
+                        <h2  v-for="(architect, key) in item.architects" :key="key" class="tracking-wide font-[700]">{{ architect }}</h2>
                     </div>
                     <hr class="h-[2px] mx-auto bg-gold w-full"/>
                     <h2 class="tracking-wide font-[700]">Share</h2>
