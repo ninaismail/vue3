@@ -36,7 +36,7 @@ onMounted(() => {
     :loop="true"
     :Infinity="true"
     :mouseDrag="false"        
-    :items-to-show="getItemsToShow()">
+    :itemsToShow="getItemsToShow()">
         <Slide v-for="(item, key) in images" :key="key" class="rounded-[2px]">
             <img :src="item" :alt="'Bissar Concepts - ' + alt" class="object-none w-full h-full" responsive loading="eager"/>
         </Slide>
@@ -49,7 +49,7 @@ onMounted(() => {
 
 <style scoped>
 .carousel__slide--sliding {
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 .carousel__slide--active{
@@ -67,8 +67,6 @@ onMounted(() => {
   position: static !important;
   height: auto !important;
   margin: 10px !important;
-  width: 200px; /* Set a fixed cropped width for non-centered images */
-  overflow: hidden; /* Ensure the image is cropped */  
   margin: 0 10px !important;
 }
 
