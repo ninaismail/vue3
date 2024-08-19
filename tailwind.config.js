@@ -20,7 +20,8 @@ export default {
         'hero': 'url(/images/hero/hero.webp)',
       },
       aspectRatio: {
-        '3.87/1': '3.87 / 1'
+        '3.87/1': '3.87 / 1',
+        '2.08/1': '2.08 / 1'
       },      
       transitionProperty: {
         'width': 'width',

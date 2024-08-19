@@ -3,7 +3,8 @@ import Socials from '../components/Socials.vue'
 
 </script>
 <template>
-  <section class="flex flex-col justify-center w-full h-screen bg-center bg-cover items-between bg-hero">``
+  <section class="relative flex flex-col justify-center w-full h-screen items-between">
+    <img src="/images/hero/hero.webp" alt="Bissar Concepts" center cover responsive loading="eager" class="aspect-[2.08/1] absolute inset-0 z-[-1] w-full h-full"/>
     <div class="flex flex-col justify-between w-11/12 mx-auto 2xl:w-8/12 lg:w-10/12">
       <div class="space-y-3 mb-[64px]">
         <h1 class="text-white uppercase lg:text-[64px] md:text-[52px] text-[40px] font-[700]">
