@@ -106,8 +106,8 @@ export function getProtfolioProjects() {
       images: [
         '/images/projects/portfolio/girls_villa/images/Rectangle 50.webp',
         '/images/projects/portfolio/girls_villa/images/Rectangle 51.webp',
-        '/images/projects/portfolio/girls_villa/images/Rectangle 52.webp',
         '/images/projects/portfolio/girls_villa/images/Rectangle 53.webp',
+        '/images/projects/portfolio/girls_villa/images/Rectangle 54.webp',
         '/images/projects/portfolio/girls_villa/images/Rectangle 54.webp',
         '/images/projects/portfolio/girls_villa/images/Rectangle 56.webp',
         '/images/projects/portfolio/girls_villa/images/Rectangle 60.webp',
