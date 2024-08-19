@@ -11,9 +11,9 @@ const getItemsToShow = () => {
   if (typeof window !== 'undefined') {
   const screenWidth = window.innerWidth;
   if (screenWidth >= 1280) {
-    return 3.95; // Desktop
+    return 2.50; // Desktop
   } else if (screenWidth >= 1024) {
-    return 3.95; // smaller  Desktop
+    return 2.50; // smaller  Desktop
   } else if (screenWidth >= 768) {
     return 3; // Tablet
   } else if (screenWidth >= 640) {
