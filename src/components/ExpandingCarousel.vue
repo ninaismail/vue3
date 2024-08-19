@@ -38,7 +38,7 @@ onMounted(() => {
     :mouseDrag="false"        
     :items-to-show="getItemsToShow()">
         <Slide v-for="(item, key) in images" :key="key" class="rounded-[2px] my-10">
-            <img :src="item" :alt="'Bissar Concepts - ' + alt" class="w-full h-full" center cover responsive loading="eager"/>
+            <img :src="item" :alt="'Bissar Concepts - ' + alt" class="object-none w-full h-full" responsive loading="eager"/>
         </Slide>
         <template #addons>
             <Navigation />
@@ -56,7 +56,6 @@ onMounted(() => {
   width: fit-content !important;
 }
 
-
 .carousel__pagination {
   position: absolute;
   bottom: 1%;
@@ -68,5 +67,9 @@ onMounted(() => {
   position: static !important;
   height: auto !important;
   margin: 10px !important;
+  width: 200px; /* Set a fixed cropped width for non-centered images */
+  overflow: hidden; /* Ensure the image is cropped */  
+  margin: 10px !important;
 }
+
 </style>
