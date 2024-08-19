@@ -52,6 +52,8 @@ const nextSlideTitle = computed(() => {
     :wrapAround="true" 
     transition="none"
     :showDots="false"
+    :mouseDrag="false"
+    :touchDrag="false"
     class="w-full h-full pb-20 mx-auto">
     <Slide v-for="(item, key) in props.data" :key="key" class="w-full h-full">
       <InnerHero :pagebanner="item.banner" :pagetitle="item.title" 

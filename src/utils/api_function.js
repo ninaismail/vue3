@@ -12,17 +12,12 @@ export function getProtfolioProjects() {
       banner:'/images/innerhero/projectdetails.webp',
       thumbnail: '/images/projects/portfolio/thumbnails/works1.webp',
       images: [
-        '/images/projects/portfolio/images/image.webp',
-        '/images/projects/portfolio/images/image.webp',
-        '/images/projects/portfolio/images/image.webp',
-        '/images/projects/portfolio/images/image.webp',
-        '/images/projects/portfolio/images/image.webp',
-        '/images/projects/portfolio/images/image.webp',
-        '/images/projects/portfolio/images/image.webp',
-        '/images/projects/portfolio/images/image.webp',
-        '/images/projects/portfolio/images/image.webp',
-        '/images/projects/portfolio/images/image.webp',
-        '/images/projects/portfolio/images/image.webp'
+        '/images/projects/portfolio/images/Rectangle 7.webp',
+        '/images/projects/portfolio/images/Rectangle 9.webp',
+        '/images/projects/portfolio/images/Rectangle 11.webp',
+        '/images/projects/portfolio/images/Rectangle 12.webp',
+        '/images/projects/portfolio/images/Rectangle 14.webp',
+        '/images/projects/portfolio/images/Rectangle 15.webp'
       ],
       client: 'Smith & Co.',
       slug: 'modern-home-design',
