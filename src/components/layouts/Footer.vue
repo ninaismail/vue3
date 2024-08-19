@@ -7,28 +7,18 @@ const footerlinks = [
     name: 'Our Services',
     to:'',
     submenu: [
-    { id: 1, name: "Industrial Design", to:"/" },
-    { id: 2, name: 'Commercial Interior Design', to: '/about' },
-    { id: 3, name: 'Residencial Interior ', to: '/contact' },
-    { id: 3, name: 'Industries ', to: '/industries' },
+    { id: 1, name: "Custom Designs", to:"/#skills" },
+    { id: 2, name: 'Exquisite Furniture', to: '/#skills' },
+    { id: 3, name: 'Luxury Homes Contract', to: '/#skills' },
   ]
   },
   {
     id: 2, 
-    submenu: [
-      { id: 1, name: 'Design Detailed and Phased', to:'/' },
-      { id: 2, name: 'Planning', to:'/' },
-      { id: 3, name: 'Apartment Exterior Design', to:'/' }
-    ]
-  },
-  {
-    id: 3, 
     name: 'Contacts', 
     to: '/',
     submenu: [
       { id: 1, name: 'Email', email:'info@bissarconcepts.com' },
       { id: 2, name: 'Phone', phone:'+966 55 372 7844' },
-      { id: 3, name: 'Address', address:'King Fahd Road Al Olaya, Tower 1 Riyadh, Saudi Arabia' }
     ]
   }
 ]
@@ -46,11 +36,11 @@ const footerlinks = [
         </div>
         <ul role="list" class="flex flex-wrap justify-between w-full gap-3 space-y-3 lg:w-7/12 list-style-none">
           <li v-for="(item, key) in footerlinks" :key="key" class="w-full space-y-3 sm:w-1/2 md:w-1/4">
-          <h1 class="text-lg font-[700]" :class="item.name ? 'mb-3' : 'mb-[24px]'">
+          <h1 class="text-lg font-[700] mb-3">
             <span v-if="item.name" class="pb-2 border-b border-white border-6">{{ item.name }}</span>
           </h1>
           <div v-for="(subitem, subkey) in item.submenu" :key="subkey">
-              <RouterLink v-if="item.id != 3" :id="subitem.name" :aria-label="'go to ' + subitem.name" :to="{path: item.to, hash: subitem?.to}" 
+              <RouterLink v-if="item.id != 2" :id="subitem.name" :aria-label="'go to ' + subitem.name" :to="{path: item.to, hash: subitem?.to}" 
               class="font-[400] hover:brightness-75">
               {{ subitem.name }}</RouterLink>
               <a prefetch="false" v-show="subitem.email" :id="'email-' + subitem.name + 'location'" :aria-label="'Email' + subitem.title + 'Location'" :href="'mailto:'+ subitem.email" class="cursor-pointer font-[400] hover:brightness-75">
@@ -59,7 +49,6 @@ const footerlinks = [
               <a prefetch="false" v-show="subitem.phone" :id="'call-' + subitem.name + 'location'" :aria-label="'Call' + subitem.title + 'Location'" :href="'tel:'+ subitem.phone" class="cursor-pointer font-[400] hover:brightness-75">
                 {{ subitem.phone }}
               </a>
-              <h2 v-show="subitem.address" class="tracking-wide font-[400]">{{ subitem.address }}</h2>
           </div>                
           </li>
         </ul>

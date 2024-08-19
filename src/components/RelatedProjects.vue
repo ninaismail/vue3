@@ -1,13 +1,19 @@
 <script setup>
 import { RouterLink } from 'vue-router'
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 
-defineProps({
-   data: Array,
-   filter: String,
-    cat: String
-})
-const isHover = ref(null)
+const props = defineProps({
+  data: Array,
+  filter: String,
+  cat: String,
+});
+
+const isHover = ref(false);
+
+// Filter data based on the selected location
+const filteredData = computed(() => {
+  return props.data.filter(item => item.location === props.filter);
+});
 </script>
 
 <template>
@@ -15,14 +21,14 @@ const isHover = ref(null)
         <h1 class="lg:text-[36px] text-[28px] md:text-[32px] font-[700]">
             Related Projects
         </h1>
-        <div class="grid w-full h-full grid-cols-1 gap-10 pb-10 max-lg:space-y-10 lg:grid-cols-3 md:grid-cols-2 place-items-start">
-            <div v-for="(item, key) in data" :key="key" class="self-start col-span-1">
+        <div class="grid w-full h-full grid-cols-1 gap-10 pb-10 lg:grid-cols-3 md:grid-cols-2">
+            <div v-for="(item, key) in filteredData" :key="key">
             <RouterLink v-if="filter === item.location"
             :id="item.title + (isHover === key ? '-active' : '')" 
             :aria-label="'go to ' + item.title" :to="`/${item.category.toLowerCase()}/${item.slug}`"
-            class="relative w-full aspect-square rounded-[2px]"
+            class="relative rounded-[2px]"
             @mouseenter="isHover = key" @mouseleave="isHover = false">
-                <img :src="item.thumbnail" :alt="item.title"  width="340" height="348" center cover responsive loading="lazy" class="w-full h-full"/>
+                <img :src="item.thumbnail" :alt="item.title"  width="340" height="348" center cover responsive loading="lazy" class="w-full h-full aspect-square"/>
                 <div v-if="isHover === key && cat === 'portfolio'" class="flex flex-col justify-center mx-auto gap-y-4 min-h-[20vh] absolute z-1 inset-0 w-full h-full z-1 bg-[#53554A] bg-opacity-77 px-6">
                     <h1 class="relative text-white lg:text-[24px] font-[700] pb-2 before:absolute before:bottom-0 before:-left-6 before:w-full before:h-[4px] before:bg-gold">
                         {{ item.title }}

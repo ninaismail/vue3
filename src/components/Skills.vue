@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-    <section class="relative flex flex-col items-center justify-center w-11/12 h-full min-h-screen gap-10 py-20 mx-auto">
+    <section id="skills" class="relative flex flex-col items-center justify-center w-11/12 h-full min-h-screen gap-10 py-20 mx-auto">
         <BackgroundTitle :bg="bg" :title="title" :subtitle="subtitle" />
         <div class="grid items-center justify-center w-11/12 grid-cols-1 gap-6 mx-auto 2xl:w-8/12 lg:w-10/12 lg:grid-cols-3 md:grid-cols-2">
             <img src="/images/skills/skill1.webp" alt="Bissar Concepts" width="340" height="348" center cover responsive loading="lazy" class="mx-auto aspect-square rounded-[2px]"/>
