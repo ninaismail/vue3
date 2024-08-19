@@ -10,14 +10,14 @@ export function getProtfolioProjects() {
       location: 'Riyadh',
       description : `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.`,      
       banner:'/images/innerhero/projectdetails.webp',
-      thumbnail: '/images/projects/portfolio/thumbnails/works1.webp',
+      thumbnail: '/images/projects/portfolio/the_collector_private_residencethumbnails/works1.webp',
       images: [
-        '/images/projects/portfolio/images/Rectangle 7.webp',
-        '/images/projects/portfolio/images/Rectangle 9.webp',
-        '/images/projects/portfolio/images/Rectangle 11.webp',
-        '/images/projects/portfolio/images/Rectangle 12.webp',
-        '/images/projects/portfolio/images/Rectangle 14.webp',
-        '/images/projects/portfolio/images/Rectangle 15.webp'
+        '/images/projects/portfolio/the_collector_private_residence/images/Rectangle 7.webp',
+        '/images/projects/portfolio/the_collector_private_residence/images/Rectangle 9.webp',
+        '/images/projects/portfolio/the_collector_private_residence/images/Rectangle 11.webp',
+        '/images/projects/portfolio/the_collector_private_residence/images/Rectangle 12.webp',
+        '/images/projects/portfolio/the_collector_private_residence/images/Rectangle 14.webp',
+        '/images/projects/portfolio/the_collector_private_residence/images/Rectangle 15.webp'
       ],
       client: 'Smith & Co.',
       slug: 'modern-home-design',

@@ -11,7 +11,7 @@ defineProps({
 
 <template>
     <Carousel class="w-full h-full mx-auto" :wrapAround="true">
-        <Slide v-for="(item, key) in images" :key="key" class="rounded-[2px] my-10">
+        <Slide v-for="(item, key) in images" :key="key" class="rounded-[2px]">
             <img :src="isEditorial ? item.image : item" :alt="'Bissar Concepts - ' + (isEditorial ? item.title : alt)" width="1440" height="568" center cover responsive loading="eager"/>
         </Slide>
         <template #addons>
