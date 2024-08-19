@@ -22,6 +22,6 @@ const accordion = getAccordion();
             Our services include space-remodeling, refinement of architectural drawings, renovation, restoration, luxury furniture , tailor-made furniture designs and customized artwork.
         </p>
     </section>
-    <Accordion :data="accordion" pagetitle="This is Bissar Concepts"/>
+    <Accordion :data="accordion" pagetitle="Behind the brand"/>
 </template>
 

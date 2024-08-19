@@ -32,7 +32,9 @@ console.log('selected accordion', isClicked.value)
                         <span v-if="isClicked === key" class="text-3xl"> - </span>
                         <span v-else class="text-3xl"> + </span>
                     </button>
-                    <p v-if="isClicked === key" class="w-full tracking-wide font-[600]">{{ item.content }}</p>   
+                    <Transition>
+                    <p v-if="isClicked === key" class="w-full tracking-wide font-[600] duration-600 transition-all">{{ item.content }}</p>   
+                    </Transition>
                 </div>
             </div>
         </div>

@@ -5,11 +5,11 @@ import Socials from '../Socials.vue'
 const footerlinks = [
   { id: 1, 
     name: 'Our Services',
-    to:'',
+    to:'/',
     submenu: [
-    { id: 1, name: "Custom Designs", to:"/#skills" },
-    { id: 2, name: 'Exquisite Furniture', to: '/#skills' },
-    { id: 3, name: 'Luxury Homes Contract', to: '/#skills' },
+    { id: 1, name: "Custom Designs", to:"#skills" },
+    { id: 2, name: 'Exquisite Furniture', to: '#skills' },
+    { id: 3, name: 'Luxury Homes Contract', to: '#skills' },
   ]
   },
   {
@@ -28,14 +28,14 @@ const footerlinks = [
 <template>
     <footer class="relative flex flex-col items-center justify-center gap-10 pt-20 bg-[#E9E9E9]">
       <div class="flex flex-wrap justify-between w-11/12 gap-6 2xl:w-8/12 lg:w-10/12 lg:gap-0">
-        <div class="flex flex-col w-full gap-2.5 mb-10 lg:w-4/12 lg:mb-0">
+        <div class="flex flex-col w-full gap-3 mb-10 lg:w-5/12 lg:mb-0">
             <img :src="logo" alt="Bissar Concepts Logo" width="147" height="37" center cover responsive loading="lazy"/>
             <p class="tracking-wide font-[400] text-justify">Authenticity, uniqueness and originality are at the core of our designs.
             No matter the projects, the scale or the style,  we always have the vision to create beautiful spaces that inspire, elevate and bring comfort.</p>
             <Socials small black/>
         </div>
-        <ul role="list" class="flex flex-wrap justify-between w-full gap-3 space-y-3 lg:w-7/12 list-style-none">
-          <li v-for="(item, key) in footerlinks" :key="key" class="w-full space-y-3 sm:w-1/2 md:w-1/4">
+        <ul role="list" class="flex flex-wrap justify-between w-full gap-3 lg:w-6/12 list-style-none">
+          <li v-for="(item, key) in footerlinks" :key="key" class="flex-1 w-full space-y-3">
           <h1 class="text-lg font-[700] mb-3">
             <span v-if="item.name" class="pb-2 border-b border-white border-6">{{ item.name }}</span>
           </h1>

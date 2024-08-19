@@ -94,22 +94,22 @@ export function getProtfolioProjects() {
     },
     { 
       id: 5, 
-      title: 'Girls Villa', 
+      title: 'Igra Private Villa', 
       type: 'Design',
       completion_date: '2019-12-01',
       architects: ['Zaher Bissar'],
       year: 2018,
       location: 'Riyadh',
       description : `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.`,
-      banner:'/images/projects/portfolio/girls_villa/banners/banner5.webp',
-      thumbnail: '/images/projects/portfolio/girls_villa/thumbnails/works5.webp',
+      banner:'/images/projects/portfolio/igra_private_villa/banners/banner5.webp',
+      thumbnail: '/images/projects/portfolio/igra_private_villa/thumbnails/works5.webp',
       images: [
-        '/images/projects/portfolio/girls_villa/images/Rectangle 50.webp',
-        '/images/projects/portfolio/girls_villa/images/Rectangle 51.webp',
-        '/images/projects/portfolio/girls_villa/images/Rectangle 53.webp',
-        '/images/projects/portfolio/girls_villa/images/Rectangle 54.webp',
-        '/images/projects/portfolio/girls_villa/images/Rectangle 56.webp',
-        '/images/projects/portfolio/girls_villa/images/Rectangle 60.webp',
+        '/images/projects/portfolio/igra_private_villa/images/Rectangle 50.webp',
+        '/images/projects/portfolio/igra_private_villa/images/Rectangle 51.webp',
+        '/images/projects/portfolio/igra_private_villa/images/Rectangle 53.webp',
+        '/images/projects/portfolio/igra_private_villa/images/Rectangle 54.webp',
+        '/images/projects/portfolio/igra_private_villa/images/Rectangle 56.webp',
+        '/images/projects/portfolio/igra_private_villa/images/Rectangle 60.webp',
       ],
       client: 'Tech Innovators',
       slug: 'sleek-office-design',
@@ -451,23 +451,23 @@ export function getAccordion() {
   return [
     { 
       id: 1, 
-      title: 'APPROACH', 
-      content: 'Armed with boundless creativity and an unwavering passion for interior design, Zaher Bissar embarked on a journey back in 2008, founding Bissar Concepts. His commitment to crafting spaces that echo an artistic vision and a relentless pursuit of beauty has captivated clients and admirers alike. Bissar Concept’s portfolio grew, each project bearing the imprint of its unique design. With time, what began as a solitary venture evolved into a thriving company, reflecting the intricate charm of interior design.'
+      title: 'The creative mind', 
+      content: 'Armed with boundless creativity and an unwavering passion for interior design, Zaher Bissar embarked on a journey back in 2014, founding Bissar Concepts. His commitment to crafting spaces that echo an artistic vision and a relentless pursuit of beauty has captivated clients and admirers alike. Bissar Concept’s portfolio grew, each project bearing the imprint of its unique design. With time, what began as a solitary venture evolved into a thriving interior design company, reflecting the intricate charm of interior design.'
     },
     { 
       id: 2, 
-      title: 'Story', 
-      content: 'Armed with boundless creativity and an unwavering passion for interior design, Zaher Bissar embarked on a journey back in 2008, founding Bissar Concepts. His commitment to crafting spaces that echo an artistic vision and a relentless pursuit of beauty has captivated clients and admirers alike. Bissar Concept’s portfolio grew, each project bearing the imprint of its unique design. With time, what began as a solitary venture evolved into a thriving company, reflecting the intricate charm of interior design.'
+      title: 'Our Story', 
+      content: 'Currently situated in Riyadh, with a strong presence in Beirut, Bissar Concepts is the epitome of sophisticated living. Having extended its influence across the region, the luxury atelier holds hundreds of projects spanning across KSA, UAE, the Levant, and Egypt. Bissar Concepts offers a world of bespoke luxury, ranging from intricate architectural refinement to customized design, where every space is meticulously curated to illustrate elegance and refinement. Our studio fully integrates interior design services specialized in upscale projects including palaces, private residences, public buildings, corporate offices, and hotels.'
     },    
     { 
       id: 3, 
-      title: 'APPROACH', 
-      content: 'Armed with boundless creativity and an unwavering passion for interior design, Zaher Bissar embarked on a journey back in 2008, founding Bissar Concepts. His commitment to crafting spaces that echo an artistic vision and a relentless pursuit of beauty has captivated clients and admirers alike. Bissar Concept’s portfolio grew, each project bearing the imprint of its unique design. With time, what began as a solitary venture evolved into a thriving company, reflecting the intricate charm of interior design.'
+      title: 'Our Approach', 
+      content: 'By taking a fresh approach to design, we create viable and dynamic spaces that are as unique as the individuality of each of our clients. Our work ranges from minimalism to classicism, with luxury contemporary defining most of our projects. We aim to consistently reflect the timeless elegance of classical aesthetics, but also introduce tradition with a modern flair.'
     },    
     { 
       id: 4, 
-      title: 'Philosophy', 
-      content: 'Armed with boundless creativity and an unwavering passion for interior design, Zaher Bissar embarked on a journey back in 2008, founding Bissar Concepts. His commitment to crafting spaces that echo an artistic vision and a relentless pursuit of beauty has captivated clients and admirers alike. Bissar Concept’s portfolio grew, each project bearing the imprint of its unique design. With time, what began as a solitary venture evolved into a thriving company, reflecting the intricate charm of interior design.'
+      title: 'Our Philosophy', 
+      content: 'Authenticity, individuality, and innovation are the cornerstone of every project we undertake. Our work is designed to blend aesthetics with functionality, seamlessly integrating the aspirations and lifestyles of our clients into every detail with finesse and a focus on well-being. Drawing inspiration from light, nature, and the art of equilibrium, our interior architecture serves as the foundation of our conceptual framework. Meanwhile, the essence of our philosophy is defined by the use of noble materials, luxurious detailing, and refined design. Our mission transcends the ordinary, aiming to orchestrate immersive experiences that captivate the senses: mentally by adding elements of surprise, spiritually by stimulating tranquillity, and culturally by infusing art and history.'
     }
   ]
 }

@@ -42,8 +42,8 @@ filterData('All');
 <template>
     <section class="flex flex-col items-center justify-center w-11/12 py-20 mx-auto 2xl:w-8/12 lg:w-10/12">
         <BackgroundTitle :bg="bg" :title="title"/>
-        <div class=" mb-[32px] w-full mx-auto">
-            <nav class="items-center justify-center flex-wrap gap-8 min-h-[42px]  mb-[32px] flex">
+        <div class="mb-[32px] w-full mx-auto">
+            <nav class="items-center justify-center flex-wrap gap-8 min-h-[42px] mb-[32px] flex">
                 <button
                 :id="'All' + (isClicked === 'All' ? '-active' : '')" 
                 :aria-label="'show all'" 
@@ -63,11 +63,11 @@ filterData('All');
                     {{ item }}
                 </button>
             </nav>
-            <div class="grid grid-cols-3 gap-6 gap-y-10">
+            <div class="grid w-full h-full grid-cols-1 gap-6 pb-10 gap-y-10 lg:grid-cols-3 md:grid-cols-2">
                 <RouterLink v-for="(item, key) in filteredData" :key="key" 
                 :id="item.title + (isClicked === item.type ? '-active' : '')" 
                 :aria-label="'go to ' + item.title" :to="`${$route.path}/${item.slug}`"
-                class="relative mx-auto col-span-3 duration-500 transform bg-center bg-cover lg:col-span-1 md:col-span-2 w-fit h-fit rounded-[2px]"
+                class="relative mx-auto duration-500 transform bg-center bg-cover w-fit h-fit rounded-[2px] duration-600 transition-all"
                 @mouseenter="isHover = key" @mouseleave="isHover = false">
                     <img :src="item.thumbnail" :alt="item.title"  width="340" height="348" center cover responsive loading="lazy"/>
                     <div v-if="isHover === key && cat === 'portfolio'" class="flex flex-col justify-center mx-auto gap-y-4 min-h-[20vh] absolute z-1 inset-0 w-full h-full z-1 bg-[#53554A] bg-opacity-77 px-6">
