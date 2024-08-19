@@ -20,7 +20,7 @@ export function getProtfolioProjects() {
         '/images/projects/portfolio/the_collector_private_residence/images/Rectangle 15.webp'
       ],
       client: 'Smith & Co.',
-      slug: 'modern-home-design',
+      slug: 'the-collector-private-residence',
       category: 'Portfolio'
     },
     { 
@@ -43,7 +43,7 @@ export function getProtfolioProjects() {
         '/images/projects/portfolio/al_rawda_reception_villa/images/Rectangle 24.webp',
       ],
       client: 'Doe Enterprises',
-      slug: 'luxury-villa',
+      slug: 'al-rawda-private-residence',
       category: 'Portfolio'
     },
     { 
@@ -66,7 +66,7 @@ export function getProtfolioProjects() {
         '/images/projects/portfolio/al_chadir_villa/images/Rectangle 38.webp',
       ],
       client: 'Interior Designs LLC',
-      slug: 'cozy-interior',
+      slug: 'al-chadir-villa',
       category: 'Portfolio'
     },
     { 
@@ -89,7 +89,7 @@ export function getProtfolioProjects() {
         '/images/projects/portfolio/al_rawda_private_residence/images/Rectangle 49.webp',
       ],
       client: 'Urban Builders',
-      slug: 'urban-living-room',
+      slug: 'al-rawda-reception-villa',
       category: 'Portfolio'
     },
     { 
@@ -112,7 +112,7 @@ export function getProtfolioProjects() {
         '/images/projects/portfolio/igra_private_villa/images/Rectangle 60.webp',
       ],
       client: 'Tech Innovators',
-      slug: 'sleek-office-design',
+      slug: 'igra-private-villa',
       category: 'Portfolio'
     },
     { 
@@ -135,7 +135,7 @@ export function getProtfolioProjects() {
         '/images/projects/portfolio/janadriah_villa/images/Rectangle 67.webp',
       ],
       client: 'Home Builders Inc.',
-      slug: 'family-home',
+      slug: 'the-collector-private-residence',
       category: 'Portfolio'
     },
     { 
