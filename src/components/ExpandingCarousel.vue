@@ -11,11 +11,11 @@ const getItemsToShow = () => {
   if (typeof window !== 'undefined') {
   const screenWidth = window.innerWidth;
   if (screenWidth >= 1280) {
-    return 3; // Desktop
+    return 3.95; // Desktop
   } else if (screenWidth >= 1024) {
-    return 3; // smaller  Desktop
+    return 3.95; // smaller  Desktop
   } else if (screenWidth >= 768) {
-    return 2; // Tablet
+    return 3; // Tablet
   } else if (screenWidth >= 640) {
     return 1; // big mobile
   } else if (screenWidth < 640) {
@@ -33,11 +33,12 @@ onMounted(() => {
 <template>
     <Carousel class="w-full h-full mx-auto" 
     :wrapAround="true"
+    :loop="true"
     :Infinity="true"
     :mouseDrag="false"        
     :items-to-show="getItemsToShow()">
         <Slide v-for="(item, key) in images" :key="key" class="rounded-[2px] my-10">
-            <img :src="item" :alt="'Bissar Concepts - ' + alt"  class="carousel-image"  center cover responsive loading="eager"/>
+            <img :src="item" :alt="'Bissar Concepts - ' + alt" class="w-full h-full" center cover responsive loading="eager"/>
         </Slide>
         <template #addons>
             <Navigation />
@@ -47,26 +48,25 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.carousel-image {
-    width: 100px; /* Set a fixed width for non-centered images */
-    height: auto;
-    transition: width 0.5s ease-in-out;
+.carousel__slide--sliding {
+  transition: 0.5s;
 }
 
-.carousel__slide--active .carousel-image {
-    width: auto; /* Expand to original width for the centered image */
+.carousel__slide--active{
+  width: fit-content !important;
 }
+
 
 .carousel__pagination {
-    position: absolute;
-    bottom: 1%;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .carousel__slide {
-    display: block !important;
-    width: fit-content !important;
-    margin: 10px !important;  
+  position: static !important;
+  height: auto !important;
+  margin: 10px !important;
 }
 </style>
