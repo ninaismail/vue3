@@ -86,7 +86,7 @@ filterData('All');
             </div>
         </div>
         <button
-        v-if="filteredData.length === props.limit && props.limit >=6"
+        v-show="filteredData.length > 6"
         @click="loadMore()"
         id="load-more-projects"
         aria-label="load more projects"
