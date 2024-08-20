@@ -9,7 +9,7 @@ export function getProtfolioProjects() {
       year: 2022,
       location: 'Riyadh',
       description : `One of the first assignments for us is to set the inspiration for the project; we invest a tremendous amount of time seeking inspiration from our client’s lifestyle and personal tastes. Aware of our client’s interest in fine art, we have selected masterpieces from the most prestigious galleries in the world. The warm and textured wooden high walls has created the perfect background for these art pieces.
-      This project with fortunate high ceilings was transformed into a hidden museum in a private home.`,      
+This project with fortunate high ceilings was transformed into a hidden museum in a private home.`,      
       banner:'/images/projects/portfolio/the_collector_private_residence/banners/banner1.webp',
       thumbnail: '/images/projects/portfolio/the_collector_private_residence/thumbnails/works1.webp',
       images: [
@@ -83,12 +83,13 @@ export function getProtfolioProjects() {
     },
     { 
       id: 4, 
-      title: 'Al Rawda Residence Villa', 
-      type: 'Living',
+      title: 'Al Rawda Private Residence', 
+      type: 'Family Home',
       completion_date: '2021-05-17',
       architects: ['Zaher Bissar'],
       year: 2021,
       location: 'Riyadh',
+      description: 'This luxury private suite combines exquisite, complex detail work with statement prints and muted walls for a modern Asian inspired aesthetic. Three different wallpapers by “De Gournay” are the catchiest elements in this project. Once again, we went in search of the top furniture brands and unique pieces from different European Galleries. A rich color palette is used throughout, giving a sense of depth to the contemporary space; while accent colors and gold hues add a warm splash of color into the design.',
       banner:'/images/projects/portfolio/al_rawda_private_residence/banners/banner4.webp',
       thumbnail: '/images/projects/portfolio/al_rawda_private_residence/thumbnails/works4.webp',
       images: [
@@ -102,8 +103,8 @@ export function getProtfolioProjects() {
         '/images/projects/portfolio/al_rawda_private_residence/images/Rectangle 46.webp',
         '/images/projects/portfolio/al_rawda_private_residence/images/Rectangle 47.webp',
       ],
-      client: 'Urban Builders',
-      slug: 'al-rawda-reception-villa',
+      client: 'Private',
+      slug: 'al-rawda-private-residence',
       category: 'Portfolio'
     },
     { 
@@ -128,18 +129,19 @@ export function getProtfolioProjects() {
         '/images/projects/portfolio/igra_private_villa/images/Rectangle 58.webp',
         '/images/projects/portfolio/igra_private_villa/images/Rectangle 59.webp',
       ],
-      client: 'Tech Innovators',
+      client: 'Private',
       slug: 'igra-private-villa',
       category: 'Portfolio'
     },
     { 
       id: 6, 
       title: 'Janadriah Villa', 
-      type: 'Houses',
+      type: 'Pool House',
       completion_date: '2018-07-29',
       architects: ['Zaher Bissar'],
-      year: 2012,
+      year: 2022,
       location: 'Riyadh',
+      description:'Layered Textures, earthy tones, hints of sleek patterns and crochet accents with a bold natural wood are just what you need for achieving a Boho-Chic look. The focal point is a wooden backdrop versus expansive glass walls overlooking the pool and its green surrounding. This pool house is a free-standing building in the middle of an extensive green area; This farm is located in Jenadriah, a suburb of Riyadh city.',
       banner:'/images/projects/portfolio/janadriah_villa/banners/banner6.webp',
       thumbnail: '/images/projects/portfolio/janadriah_villa/thumbnails/works6.webp',
       images: [
@@ -150,7 +152,7 @@ export function getProtfolioProjects() {
         '/images/projects/portfolio/janadriah_villa/images/Rectangle 66.webp',
         '/images/projects/portfolio/janadriah_villa/images/Rectangle 67.webp',
       ],
-      client: 'Home Builders Inc.',
+      client: 'Private',
       slug: 'the-collector-private-residence',
       category: 'Portfolio'
     },
