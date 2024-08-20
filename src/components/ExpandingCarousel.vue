@@ -68,6 +68,6 @@ onMounted(() => {
   position: static !important;
   height: auto !important;
   margin: 0 10px !important;
-  align-items: normal !important;
+  align-items: unset !important;
 }
 </style>
