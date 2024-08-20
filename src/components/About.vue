@@ -16,9 +16,9 @@ import { RouterLink } from 'vue-router'
                     </p>          
                 </div>
                 <RouterLink
-                id="go-to-editorial-page"
-                aria-label="go to editorial page"
-                to="/editorial#accordion"
+                id="go-to-editorial-page-beihind-the-brand"
+                aria-label="go to editorial page behind the brand section"
+                to="/editorial#beihind-the-brand"
                 :activeClass="'text-white bg-olive'"
                 :exactActiveClass="'text-white bg-olive'"
                 class="w-fit cursor-pointer px-4 py-3 font-[400] text-center rounded-[2px] bg-gold hover:bg-olive hover:text-white uppercase"

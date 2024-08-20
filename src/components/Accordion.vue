@@ -13,7 +13,7 @@ console.log('selected accordion', isClicked.value)
 // };
 </script>
 <template>
-    <section class="relative w-full h-full py-20 mx-auto lg:py-40">
+    <section id="beihind-the-brand" class="relative w-full h-full py-20 mx-auto lg:py-40">
         <div class="w-11/12 2xl:w-8/12 mx-auto lg:w-10/12 flex flex-wrap items-center justify-end gap-3  mb-[32px] h-full">
             <div class="w-full lg:w-5/12 2xl:left-0 2xl:transform 2xl:-translate-y-1/2 2xl:absolute 2xl:w-6/12 2xl:top-1/2">
                 <img src="/images/editorial/accordion.webp" alt="Bissar Concepts" width="644" height="603" center cover responsive loading="lazy"/>
