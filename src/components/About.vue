@@ -12,12 +12,13 @@ import { RouterLink } from 'vue-router'
                         Creating Bespoke Spaces that are Distinctive, Compelling and Timeless.
                     </h1>
                     <p class="tracking-wide font-[600] text-justify">With hundreds of projects spanning across the Gulf Cooperation council (GCC),
-                        mainly KSA & UAE, Levant North Africa and Europe.</p>          
+                        Armed with boundless creativity and an unwavering passion for interior design, Zaher Bissar embarked on a journey back in 2014, founding Bissar Concepts. His commitment to crafting spaces that echo an artistic vision and a relentless pursuit of beauty has captivated clients and admirers alike.
+                    </p>          
                 </div>
                 <RouterLink
-                id="go-to-portfolio-page"
-                aria-label="go to portfolio page"
-                to="/portfolio"
+                id="go-to-editorial-page"
+                aria-label="go to editorial page"
+                to="/editorial#accordion"
                 :activeClass="'text-white bg-olive'"
                 :exactActiveClass="'text-white bg-olive'"
                 class="w-fit cursor-pointer px-4 py-3 font-[400] text-center rounded-[2px] bg-gold hover:bg-olive hover:text-white uppercase"
