@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink } from 'vue-router'
-import logo from '/Bissar_Logo.webp'
+import logo from '/Bissar_Logo_V1.webp'
 import Socials from '../Socials.vue'
 const footerlinks = [
   { id: 1, 

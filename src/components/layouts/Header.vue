@@ -1,5 +1,5 @@
 <script setup>
-import logo from '/Bissar_Logo.webp'
+import logo from '/Bissar_Logo_V1.webp'
 import { RouterLink } from 'vue-router'
 import { ref, onMounted, onUnmounted } from 'vue';
 
