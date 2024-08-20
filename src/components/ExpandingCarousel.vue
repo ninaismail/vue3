@@ -38,7 +38,7 @@ onMounted(() => {
     :mouseDrag="false"      
     :transition="600"  
     :itemsToShow="getItemsToShow()">
-        <Slide v-for="(item, key) in images" :key="key">
+        <Slide v-for="(item, key) in images" :key="key" class="mx-[10px]">
             <img :src="item" :alt="'Bissar Concepts - ' + alt" class="object-none w-full h-full" responsive loading="eager"/>
         </Slide>
         <template #addons>
@@ -50,10 +50,10 @@ onMounted(() => {
 
 <style scoped>
 .carousel__slide--sliding {
-  transition: 0.6s ease;
+  transition: transform 0.6s ease;
 }
 
-.carousel__slide--active{
+.carousel__slide--active {
   width: fit-content !important;
 }
 
@@ -67,6 +67,14 @@ onMounted(() => {
 .carousel__slide {
   position: static !important;
   height: auto !important;
-  margin: 0 10px !important;
+}
+
+/* Adding smooth scaling effect */
+.carousel__slide img {
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel__slide--active img {
+  transform: scale(1.05); /* Slightly scale up the active image */
 }
 </style>
