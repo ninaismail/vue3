@@ -36,11 +36,11 @@ onMounted(() => {
     :wrapAround="true"
     :loop="true"
     :Infinity="true"
-    :mouseDrag="false"      
-    :transition="600"  
+    :mouseDrag="false"     
+    ariaGallery 
     :itemsToShow="getItemsToShow()">
-        <Slide v-for="(item, key) in images" :key="key" class="mx-[10px]">
-          <img :src="isEditorial ? item.image : item" :alt="'Bissar Concepts - ' + (isEditorial ? item.title : alt)" class="object-none w-full h-full" responsive loading="eager"/>
+        <Slide v-for="(item, key) in images" :key="key">
+          <img :src="isEditorial ? item.image : item" :alt="'Bissar Concepts - ' + (isEditorial ? item.title : alt)" class="object-none object-left w-full h-full" responsive loading="eager"/>
         </Slide>
         <template #addons>
             <Navigation />
@@ -51,12 +51,13 @@ onMounted(() => {
 
 <style scoped>
 .carousel__slide--sliding {
-  transition: transform 0.6s ease-in-out, width 0.6s ease-in-out !important;
+  transition: transform 0.6s ease-in-out, width 0.6s ease-in-out;
 }
 
 .carousel__slide--active {
+  /* Use a percentage or fixed width value */
   width: fit-content !important;
-  transition: transform 0.6s ease-in-out, width 0.6s ease-in-out !important;
+  transition: width 0.6s ease-in-out;
 }
 
 .carousel__pagination {
@@ -69,10 +70,11 @@ onMounted(() => {
 .carousel__slide {
   position: static !important;
   height: auto !important;
+  transition: width 0.6s ease-in-out; /* Apply the same transition */
 }
 
 .carousel__slide--active img {
   transform: scale(1.05);
-  transition: transform 0.6s ease-in-out, width 0.6s ease-in-out !important;
+  transition: transform 0.6s ease-in-out;
 }
 </style>
