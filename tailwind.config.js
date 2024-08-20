@@ -19,7 +19,8 @@ export default {
       aspectRatio: {
         '3.87/1': '3.87 / 1',
         '2.08/1': '2.08 / 1',
-        '2.54/1': '2.54 / 1'
+        '2.54/1': '2.54 / 1',
+        '0.68/1': '0.68 / 1'
       },      
       transitionProperty: {
         'width': 'width',

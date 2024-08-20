@@ -5,6 +5,7 @@ import { onMounted } from 'vue';
 defineProps({
   images: Array,
   alt: String,
+  isEditorial: Boolean
 })
 // Calculate the number of items to show based on screen width
 const getItemsToShow = () => {
@@ -39,7 +40,7 @@ onMounted(() => {
     :transition="600"  
     :itemsToShow="getItemsToShow()">
         <Slide v-for="(item, key) in images" :key="key" class="mx-[10px]">
-            <img :src="item" :alt="'Bissar Concepts - ' + alt" class="object-none w-full h-full" responsive loading="eager"/>
+          <img :src="isEditorial ? item.image : item" :alt="'Bissar Concepts - ' + (isEditorial ? item.title : alt)" class="object-none w-full h-full" responsive loading="eager"/>
         </Slide>
         <template #addons>
             <Navigation />

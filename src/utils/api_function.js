@@ -3,7 +3,7 @@ export function getProtfolioProjects() {
     { 
       id: 1, 
       title: 'The Art Collector Private Residence', 
-      type: 'Design',
+      type: 'Private Residence',
       completion_date: '2023-06-15',
       architects: ['Zaher Bissar'],
       year: 2022,
@@ -30,7 +30,7 @@ export function getProtfolioProjects() {
     { 
       id: 2, 
       title: 'Al Rawda Reception Villa', 
-      type: 'Houses',
+      type: 'Family Home',
       completion_date: '2020-11-08',
       architects: ['Zaher Bissar'],
       year: 2020,
@@ -56,10 +56,11 @@ export function getProtfolioProjects() {
     { 
       id: 3, 
       title: 'Al Chadir Villa', 
-      type: 'Interior',
+      type: 'Family Home',
       completion_date: '2019-09-23',
       architects: ['Zaher Bissar'],
       year: 2019,
+      description:'The exclusive interior design of this spacious project that impresses with the elegance and splendor of the timeless furniture pieces is the reception area of this villa. The focal point of this project is a double height space, where a crystal light installation from floor to ceiling is stretching out from floor to ceiling. This piece is called the “Crystal Biosphere”',
       location: 'Riyadh',
       banner:'/images/projects/portfolio/al_chadir_villa/banners/banner3.webp',
       thumbnail: '/images/projects/portfolio/al_chadir_villa/thumbnails/works3.webp',
@@ -76,7 +77,7 @@ export function getProtfolioProjects() {
         '/images/projects/portfolio/al_chadir_villa/images/Rectangle 37.webp',
         '/images/projects/portfolio/al_chadir_villa/images/Rectangle 39.webp',
       ],
-      client: 'Interior Designs LLC',
+      client: 'Private',
       slug: 'al-chadir-villa',
       category: 'Portfolio'
     },
@@ -384,58 +385,53 @@ export function getEditorial() {
     { 
       id: 1, 
       title: 'Editorial Art Gallery', 
-      image: '/images/editorial/images/editorial.webp'
+      image:'/images/projects/portfolio/the_collector_private_residence/images/Rectangle 7.webp',
     },
     { 
       id: 2, 
       title: 'Editorial Art Gallery', 
-      image: '/images/editorial/images/editorial.webp'
+      image:'/images/projects/portfolio/al_rawda_reception_villa/images/Rectangle 17.webp',
     },    
     { 
       id: 3, 
       title: 'Editorial Art Gallery', 
-      image: '/images/editorial/images/editorial.webp'
+      image:'/images/projects/portfolio/al_chadir_villa/images/Rectangle 27.webp',
     },    
     { 
       id: 4, 
       title: 'Editorial Art Gallery', 
-      image: '/images/editorial/images/editorial.webp'
+      image:'/images/projects/portfolio/al_rawda_private_residence/images/Rectangle 40.webp',
     },     
     { 
       id: 5, 
       title: 'Editorial Art Gallery', 
-      image: '/images/editorial/images/editorial.webp'
+      image:'/images/projects/portfolio/igra_private_villa/images/Rectangle 50.webp',
     },     
     { 
       id: 6, 
       title: 'Editorial Art Gallery', 
-      image: '/images/editorial/images/editorial.webp'
+      image:'/images/projects/portfolio/janadriah_villa/images/Rectangle 62.webp',
     },      
     { 
       id: 7, 
       title: 'Editorial Art Gallery', 
-      image: '/images/editorial/images/editorial.webp'
+      image: '/images/projects/collaborations/baccarat/images/Rectangle 83.webp',
     },     
     { 
       id: 8, 
       title: 'Editorial Art Gallery', 
-      image: '/images/editorial/images/editorial.webp'
+      image: '/images/projects/collaborations/de_gournay/images/Rectangle 68.webp',
     }, 
     { 
       id: 9, 
       title: 'Editorial Art Gallery', 
-      image: '/images/editorial/images/editorial.webp'
+      image: '/images/projects/collaborations/preciosa/images/Rectangle 77.webp',
     },     
     { 
       id: 10, 
       title: 'Editorial Art Gallery', 
-      image: '/images/editorial/images/editorial.webp'
-    }, 
-    { 
-      id: 11, 
-      title: 'Editorial Art Gallery', 
-      image: '/images/editorial/images/editorial.webp'
-    }, 
+      image: '/images/projects/collaborations/italamp/images/Rectangle 89.webp',
+    }
   ]
 }
 
