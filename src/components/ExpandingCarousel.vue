@@ -11,9 +11,9 @@ const getItemsToShow = () => {
   if (typeof window !== 'undefined') {
   const screenWidth = window.innerWidth;
   if (screenWidth >= 1280) {
-    return 2.50; // Desktop
+    return 3; // Desktop
   } else if (screenWidth >= 1024) {
-    return 2.50; // smaller  Desktop
+    return 3; // smaller  Desktop
   } else if (screenWidth >= 768) {
     return 3; // Tablet
   } else if (screenWidth >= 640) {
@@ -31,13 +31,14 @@ onMounted(() => {
 </script>
 
 <template>
-    <Carousel class="w-full h-full mx-auto" 
+    <Carousel class="w-full h-full mx-auto rounded-[2px]" 
     :wrapAround="true"
     :loop="true"
     :Infinity="true"
-    :mouseDrag="false"        
+    :mouseDrag="false"      
+    :transition="600"  
     :itemsToShow="getItemsToShow()">
-        <Slide v-for="(item, key) in images" :key="key" class="rounded-[2px]">
+        <Slide v-for="(item, key) in images" :key="key">
             <img :src="item" :alt="'Bissar Concepts - ' + alt" class="object-none w-full h-full" responsive loading="eager"/>
         </Slide>
         <template #addons>
@@ -49,7 +50,7 @@ onMounted(() => {
 
 <style scoped>
 .carousel__slide--sliding {
-  transition: 0.5s ease-in-out;
+  transition: 0.6s ease;
 }
 
 .carousel__slide--active{
@@ -66,8 +67,6 @@ onMounted(() => {
 .carousel__slide {
   position: static !important;
   height: auto !important;
-  margin: 10px !important;
   margin: 0 10px !important;
 }
-
 </style>
