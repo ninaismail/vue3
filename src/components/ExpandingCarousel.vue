@@ -51,11 +51,12 @@ onMounted(() => {
 
 <style scoped>
 .carousel__slide--sliding {
-  transition: transform 0.6s ease;
+  transition: transform 0.6s ease-in-out, width 0.6s ease-in-out !important;
 }
 
 .carousel__slide--active {
   width: fit-content !important;
+  transition: transform 0.6s ease-in-out, width 0.6s ease-in-out !important;
 }
 
 .carousel__pagination {
@@ -70,12 +71,8 @@ onMounted(() => {
   height: auto !important;
 }
 
-/* Adding smooth scaling effect */
-.carousel__slide img {
-  transition: transform 0.6s ease-in-out;
-}
-
 .carousel__slide--active img {
-  transform: scale(1.05); /* Slightly scale up the active image */
+  transform: scale(1.05);
+  transition: transform 0.6s ease-in-out, width 0.6s ease-in-out !important;
 }
 </style>
