@@ -13,9 +13,7 @@ html {
 }
 html,
 body {
-  max-width: 2000px;
   width: 100vw;
-  margin: 0 auto;
   overflow-x: hidden;
 }
 ::-webkit-scrollbar {

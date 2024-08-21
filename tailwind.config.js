@@ -29,6 +29,9 @@ export default {
       width: {
         'custom': 'calc(100% - 27rem)', // Subtracts 27rem (mx-108) from 100%
       },
+      backgroundImage: {
+        'hero':'url(/images/hero/hero.webp)',
+      }
     }
   },
   plugins: [],
