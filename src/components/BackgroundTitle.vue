@@ -12,7 +12,7 @@ defineProps({
             <h1 v-if="title" class="lg:text-[36px] text-center text-[28px] md:text-[32px] font-[700] mx-auto lg:w-2/3">
                 {{ title }}
             </h1>
-            <h2 v-if="subtitle" class="tracking-wide font-[600] text-center mx-auto lg:w-2/3">{{ subtitle }}</h2>   
+            <h2 v-if="subtitle" class="tracking-wide lg:text-[24px] md:text-[20px] text-[18px] font-[400] text-center mx-auto lg:w-2/3">{{ subtitle }}</h2>   
         </div>
     </div>
 </template>

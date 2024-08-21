@@ -11,10 +11,10 @@ import ExpandingCarousel from './ExpandingCarousel.vue';
         <ExpandingCarousel :images="item.images" :alt="item.title"/>
         <div class="flex flex-wrap items-center justify-between w-full h-full gap-6 mt-[32px] lg:gap-0">
             <div class="space-y-3 mb-[64px] w-full lg:w-8/12">
-                <h1 class="lg:text-[36px] text-[28px] md:text-[32px]">
-                    <span class="font-[700]">{{ item.title }}</span>&nbsp;
-                    <span class="font-[200]"> - {{ item.location }}&nbsp;{{ item.year }}</span>
+                <h1 class="lg:text-[36px] text-[28px] md:text-[32px] font-[700]">
+                    {{ item.title }}
                 </h1>
+                <h2 class="lg:text-[24px] md:text-[20px] text-[18px] font-[100]">{{ item.location }}&nbsp;{{ item.year }}</h2>
                 <p v-if="item.description" class="tracking-wide font-[400]">{{ item.description }}</p>
                 <p v-else class="tracking-wide font-[400]">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
