@@ -5,7 +5,7 @@ import Socials from '../components/Socials.vue'
 <template>
   <section class="relative flex flex-col justify-center w-full max-h-screen items-between mt-[90px] bg-cover bg-center aspect-2/1 bg-hero">
     <!-- <img src="/images/hero/hero.webp" alt="Bissar Concepts" loading="eager" class="aspect-[2/1] absolute inset-0 z-[-1] w-full h-full"/> -->
-    <div class="flex flex-col justify-around w-11/12 h-full py-20 mx-auto 2xl:w-8/12 lg:w-10/12">
+    <div class="flex flex-col w-11/12 h-full py-40 mx-auto 2xl:w-8/12 lg:w-10/12">
       <div class="space-y-3 mb-[64px]">
         <h1 class="text-white uppercase lg:text-[64px] md:text-[52px] text-[40px] font-[700] leading-tight">
           Home <br class="max-lg:hidden"/>of Luxury
