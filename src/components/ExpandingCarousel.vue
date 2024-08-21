@@ -11,9 +11,9 @@ const getItemsToShow = () => {
   if (typeof window !== 'undefined') {
   const screenWidth = window.innerWidth;
   if (screenWidth >= 1280) {
-    return 3; // Desktop
+    return 2.98; // Desktop
   } else if (screenWidth >= 1024) {
-    return 3; // smaller  Desktop
+    return 2.98;  // smaller  Desktop
   } else if (screenWidth >= 768) {
     return 3; // Tablet
   } else if (screenWidth >= 640) {
@@ -52,8 +52,8 @@ onMounted(() => {
 }
 
 .carousel__slide--visible .carousel__slide--active {
-  /* Use a percentage or fixed width value */
   width: fit-content !important;
+  opacity: 1 !important;
 }
 
 .carousel__pagination {
@@ -64,22 +64,32 @@ onMounted(() => {
 }
 
 .carousel__slide {
-  position: static !important;
+  position: relative !important; /* Ensure relative positioning for the overlay */
   height: auto !important;
-  transition: width 0.6s ease-in-out; /* Apply the same transition */
+  transition: width 0.6s ease-in-out;
 }
 
 .carousel__slide--active img {
   transform: scale(1.05);
 }
 
-.carousel__slide--visible{
+.carousel__slide--visible {
   width: 10% !important;
 }
 
-/* Ensures the first slide doesn't act twice */
-.carousel__slide--duplicate.carousel__slide--first,
-.carousel__slide--duplicate.carousel__slide--last {
-  display: none !important;
+.carousel__slide--visible::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Black overlay with low opacity */
+  z-index: 1; /* Make sure the overlay is above the image */
+  pointer-events: none; /* Allow clicks through the overlay */
+}
+
+.carousel__slide--active::after {
+  display: none; /* Remove overlay for active slide */
 }
 </style>
