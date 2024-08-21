@@ -19,6 +19,7 @@ const footerlinks = [
     submenu: [
       { id: 1, name: 'Email', email:'info@bissarconcepts.com' },
       { id: 2, name: 'Phone', phone:'+966 55 372 7844' },
+      { id: 3, name: 'Phone', phone:'+961 3 577 147' },
     ]
   }
 ]

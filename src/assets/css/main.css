@@ -32,3 +32,8 @@ body {
 .carousel__prev, .carousel__next{
   margin: 0 0!important;
 }
+@media only screen and (max-width: 640px) { 
+  .carousel__pagination {
+    display: none!important; /* Remove overlay for active slide */
+  }  
+}

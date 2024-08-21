@@ -11,11 +11,11 @@ const getItemsToShow = () => {
   if (typeof window !== 'undefined') {
   const screenWidth = window.innerWidth;
   if (screenWidth >= 1280) {
-    return 2.98; // Desktop
+    return 3; // Desktop
   } else if (screenWidth >= 1024) {
-    return 2.98;  // smaller  Desktop
+    return 3;  // smaller  Desktop
   } else if (screenWidth >= 768) {
-    return 3; // Tablet
+    return 2; // Tablet
   } else if (screenWidth >= 640) {
     return 1; // big mobile
   } else if (screenWidth < 640) {
@@ -51,7 +51,7 @@ onMounted(() => {
   transition: transform 0.6s ease-in-out, width 0.6s ease-in-out;
 }
 
-.carousel__slide--visible .carousel__slide--active {
+.carousel__slide--visible.carousel__slide--active {
   width: fit-content !important;
   opacity: 1 !important;
 }
@@ -73,9 +73,9 @@ onMounted(() => {
   transform: scale(1.05);
 }
 
-.carousel__slide--visible {
+/* .carousel__slide--visible {
   width: 10% !important;
-}
+} */
 
 .carousel__slide--visible::after {
   content: '';
@@ -84,7 +84,7 @@ onMounted(() => {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2); /* Black overlay with low opacity */
+  background-color: rgba(0, 0, 0, 0.3); /* Black overlay with low opacity */
   z-index: 1; /* Make sure the overlay is above the image */
   pointer-events: none; /* Allow clicks through the overlay */
 }
@@ -92,4 +92,5 @@ onMounted(() => {
 .carousel__slide--active::after {
   display: none; /* Remove overlay for active slide */
 }
+
 </style>
