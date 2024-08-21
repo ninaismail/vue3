@@ -67,9 +67,9 @@ filterData('All');
                 <RouterLink v-for="(item, key) in filteredData" :key="key" 
                 :id="item.title + (isClicked === item.type ? '-active' : '')" 
                 :aria-label="'go to ' + item.title" :to="`${$route.path}/${item.slug}`"
-                class="relative mx-auto duration-500 transform bg-center bg-cover w-fit h-fit rounded-[2px] duration-600 transition-all"
+                class="relative mx-auto duration-600 transform bg-center bg-cover w-fit h-fit rounded-[2px]"
                 @mouseenter="isHover = key" @mouseleave="isHover = false">
-                    <img :src="item.thumbnail" :alt="item.title"  width="340" height="348" center cover responsive loading="lazy"/>
+                    <img :src="item.thumbnail" :alt="item.title"  width="340" height="348" center cover responsive loading="lazy" class="aspect-0.98/1"/>
                     <div v-if="isHover === key && cat === 'portfolio'" class="flex flex-col justify-center mx-auto gap-y-4 min-h-[20vh] absolute z-1 inset-0 w-full h-full z-1 bg-[#53554A] bg-opacity-77 px-6">
                         <h1 class="relative text-white lg:text-[24px] font-[700] pb-2 before:absolute before:bottom-0 before:-left-6 before:w-full before:h-[4px] before:bg-gold">
                             {{ item.title }}

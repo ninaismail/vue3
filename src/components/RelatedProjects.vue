@@ -21,27 +21,23 @@ const filteredData = computed(() => {
     <h1 class="lg:text-[36px] text-[28px] md:text-[32px] font-[700]">
       Related Projects
     </h1>
-    <div class="grid w-full grid-cols-1 gap-6 pb-10 gap-y-10 lg:grid-cols-3 md:grid-cols-2">
-      <div v-if="filteredData.length > 0" v-for="(item, key) in filteredData" :key="key">
-        <div
+    <div class="grid w-full h-full grid-cols-1 gap-6 pb-10 gap-y-10 lg:grid-cols-3 md:grid-cols-2">
+      <RouterLink v-if="filteredData.length > 0" v-for="(item, key) in filteredData" :key="key"
           @mouseenter="isHover = key"
           @mouseleave="isHover = null"
-          class="relative rounded-[2px] duration-600 transition-all"
-        >
-          <RouterLink
             :id="item.title + (isHover === key ? '-active' : '')"
             :aria-label="'go to ' + item.title"
             :to="`/${item.category.toLowerCase()}/${item.slug}`"
+            class="relative duration-600 transform bg-center bg-cover w-fit h-fit rounded-[2px]"
           >
             <img
               :src="item.thumbnail"
               :alt="item.title"
               width="340"
               height="348"
-              class="w-full h-full aspect-square"
+              class="aspect-0.98/1"
               loading="lazy"
             />
-          </RouterLink>
 
           <div v-if="isHover === key && cat === 'portfolio'" class="flex flex-col justify-center mx-auto gap-y-4 min-h-[20vh] absolute inset-0 w-full h-full bg-[#53554A] bg-opacity-77 px-6">
             <h1 class="relative text-white lg:text-[24px] font-[700] pb-2 before:absolute before:bottom-0 before:-left-6 before:w-full before:h-[4px] before:bg-gold">
@@ -56,8 +52,7 @@ const filteredData = computed(() => {
             </h1>
             <h2 class="tracking-wide font-[600]">{{ item.location }}&nbsp;{{ item.year }}</h2>
           </div>
-        </div>
-      </div>
+        </RouterLink>
 
       <h1 v-else class="lg:text-[20px] p-2 font-[700] border-b border-gold">
         No related projects...

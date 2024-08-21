@@ -5,7 +5,6 @@ import { onMounted } from 'vue';
 defineProps({
   images: Array,
   alt: String,
-  isEditorial: Boolean
 })
 // Calculate the number of items to show based on screen width
 const getItemsToShow = () => {
@@ -34,13 +33,11 @@ onMounted(() => {
 <template>
     <Carousel class="w-full h-full mx-auto rounded-[2px]" 
     :wrapAround="true"
-    :loop="true"
-    :Infinity="true"
     :mouseDrag="false"     
     ariaGallery 
     :itemsToShow="getItemsToShow()">
         <Slide v-for="(item, key) in images" :key="key">
-          <img :src="isEditorial ? item.image : item" :alt="'Bissar Concepts - ' + (isEditorial ? item.title : alt)" class="object-none object-left w-full h-full" responsive loading="eager"/>
+          <img :src="item" :alt="'Bissar Concepts - ' + alt" class="object-none object-left w-full h-full" responsive loading="eager"/>
         </Slide>
         <template #addons>
             <Navigation />
@@ -54,10 +51,9 @@ onMounted(() => {
   transition: transform 0.6s ease-in-out, width 0.6s ease-in-out;
 }
 
-.carousel__slide--active {
+.carousel__slide--visible .carousel__slide--active {
   /* Use a percentage or fixed width value */
   width: fit-content !important;
-  transition: width 0.6s ease-in-out;
 }
 
 .carousel__pagination {
@@ -75,6 +71,15 @@ onMounted(() => {
 
 .carousel__slide--active img {
   transform: scale(1.05);
-  transition: transform 0.6s ease-in-out;
+}
+
+.carousel__slide--visible{
+  width: 10% !important;
+}
+
+/* Ensures the first slide doesn't act twice */
+.carousel__slide--duplicate.carousel__slide--first,
+.carousel__slide--duplicate.carousel__slide--last {
+  display: none !important;
 }
 </style>

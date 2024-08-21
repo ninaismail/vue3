@@ -1,6 +1,6 @@
 <script setup>
 import { getEditorial, getAccordion } from '../utils/api_function';
-import ExpandingCarousel from '../components/ExpandingCarousel.vue';
+import GalleryCarousel from '../components/GalleryCarousel.vue';
 import Accordion from '../components/Accordion.vue';
 
 
@@ -12,7 +12,7 @@ const accordion = getAccordion();
         <h1 class="lg:text-[36px] text-[28px] md:text-[32px] font-[700] text-center lg:w-2/3 mx-auto pb-20">
             An edge of sophistication to simplicity, a whiff of modernism to the traditional.
         </h1>
-    <ExpandingCarousel :images="images" :isEditorial="true"/>
+    <GalleryCarousel :images="images"/>
     </section>
     <section class="w-11/12 pt-20 mx-auto space-y-3 2xl:w-8/12 lg:w-10/12">
         <p class="tracking-wide font-[600] text-center">

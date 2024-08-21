@@ -4,15 +4,16 @@ import 'vue3-carousel/dist/carousel.css';
 
 defineProps({
   images: Array,
-  alt: String,
-  isEditorial: Boolean
 })
 </script>
 
 <template>
-    <Carousel class="w-full h-full mx-auto" :wrapAround="true">
+    <Carousel class="w-full h-full mx-auto" 
+    :wrapAround="true"     
+    ariaGallery
+    :transition="600">
         <Slide v-for="(item, key) in images" :key="key" class="rounded-[2px]">
-            <img :src="isEditorial ? item.image : item" :alt="'Bissar Concepts - ' + (isEditorial ? item.title : alt)" width="1440" height="568" center cover responsive loading="eager"/>
+            <img :src="item.image" :alt="'Bissar Concepts - ' + item.title" width="1440" height="568" center cover responsive loading="eager"/>
         </Slide>
         <template #addons>
             <Navigation />
