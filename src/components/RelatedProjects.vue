@@ -17,18 +17,18 @@ const filteredData = computed(() => {
 </script>
 
 <template>
-  <section class="w-11/12 mx-auto pb-20 space-y-3 lg:w-10/12 2xl:w-8/12 max-sm:mb-[-100px]">
+  <section class="w-11/12 pb-20 mx-auto space-y-3 lg:w-10/12 2xl:w-8/12">
     <h1 class="lg:text-[36px] text-[28px] md:text-[32px] font-[700]">
       Related Projects
     </h1>
-    <div class="grid w-full h-full grid-cols-1 gap-x-6 gap-y-10 max-sm:mx-auto lg:grid-cols-3 md:grid-cols-2">
-      <RouterLink v-if="filteredData.length > 0" v-for="(item, key) in filteredData" :key="key"
+    <div v-if="filteredData.length > 0" class="grid w-full grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-3 md:grid-cols-2">
+      <RouterLink v-for="(item, key) in filteredData" :key="key"
           @mouseenter="isHover = key"
           @mouseleave="isHover = null"
             :id="item.title + (isHover === key ? '-active' : '')"
             :aria-label="'go to ' + item.title"
             :to="`/${item.category.toLowerCase()}/${item.slug}`"
-            class="relative w-fit h-fit rounded-[2px]"
+            class="relative w-fit h-fit max-sm:mx-auto rounded-[2px]"
           >
             <img
               :src="item.thumbnail"
@@ -53,10 +53,9 @@ const filteredData = computed(() => {
             <h2 class="tracking-wide font-[600]">{{ item.location }}&nbsp;{{ item.year }}</h2>
           </div>
         </RouterLink>
-
-      <h1 v-else class="lg:text-[20px] p-2 font-[700] border-b border-gold">
+    </div>
+    <h1 v-else class="lg:text-[20px] p-2 font-[700] border-b border-gold">
         No related projects...
       </h1>
-    </div>
   </section>
 </template>

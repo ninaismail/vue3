@@ -54,7 +54,7 @@ const nextSlideTitle = computed(() => {
     :showDots="false"
     :mouseDrag="false"
     :touchDrag="false"
-    class="w-full mx-auto h-fit">
+    class="w-full h-full mx-auto">
     <Slide v-for="(item, key) in props.data" :key="key" class="w-full h-full">
       <InnerHero :pagebanner="item.banner" :pagetitle="item.title" 
       :pagedescription="item.location + ' ' + item.year"/>
