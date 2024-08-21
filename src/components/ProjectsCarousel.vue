@@ -67,10 +67,10 @@ const nextSlideTitle = computed(() => {
             <path d="M10.3779 19.6877L1.37793 10.1877L10.3779 0.687745" stroke="black" stroke-width="2"/>
             </svg> 
           </span>
-          <span class="font-[800] max-sm:text-[12px]">{{ prevSlideTitle }}</span>
+          <span class="font-[800] max-sm:text-[12px] text-left">{{ prevSlideTitle }}</span>
         </button>
         <button @click="goNext" class="flex items-center gap-2 group">
-          <span class="font-[800]">{{ nextSlideTitle }}</span>
+          <span class="font-[800] max-sm:text-[12px] text-left">{{ nextSlideTitle }}</span>
           <span class="p-3 bg-gold group-hover:bg-olive focuse:bg-olive">
             <svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="transform -scale-x-100 group-hover:text-white focus:text-white">
             <path d="M10.3779 19.6877L1.37793 10.1877L10.3779 0.687745" stroke="black" stroke-width="2"/>

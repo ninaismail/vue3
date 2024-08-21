@@ -17,18 +17,18 @@ const filteredData = computed(() => {
 </script>
 
 <template>
-  <section class="w-11/12 mx-auto space-y-3 lg:w-10/12 2xl:w-8/12">
+  <section class="w-11/12 mx-auto space-y-3 lg:w-10/12 2xl:w-8/12 max-sm:mb-[-100px]">
     <h1 class="lg:text-[36px] text-[28px] md:text-[32px] font-[700]">
       Related Projects
     </h1>
-    <div class="grid w-full h-full grid-cols-1 gap-6 pb-10 gap-y-10 lg:grid-cols-3 md:grid-cols-2">
+    <div class="grid w-full h-full grid-cols-1 gap-x-6 gap-y-10 max-sm:mx-auto lg:grid-cols-3 md:grid-cols-2">
       <RouterLink v-if="filteredData.length > 0" v-for="(item, key) in filteredData" :key="key"
           @mouseenter="isHover = key"
           @mouseleave="isHover = null"
             :id="item.title + (isHover === key ? '-active' : '')"
             :aria-label="'go to ' + item.title"
             :to="`/${item.category.toLowerCase()}/${item.slug}`"
-            class="relative duration-600 transform bg-center bg-cover w-fit h-fit rounded-[2px]"
+            class="relative w-fit h-fit rounded-[2px]"
           >
             <img
               :src="item.thumbnail"
