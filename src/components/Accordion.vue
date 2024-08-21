@@ -6,7 +6,7 @@ const props = defineProps({
     pagetitle: String,
     data: Array
 })
-const isClicked = ref(1);
+const isClicked = ref(0);
 console.log('selected accordion', isClicked.value)
 // const toggleClicked = (key) => {
 //     isClicked.value = isClicked.value === key ? 1 : key;

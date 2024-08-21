@@ -8,10 +8,10 @@ import { RouterLink } from 'vue-router'
         <div class="flex flex-wrap items-center justify-between w-full h-full gap-6 mx-auto lg:gap-0">
             <div class="flex flex-col justify-between w-full lg:w-7/12">
                 <div class="space-y-3 mb-[64px]">
-                    <h1 class="lg:text-[36px] text-[28px] md:text-[32px] font-[700]">
+                    <h1 class="lg:text-[36px] text-[28px] md:text-[32px] font-[700] leading-tight">
                         Creating Bespoke Spaces that are Distinctive, Compelling and Timeless.
                     </h1>
-                    <p class="tracking-wide font-[600] text-justify">With hundreds of projects spanning across the Gulf Cooperation council (GCC),
+                    <p class="tracking-wide font-[600] text-justify">
                         Armed with boundless creativity and an unwavering passion for interior design, Zaher Bissar embarked on a journey back in 2014, founding Bissar Concepts. His commitment to crafting spaces that echo an artistic vision and a relentless pursuit of beauty has captivated clients and admirers alike.
                     </p>          
                 </div>

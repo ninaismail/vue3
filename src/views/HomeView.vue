@@ -19,7 +19,6 @@ const styles = [
     <Hero/>
     <About/>
     <Styles :data="styles"/>
-    <Skills :bg="bg" title="An edge of sophistication to simplicity, a whiff of modernism to the traditional."
-    subtitle="By taking a fresh approach to design, we create viable and dynamic spaces that are as unique as the individuality of each of our clients."/>
+    <Skills :bg="bg" title="Share with us your own personal touch and we’ll make a world of it!"/>
   </main>
 </template>
