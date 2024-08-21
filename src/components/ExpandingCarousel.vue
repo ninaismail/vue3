@@ -37,7 +37,7 @@ onMounted(() => {
     ariaGallery 
     :itemsToShow="getItemsToShow()">
         <Slide v-for="(item, key) in images" :key="key">
-          <img :src="item" :alt="'Bissar Concepts - ' + alt" class="object-none object-left w-full h-full" responsive loading="eager"/>
+          <img :src="item" :alt="'Bissar Concepts - ' + alt" class="object-none object-left w-full h-full" loading="eager"/>
         </Slide>
         <template #addons>
             <Navigation />
@@ -67,29 +67,27 @@ onMounted(() => {
   position: relative !important; /* Ensure relative positioning for the overlay */
   height: auto !important;
   transition: width 0.6s ease-in-out;
+  overflow: hidden !important;   /* Hide any overflow caused by the scaled image */
 }
 
-.carousel__slide--active img {
-  transform: scale(1.05);
+.carousel__slide img {
+  transform: scale(1.05) !important;
+  width: 105% !important;
+  height: 100% !important;
 }
 
-/* .carousel__slide--visible {
-  width: 10% !important;
-} */
-
-.carousel__slide--visible::after {
+.carousel__slide--visible::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3); /* Black overlay with low opacity */
-  z-index: 1; /* Make sure the overlay is above the image */
-  pointer-events: none; /* Allow clicks through the overlay */
-}
+  background-color: rgba(0, 0, 0, 0.3); 
+  z-index: 1; 
+} 
 
-.carousel__slide--active::after {
+.carousel__slide--active::before {
   display: none; /* Remove overlay for active slide */
 }
 
