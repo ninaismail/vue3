@@ -390,53 +390,73 @@ export function getEditorial() {
     { 
       id: 1, 
       title: 'Editorial Art Gallery', 
-      image:'/images/projects/portfolio/the_collector_private_residence/images/Rectangle 7.webp',
+      image:'/images/editorial/images/Rectangle 180.webp',
     },
     { 
       id: 2, 
       title: 'Editorial Art Gallery', 
-      image:'/images/projects/portfolio/al_rawda_reception_villa/images/Rectangle 17.webp',
+      image:'/images/editorial/images/Rectangle 181.webp',
     },    
     { 
       id: 3, 
       title: 'Editorial Art Gallery', 
-      image:'/images/projects/portfolio/al_ghadir_villa/images/Rectangle 27.webp',
+      image:'/images/editorial/images/Rectangle 182.webp',
     },    
     { 
       id: 4, 
       title: 'Editorial Art Gallery', 
-      image:'/images/projects/portfolio/al_rawda_private_residence/images/Rectangle 40.webp',
+      image:'/images/editorial/images/Rectangle 183.webp',
     },     
     { 
       id: 5, 
       title: 'Editorial Art Gallery', 
-      image:'/images/projects/portfolio/the_sisters_villa/images/Rectangle 50.webp',
+      image:'/images/editorial/images/Rectangle 184.webp',
     },     
     { 
       id: 6, 
       title: 'Editorial Art Gallery', 
-      image:'/images/projects/portfolio/jenadriah_ranch/images/Rectangle 62.webp',
+      image:'/images/editorial/images/Rectangle 185.webp',
     },      
     { 
       id: 7, 
       title: 'Editorial Art Gallery', 
-      image: '/images/projects/collaborations/baccarat/images/Rectangle 83.webp',
+      image:'/images/editorial/images/Rectangle 186.webp',
     },     
     { 
       id: 8, 
       title: 'Editorial Art Gallery', 
-      image: '/images/projects/collaborations/de_gournay/images/Rectangle 68.webp',
+      image:'/images/editorial/images/Rectangle 187.webp',
     }, 
     { 
       id: 9, 
       title: 'Editorial Art Gallery', 
-      image: '/images/projects/collaborations/preciosa/images/Rectangle 77.webp',
+      image:'/images/editorial/images/Rectangle 188.webp',
     },     
     { 
       id: 10, 
       title: 'Editorial Art Gallery', 
-      image: '/images/projects/collaborations/italamp/images/Rectangle 89.webp',
-    }
+      image:'/images/editorial/images/Rectangle 189.webp',
+    },    
+    { 
+      id: 11, 
+      title: 'Editorial Art Gallery', 
+      image:'/images/editorial/images/Rectangle 190.webp',
+    },   
+    { 
+      id: 12, 
+      title: 'Editorial Art Gallery', 
+      image:'/images/editorial/images/Rectangle 191.webp',
+    },     
+    { 
+      id: 13, 
+      title: 'Editorial Art Gallery', 
+      image:'/images/editorial/images/Rectangle 192.webp',
+    },     
+    { 
+      id: 14, 
+      title: 'Editorial Art Gallery', 
+      image:'/images/editorial/images/Rectangle 193.webp',
+    },
   ]
 }
 
