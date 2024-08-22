@@ -7,7 +7,7 @@ import { RouterLink } from 'vue-router'
         <img src="/images/backgrounds/about.webp" alt="About Bissar Concepts" width="1214" height="152" center cover responsive loading="lazy" class="absolute top-14"/>
         <div class="flex flex-wrap items-center justify-between w-full h-full gap-6 mx-auto lg:gap-0">
             <div class="flex flex-col justify-between w-full lg:w-7/12">
-                <div class="space-y-3 mb-[64px]">
+                <div class="space-y-3 2xl:mb-[64px] mb-[32px] ">
                     <h1 class="lg:text-[36px] text-[28px] md:text-[32px] font-[700] leading-tight">
                         Creating Bespoke Spaces that are Distinctive, Compelling and Timeless.
                     </h1>

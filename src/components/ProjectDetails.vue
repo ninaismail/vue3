@@ -10,7 +10,7 @@ import ExpandingCarousel from './ExpandingCarousel.vue';
     <section class="flex flex-col items-center justify-center w-11/12 h-full pt-20 mx-auto lg:w-10/12 2xl:w-8/12">
         <ExpandingCarousel :images="item.images" :alt="item.title"/>
         <div class="flex flex-wrap items-center justify-between w-full h-full gap-6 mt-[32px] lg:gap-0">
-            <div class="space-y-3 mb-[64px] w-full lg:w-8/12">
+            <div class="space-y-3 2xl:mb-[64px] mb-[32px]  w-full lg:w-8/12">
                 <h1 class="lg:text-[36px] text-[28px] md:text-[32px] font-[700]">
                     {{ item.title }}
                 </h1>

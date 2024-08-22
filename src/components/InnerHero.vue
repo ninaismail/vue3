@@ -12,7 +12,7 @@ defineProps({
       <h1 class="text-white lg:text-[64px] md:text-[52px] text-[40px] font-[700] text-center">
           {{ pagetitle }}
       </h1>
-      <p class="tracking-wide text-white font-[600] text-center lg:w-1/2 mx-auto">{{ pagedescription }}</p>          
+      <p class="tracking-wide text-white font-[600] text-center 2xl:w-1/2 w-3/4 mx-auto">{{ pagedescription }}</p>          
     </div>
  </section>
 </template>

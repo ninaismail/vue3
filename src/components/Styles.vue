@@ -7,18 +7,18 @@ const isHover = ref(null)
 
 </script>
 <template>
-    <section class="relative grid w-full h-full grid-cols-1 mx-auto lg:grid-cols-3 md:grid-cols-2">
-        <div v-for="(item, key) in data" :key="key" class="relative"
+    <section class="relative grid w-full h-full min-h-screen grid-cols-1 mx-auto lg:grid-cols-3 md:grid-cols-2">
+        <div v-for="(item, key) in data" :key="key" class="relative w-full h-full"
         @mouseenter="isHover = key" @mouseleave="isHover = false">
-            <img :src="item.image" :alt="item.name" width="100%" height="100%" center cover responsive loading="lazy" class="aspect-0.68/1"/>
+            <img :src="item.image" :alt="item.name" center cover responsive loading="lazy" class="w-full h-full aspect-0.68/1"/>
             <Transition>
-                <div class="flex flex-col justify-center items-center mx-auto gap-y-4 absolute z-[1] inset-0 w-full h-full px-6 duration-600 transition-all"
+                <div class="flex flex-col justify-center items-center mx-auto gap-y-4 absolute z-[1] inset-0 w-full h-full p-6 duration-600 transition-all"
                 :class="{'bg-black/50' : isHover === key}">
-                    <h1 class="text-white lg:text-[36px] text-[28px] md:text-[32px] font-[700]">
+                    <h1 class="text-white 2xl:text-[36px] text-center text-[20px] font-[700]">
                         {{ item.name }}
                     </h1>
-                    <h2 v-if="isHover === key" class="tracking-wide text-white font-[600] text-justify lg:w-2/3" style="text-align-last: center;">{{ item.summary }}</h2>   
-                    <p v-if="isHover === key" class="tracking-wide text-white font-[600] text-justify lg:w-2/3" style="text-align-last: center;">{{ item.description }}</p>          
+                    <h2 v-if="isHover === key" class="tracking-wide text-white font-[600] text-center lg:w-2/3">{{ item.summary }}</h2>   
+                    <p v-if="isHover === key" class="tracking-wide text-white font-[600] text-center lg:w-2/3">{{ item.description }}</p>          
                 </div>
             </Transition>
         </div>

@@ -3,14 +3,14 @@ import Socials from '../components/Socials.vue'
 
 </script>
 <template>
-  <section class="relative flex flex-col justify-center w-full max-h-screen items-between mt-[86px] bg-cover bg-center aspect-2/1 bg-hero min-h-screen">
+  <section class="relative flex flex-col justify-center w-full min-h-screen h-full items-between mt-[86px] bg-cover bg-center aspect-2/1 bg-hero">
     <!-- <img src="/images/hero/hero.webp" alt="Bissar Concepts" loading="eager" class="aspect-[2/1] absolute inset-0 z-[-1] w-full h-full"/> -->
-    <div class="flex flex-col w-11/12 h-full py-40 mx-auto 2xl:w-8/12 lg:w-10/12">
-      <div class="space-y-3 mb-[64px]">
+    <div class="flex flex-col w-11/12 h-full py-20 mx-auto 2xl:py-40 2xl:w-8/12 lg:w-10/12">
+      <div class="space-y-3 2xl:mb-[64px] mb-[32px]">
         <h1 class="text-white uppercase lg:text-[64px] md:text-[52px] text-[40px] font-[700] leading-tight">
           Home <br class="max-lg:hidden"/>of Luxury
         </h1>
-        <p class="tracking-wide text-white font-[600] text-justify lg:w-1/3 italic">"Luxury is when it seems flawless, when you reach the right balance between all elements. Understated theatricality – that is what my luxury is all about."<br/> Jean-Louis Deniot</p>          
+        <p class="tracking-wide text-white font-[600] 2xl:w-1/3 lg:w-1/2 italic">"Luxury is when it seems flawless, when you reach the right balance between all elements. Understated theatricality – that is what my luxury is all about."<br/> Jean-Louis Deniot</p>          
       </div>
       <RouterLink
         id="go-to-portfolio-page"
