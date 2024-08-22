@@ -37,7 +37,7 @@ onMounted(() => {
     ariaGallery 
     :itemsToShow="getItemsToShow()">
         <Slide v-for="(item, key) in images" :key="key">
-          <img :src="item" :alt="'Bissar Concepts - ' + alt" class="object-none object-left w-full h-full" loading="eager"/>
+          <img :src="item" :alt="'Bissar Concepts - ' + alt" responsive class="object-none object-left w-full h-full max-sm:object-cover max-sm:object-center" loading="eager"/>
         </Slide>
         <template #addons>
             <Navigation />
@@ -90,5 +90,9 @@ onMounted(() => {
 .carousel__slide--active::before {
   display: none; /* Remove overlay for active slide */
 }
-
+@media only screen and (max-width: 640px) { 
+  .carousel__slide {
+   max-height: 350px!important;
+  }  
+}
 </style>

@@ -12,7 +12,7 @@ const isHover = ref(null)
         @mouseenter="isHover = key" @mouseleave="isHover = false">
             <img :src="item.image" :alt="item.name" center cover responsive loading="lazy" class="w-full h-full aspect-0.68/1"/>
             <Transition>
-                <div class="flex flex-col justify-center items-center mx-auto gap-y-4 absolute z-[1] inset-0 w-full h-full p-6 duration-600 transition-all"
+                <div class="flex flex-col justify-center items-center mx-auto gap-y-4 absolute z-[1] inset-0 w-full h-full p-2 duration-600 transition-opacity"
                 :class="{'bg-black/50' : isHover === key}">
                     <h1 class="text-white 2xl:text-[36px] text-center text-[20px] font-[700]">
                         {{ item.name }}

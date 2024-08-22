@@ -33,17 +33,17 @@ import ExpandingCarousel from './ExpandingCarousel.vue';
                         <h2 class="tracking-wide font-[700]">{{ item.client }}</h2>
                     </div>                   
                     <div class="flex items-center justify-between">
-                        <h2 class="tracking-wide font-[700]">Completion:</h2>
-                        <h2 class="tracking-wide font-[700]">{{ item.completion_date }}</h2>
+                        <h2 class="tracking-wide font-[700]">Project Year:</h2>
+                        <h2 class="tracking-wide font-[700]">{{ item.year }}</h2>
                     </div>                   
                     <div class="flex items-center justify-between">
-                        <h2 class="tracking-wide font-[700]">Project Type:</h2>
+                        <h2 class="tracking-wide font-[700]">Category:</h2>
                         <h2 class="tracking-wide font-[700]">{{ item.type }}</h2>
                     </div>                    
-                    <div class="flex flex-wrap items-center justify-between">
+                    <!-- <div class="flex flex-wrap items-center justify-between">
                         <h2 class="tracking-wide font-[700]">Architects:</h2>
                         <h2  v-for="(architect, key) in item.architects" :key="key" class="tracking-wide font-[700]">{{ architect }}</h2>
-                    </div>
+                    </div> -->
                     <hr class="h-[2px] mx-auto bg-gold w-full"/>
                     <h2 class="tracking-wide font-[700]">Share</h2>
                 </div>
