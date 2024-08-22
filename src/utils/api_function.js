@@ -308,8 +308,7 @@ export function getCollabsProjects() {
       id: 1, 
       title: 'De Gournay', 
       type: 'Design',
-      completion_date: '2023-05-10',
-      architects: ['Zaher Bissar', 'Lara Collins', 'Michael Lee'],
+      architects: ['Zaher Bissar', 'Others'],
       year: 2023,
       location: 'Dubai, UAE',
       banner:'/images/projects/collaborations/de_gournay/banners/banner1.webp',
@@ -462,48 +461,42 @@ export function getCollabsProjectBySlug(slug) {
 export function getEditorial() {
   return [
     { 
-      id: 4, 
       title: 'Editorial Art Gallery', 
       image:'/images/editorial/images/Rectangle 183.webp',
     },         
     { 
-      id: 1, 
       title: 'Editorial Art Gallery', 
       image:'/images/editorial/images/Rectangle 180.webp',
     },
     { 
-      id: 2, 
       title: 'Editorial Art Gallery', 
       image:'/images/editorial/images/Rectangle 181.webp',
     },    
     { 
-      id: 3, 
       title: 'Editorial Art Gallery', 
       image:'/images/editorial/images/Rectangle 182.webp',
     },    
-
+    // { 
+    //   title: 'Editorial Art Gallery', 
+    //   image:'/images/editorial/images/Rectangle 03_Resized.webp',
+    // },  
     { 
-      id: 5, 
       title: 'Editorial Art Gallery', 
       image:'/images/editorial/images/Rectangle 184.webp',
     },     
     { 
-      id: 6, 
       title: 'Editorial Art Gallery', 
       image:'/images/editorial/images/Rectangle 185.webp',
     },      
     { 
-      id: 7, 
       title: 'Editorial Art Gallery', 
       image:'/images/editorial/images/Rectangle 186.webp',
     },     
     { 
-      id: 8, 
       title: 'Editorial Art Gallery', 
       image:'/images/editorial/images/Rectangle 187.webp',
     }, 
     { 
-      id: 9, 
       title: 'Editorial Art Gallery', 
       image:'/images/editorial/images/Rectangle 188.webp',
     },     
@@ -513,25 +506,25 @@ export function getEditorial() {
       image:'/images/editorial/images/Rectangle 189.webp',
     },    
     { 
-      id: 11, 
       title: 'Editorial Art Gallery', 
       image:'/images/editorial/images/Rectangle 190.webp',
     },   
     { 
-      id: 12, 
       title: 'Editorial Art Gallery', 
       image:'/images/editorial/images/Rectangle 191.webp',
     },     
     { 
-      id: 13, 
       title: 'Editorial Art Gallery', 
       image:'/images/editorial/images/Rectangle 192.webp',
     },     
     { 
-      id: 14, 
       title: 'Editorial Art Gallery', 
       image:'/images/editorial/images/Rectangle 193.webp',
     },
+    // { 
+    //   title: 'Editorial Art Gallery', 
+    //   image:'/images/editorial/images/Rectangle 16_Resized.webp',
+    // },
   ]
 }
 
