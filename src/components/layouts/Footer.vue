@@ -9,7 +9,8 @@ const footerlinks = [
     submenu: [
     { id: 1, name: "Custom Designs", to:"#skills" },
     { id: 2, name: 'Exquisite Furniture', to: '#skills' },
-    { id: 3, name: 'Luxury Homes Contract', to: '#skills' },
+    { id: 3, name: 'Luxury Fit-Out', to: '#skills' },
+    { id: 4, name: 'Fine Art', to: '#skills' },
   ]
   },
   {
@@ -33,7 +34,6 @@ const footerlinks = [
             <img :src="logo" alt="Bissar Concepts Logo" width="147" height="37" center cover responsive loading="lazy"/>
             <p class="tracking-wide font-[400] text-justify mt-[4px]">Authenticity, uniqueness and originality are at the core of our designs.
             No matter the projects, the scale or the style,  we always have the vision to create beautiful spaces that inspire, elevate and bring comfort.</p>
-            <Socials small black/>
         </div>
         <ul role="list" class="flex flex-wrap justify-between w-full gap-3 lg:w-6/12 list-style-none">
           <li v-for="(item, key) in footerlinks" :key="key" class="flex-1 w-full space-y-3">
@@ -51,6 +51,7 @@ const footerlinks = [
                 {{ subitem.phone }}
               </a>
           </div>                
+              <Socials v-if="item.id === 2"  small black/>
           </li>
         </ul>
       </div>

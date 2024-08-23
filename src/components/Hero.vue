@@ -3,14 +3,14 @@ import Socials from '../components/Socials.vue'
 
 </script>
 <template>
-  <section class="relative flex flex-col justify-center w-full min-h-screen h-full items-between mt-[86px] bg-cover bg-center aspect-2/1 bg-hero">
+  <section class="relative flex flex-col justify-center w-full 2xl:min-h-screen h-full items-between mt-[86px] bg-cover bg-center aspect-2/1 bg-hero">
     <!-- <img src="/images/hero/hero.webp" alt="Bissar Concepts" loading="eager" class="aspect-[2/1] absolute inset-0 z-[-1] w-full h-full"/> -->
-    <div class="flex flex-col w-11/12 h-full py-20 mx-auto 2xl:py-40 2xl:w-8/12 lg:w-10/12">
+    <div class="flex flex-col w-11/12 h-full py-40 mx-auto lg:w-10/12">
       <div class="space-y-3 2xl:mb-[64px] mb-[32px]">
-        <h1 class="text-white uppercase lg:text-[64px] md:text-[52px] text-[40px] font-[700] leading-tight">
+        <h1 class="text-white uppercase lg:text-[48px] md:text-[32px] text-[28px] font-[700] leading-tight">
           Home <br class="max-lg:hidden"/>of Luxury
         </h1>
-        <p class="tracking-wide text-white font-[600] 2xl:w-1/3 lg:w-1/2 italic">"Luxury is when it seems flawless, when you reach the right balance between all elements. Understated theatricality – that is what my luxury is all about."<br/> Jean-Louis Deniot</p>          
+        <p class="tracking-wide text-white font-[600] 2xl:w-80 w-1/2 italic">"Luxury is when it seems flawless, when you reach the right balance between all elements. Understated theatricality – that is what my luxury is all about."<br/> Jean-Louis Deniot</p>          
       </div>
       <RouterLink
         id="go-to-portfolio-page"
@@ -20,7 +20,7 @@ import Socials from '../components/Socials.vue'
         :exactActiveClass="'bg-olive text-white'"
         class="w-fit cursor-pointer px-4 py-3 font-[400] text-center rounded-[2px] bg-white hover:bg-olive hover:text-white uppercase"
         >View Projects</RouterLink>
-    <Socials class="mt-auto mb-0"/>
+    <Socials class="mt-auto mb-10"/>
     </div>
   <svg width="5" height="116" viewBox="0 0 5 116" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute mx-auto transform translate-x-1/2 top-[93%] left-1/2 z-[2]">
   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.66675 0.85498H2.77786V114.86H1.66675V0.85498Z" fill="#CCBB99" stroke="#CCBB99"/>

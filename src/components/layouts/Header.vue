@@ -66,7 +66,7 @@ onUnmounted(() => {
   <div @mouseover="handleMouseOver" @mouseleave="handleMouseLeave" class="fixed z-[10] inset-0 w-full h-[64px]">
     <header v-show="!isHidden || isMouseOver" role="header" class="py-6 transition-all bg-white shadow-md duration-600 max-sm:px-6"
     :class="{'h-fit' : isOpen}">
-    <div class="items-center justify-between w-11/12 mx-auto 2xl:w-8/12 lg:w-10/12 lg:flex">
+    <div class="items-center justify-between w-11/12 mx-auto lg:w-10/12 lg:flex">
       <RouterLink id="Home" aria-label="go to home" to="/" class="w-2/12">
         <img :src="logo" alt="Bissar Concepts logo" width="147" height="37" cover center responsive loading="eager"/>    
       </RouterLink>

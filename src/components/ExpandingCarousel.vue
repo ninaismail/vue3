@@ -35,6 +35,7 @@ onMounted(() => {
     :wrapAround="true"
     :mouseDrag="false"     
     ariaGallery 
+    :transition="false"
     :itemsToShow="getItemsToShow()">
         <Slide v-for="(item, key) in images" :key="key">
           <img :src="item" :alt="'Bissar Concepts - ' + alt" responsive class="object-none object-left w-full h-full max-sm:object-cover max-sm:object-center" loading="eager"/>
@@ -48,7 +49,7 @@ onMounted(() => {
 
 <style scoped>
 .carousel__slide--sliding {
-  transition: transform 0.6s ease-in-out, width 0.6s ease-in-out;
+  transition: width 0.6s ease-in-out;
 }
 
 .carousel__slide--visible.carousel__slide--active {
@@ -63,10 +64,14 @@ onMounted(() => {
   transform: translateX(-50%);
 }
 
+.carousel__slide--visible{
+  width: 13% !important;
+}
+
 .carousel__slide {
   position: relative !important; /* Ensure relative positioning for the overlay */
   height: auto !important;
-  transition: width 0.6s ease-in-out;
+  transition: width 0.4s ease-in-out;
   overflow: hidden !important;   /* Hide any overflow caused by the scaled image */
 }
 
@@ -76,7 +81,7 @@ onMounted(() => {
   height: 100% !important;
 }
 
-.carousel__slide--visible::before {
+.carousel__slide::before {
   content: '';
   position: absolute;
   top: 0;
@@ -90,6 +95,7 @@ onMounted(() => {
 .carousel__slide--active::before {
   display: none; /* Remove overlay for active slide */
 }
+
 @media only screen and (max-width: 640px) { 
   .carousel__slide {
    max-height: 350px!important;

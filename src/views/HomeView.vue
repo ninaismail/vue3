@@ -19,6 +19,6 @@ const styles = [
     <Hero/>
     <About/>
     <Styles :data="styles"/>
-    <Skills :bg="bg" title="Share with us your own personal touch and" subtitle="we’ll make a world of it!"/>
+    <Skills :bg="bg" title="Share with us your own personal touch" subtitle="we’ll make a world of it!"/>
   </main>
 </template>
