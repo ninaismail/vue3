@@ -6,11 +6,11 @@ import Socials from '../components/Socials.vue'
   <section class="relative flex flex-col justify-center w-full 2xl:min-h-screen h-full items-between mt-[86px] bg-cover bg-center aspect-2/1 bg-hero">
     <!-- <img src="/images/hero/hero.webp" alt="Bissar Concepts" loading="eager" class="aspect-[2/1] absolute inset-0 z-[-1] w-full h-full"/> -->
     <div class="flex flex-col w-11/12 h-full py-40 mx-auto lg:w-10/12">
-      <div class="space-y-3 2xl:mb-[64px] mb-[32px]">
-        <h1 class="text-white uppercase lg:text-[48px] md:text-[32px] text-[28px] font-[700] leading-tight">
+      <div class="sm:space-y-3 2xl:mb-[64px] mb-[32px]">
+        <h1 class="text-white uppercase lg:text-[48px] md:text-[32px] text-[14px] font-[700] leading-tight">
           Home <br class="max-lg:hidden"/>of Luxury
         </h1>
-        <p class="tracking-wide text-white font-[600] 2xl:w-80 w-1/2 italic">"Luxury is when it seems flawless, when you reach the right balance between all elements. Understated theatricality – that is what my luxury is all about."<br/> Jean-Louis Deniot</p>          
+        <p class="tracking-wide text-white font-[600] max-sm:text-[10px] md:w-80 sm:w-1/2 w-3/4 italic">"Luxury is when it seems flawless, when you reach the right balance between all elements. Understated theatricality – that is what my luxury is all about."<br/> Jean-Louis Deniot</p>          
       </div>
       <RouterLink
         id="go-to-portfolio-page"
@@ -18,7 +18,7 @@ import Socials from '../components/Socials.vue'
         to="/portfolio"
         :activeClass="'bg-olive text-white'"
         :exactActiveClass="'bg-olive text-white'"
-        class="w-fit cursor-pointer px-4 py-3 font-[400] text-center rounded-[2px] bg-white hover:bg-olive hover:text-white uppercase"
+        class="w-fit cursor-pointer px-4 py-3 mb-2 font-[400] text-center rounded-[2px] bg-white hover:bg-olive hover:text-white uppercase"
         >View Projects</RouterLink>
     <Socials class="mt-auto mb-10"/>
     </div>

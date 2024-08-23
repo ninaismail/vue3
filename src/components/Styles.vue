@@ -17,8 +17,8 @@ const isHover = ref(null)
                     <h1 class="text-white 2xl:text-[36px] text-center text-[20px] font-[700]">
                         {{ item.name }}
                     </h1>
-                    <h2 v-if="isHover === key" class="tracking-wide text-white font-[600] text-center lg:w-2/3">{{ item.summary }}</h2>   
-                    <p v-if="isHover === key" class="tracking-wide text-white font-[600] text-center lg:w-2/3">{{ item.description }}</p>          
+                    <h2 v-if="isHover === key" class="tracking-wide text-white font-[600] text-center w-2/3">{{ item.summary }}</h2>   
+                    <p v-if="isHover === key" class="tracking-wide text-white font-[600] text-center w-2/3">{{ item.description }}</p>          
                 </div>
             </Transition>
         </div>
