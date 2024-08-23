@@ -3,9 +3,9 @@ import Socials from '../components/Socials.vue'
 
 </script>
 <template>
-  <section class="relative flex items-center justify-center mt-[86px] h-[60vh] md:min-h-[70vh] bg-cover bg-center aspect-2/1 bg-hero">
+  <section class="relative flex items-center justify-center mt-[86px] h-[60vh] md:min-h-[70vh] lg:min-h-screen md:h-full bg-cover bg-center aspect-2/1 bg-hero">
     <!-- <img src="/images/hero/hero.webp" alt="Bissar Concepts" loading="eager" class="aspect-[2/1] absolute inset-0 z-[-1] w-full h-full"/> -->
-    <div class="relative top-0 w-11/12 mx-auto space-y-3 transform sm:space-y-3 lg:w-10/12">
+    <div class="relative top-0 flex flex-col justify-between w-11/12 mx-auto space-y-3 transform sm:space-y-3 lg:w-10/12">
       <div class="w-full space-y-3 2xl:mb-[64px] sm:mb-[32px]">
         <h1 class="text-white uppercase lg:text-[48px] md:text-[20px] text-[14px] font-[700] leading-tight">
           Home <br class="max-lg:hidden"/>of Luxury
@@ -19,9 +19,9 @@ import Socials from '../components/Socials.vue'
         to="/portfolio"
         :activeClass="'bg-olive text-white'"
         :exactActiveClass="'bg-olive text-white'"
-        class="w-fit cursor-pointer px-4 py-3 mb-2 font-[400] max-sm:p-1 max-sm:text-[10px] text-center rounded-[2px] bg-white hover:bg-olive hover:text-white uppercase"
+        class="w-fit cursor-pointer px-4 py-3 font-[400] max-sm:p-1 max-sm:text-[10px] text-center rounded-[2px] bg-white hover:bg-olive hover:text-white uppercase"
         >View Projects</RouterLink>
-    <Socials class="mt-auto mb-10 max-md:hidden"/>
+    <Socials class="pt-20 max-md:hidden"/>
     <div class="flex items-center gap-6 md:hidden">
         <a id="go-to-facebook" href="https://www.facebook.com/bissarconcepts" target="_blank" class="font-[400] hover:brightness-125">
             <svg width="7" height="15" :fill="black ? 'black' : 'white'" xmlns="http://www.w3.org/2000/svg" >
