@@ -40,7 +40,7 @@ filterData('All');
 </script>
 
 <template>
-    <section class="flex flex-col items-center justify-center w-11/12 py-20 mx-auto 2xl:w-8/12 lg:w-10/12">
+    <section class="relative flex flex-col items-center justify-center w-11/12 py-20 mx-auto 2xl:w-8/12 lg:w-10/12">
         <BackgroundTitle :bg="bg" :title="title"/>
         <div class="my-[32px] w-full mx-auto">
             <nav class="items-center justify-center flex-wrap md:gap-8 gap-x-3 min-h-[42px] mb-[32px] flex">

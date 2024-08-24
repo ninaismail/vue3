@@ -22,7 +22,7 @@ const isHover = ref(null)
                 </div>
             </Transition>
         </div>
-        <svg width="5" height="116" viewBox="0 0 5 116" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute mx-auto transform translate-x-1/2 lg:top-[90%] top-[96%] left-1/2 z-[2]">
+        <svg width="5" height="116" viewBox="0 0 5 116" fill="none" xmlns="http://www.w3.org/2000/svg" class="sm:block absolute hidden mx-auto transform translate-x-1/2 lg:top-[90%] top-[96%] left-1/2 z-[2]">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M1.66675 0.85498H2.77786V114.86H1.66675V0.85498Z" fill="#CCBB99" stroke="#CCBB99"/>
         </svg>
     </section>

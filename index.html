@@ -25,27 +25,3 @@
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
-<script>
-function detectDesktopSiteToggle() {
-  let initialWidth = window.innerWidth;
-  let initialDPR = window.devicePixelRatio;
-
-  window.addEventListener('resize', function () {
-    let currentWidth = window.innerWidth;
-    let currentDPR = window.devicePixelRatio;
-
-    // Detecting if the user has switched to Desktop Site
-    if (currentWidth !== initialWidth || currentDPR !== initialDPR) {
-      console.log("Desktop Site mode detected");
-      // Execute your logic here, e.g., adjust layout or styles
-      document.body.classList.add('desktop-view');
-    } else {
-      document.body.classList.remove('desktop-view');
-    }
-  });
-}
-
-// Run the detection on page load
-window.addEventListener('load', detectDesktopSiteToggle);
-
-</script>
