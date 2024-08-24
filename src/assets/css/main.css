@@ -16,6 +16,9 @@ body {
   width: 100vw;
   overflow-x: hidden;
 }
+.desktop-view {
+  min-width: 1536px; /* Adjust this value based on your desktop layout */
+}
 ::-webkit-scrollbar {
   display: none;
 }

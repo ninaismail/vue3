@@ -22,7 +22,7 @@ import Socials from '../components/Socials.vue'
         class="w-fit cursor-pointer px-4 py-3 font-[400] max-sm:p-1 max-sm:text-[10px] text-center rounded-[2px] bg-white hover:bg-olive hover:text-white uppercase"
         >View Projects</RouterLink>
     <Socials class="pt-20 max-md:hidden"/>
-    <div class="flex items-center gap-6 md:hidden">
+    <div class="flex items-center gap-6 sm:hidden">
         <a id="go-to-facebook" href="https://www.facebook.com/bissarconcepts" target="_blank" class="font-[400] hover:brightness-125">
             <svg width="7" height="15" :fill="black ? 'black' : 'white'" xmlns="http://www.w3.org/2000/svg" >
             <path d="M1.53677 15H4.4925V7.4346H6.5569L6.77717 4.90234H4.4925V3.45832C4.4925 2.86188 4.61032 2.62644 5.1738 2.62644H6.77205V0H4.72301C2.53055 0 1.53677 0.988839 1.53677 2.8828V4.90234H0V7.46599H1.53677V14.9948V15Z" :fill="black ? 'black' : 'white'"/>
