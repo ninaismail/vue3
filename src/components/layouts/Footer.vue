@@ -32,17 +32,17 @@ const footerlinks = [
       <div class="flex flex-wrap justify-between w-11/12 gap-6 2xl:w-8/12 lg:w-10/12 lg:gap-0">
         <div class="flex flex-col w-full gap-3 mb-10 lg:w-5/12 lg:mb-0">
             <img :src="logo" alt="Bissar Concepts Logo" width="147" height="37" center cover responsive loading="lazy"/>
-            <p class="tracking-wide font-[400] text-justify mt-[4px]">Authenticity, uniqueness and originality are at the core of our designs.
+            <p class="tracking-wide font-[400] text-justify max-sm:text-[14px] mt-[4px]">Authenticity, uniqueness and originality are at the core of our designs.
             No matter the projects, the scale or the style,  we always have the vision to create beautiful spaces that inspire, elevate and bring comfort.</p>
         </div>
         <ul role="list" class="flex flex-wrap justify-between w-full gap-3 lg:w-6/12 list-style-none">
           <li v-for="(item, key) in footerlinks" :key="key" class="flex-1 w-full space-y-3">
-          <h1 class="text-lg font-[700] mb-6">
+          <h1 class="sm:text-lg font-[700] mb-6">
             <span v-if="item.name" class="pb-2 border-b border-white border-6">{{ item.name }}</span>
           </h1>
           <div v-for="(subitem, subkey) in item.submenu" :key="subkey">
               <RouterLink v-if="item.id != 2" :id="subitem.name" :aria-label="'go to ' + subitem.name" :to="{path: item.to, hash: subitem?.to}" 
-              class="font-[400] hover:brightness-75">
+              class="font-[400] hover:brightness-75 max-sm:text-[14x]">
               {{ subitem.name }}</RouterLink>
               <a prefetch="false" v-show="subitem.email" :id="'email-' + subitem.name + 'location'" :aria-label="'Email' + subitem.title + 'Location'" :href="'mailto:'+ subitem.email" class="cursor-pointer font-[400] hover:brightness-75">
                 {{ subitem.email }}
@@ -56,8 +56,8 @@ const footerlinks = [
         </ul>
       </div>
       <div class="text-center min-h-[50px] w-full flex gap-3 flex-wrap items-center justify-center border-t py-3 border-white">
-        <p class="tracking-wide text-[14px]">Copyright ©2024 BISSAR CONCEPTS by The Cabinet. All Rights Reserved.</p>
-        <p class="tracking-wide text-[14px]">
+        <p class="tracking-wide text-[14px] max-sm:text-[12px]">Copyright ©2024 BISSAR CONCEPTS by The Cabinet. All Rights Reserved.</p>
+        <p class="tracking-wide text-[14px] max-sm:text-[12px]">
         <RouterLink
         id="go-to-terms-of-us-page"
         aria-label="go to turem of us page"

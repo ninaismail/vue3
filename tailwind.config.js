@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
 export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
@@ -34,6 +35,10 @@ export default {
       },
       backgroundImage: {
         'hero':'url(/images/hero/hero_v1.webp)',
+      }, 
+      screens: {
+        'xs': '475px',
+        ...defaultTheme.screens,
       }
     }
   },

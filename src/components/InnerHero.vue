@@ -7,7 +7,7 @@ defineProps({
 </script>
 
 <template>
-  <section class="relative flex items-center justify-center mt-[86px] min-h-[30vh] sm:min-h-[50vh] md:min-h-[60vh] 2xl:min-h-[70vh]">
+  <section class="relative flex items-center justify-center mt-[86px] min-h-[200px] xs:min-h-[300px] sm:min-h-[400px] md:min-h-[500px] lg:min-h-[60vh] 2xl:min-h-[70vh]">
     <img 
       :src="pagebanner" 
       :alt="'Bissar Concepts - ' + pagetitle" 
