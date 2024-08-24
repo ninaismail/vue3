@@ -21,7 +21,7 @@ import { RouterLink } from 'vue-router'
                 to="/editorial#beihind-the-brand"
                 :activeClass="'text-white bg-olive'"
                 :exactActiveClass="'text-white bg-olive'"
-                class="w-fit cursor-pointer px-4 py-3 font-[400] text-center rounded-[2px] bg-gold hover:bg-olive hover:text-white uppercase"
+                class="w-fit cursor-pointer px-4 py-3 font-[400] text-center rounded-[2px] bg-gold hover:bg-olive transition-all duration-400  hover:text-white uppercase"
                 >discover more</RouterLink>
             </div>
             <div class="w-full lg:w-5/12">

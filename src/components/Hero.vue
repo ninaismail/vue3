@@ -19,7 +19,7 @@ import Socials from '../components/Socials.vue'
         to="/portfolio"
         :activeClass="'bg-olive text-white'"
         :exactActiveClass="'bg-olive text-white'"
-        class="w-fit cursor-pointer px-4 py-3 font-[400] max-md:p-1 max-md:text-[10px] text-center rounded-[2px] bg-white hover:bg-olive hover:text-white uppercase"
+        class="w-fit cursor-pointer px-4 py-3 font-[400] max-md:p-1 max-md:text-[10px] text-center rounded-[2px] bg-white hover:bg-olive transition-all duration-400  hover:text-white uppercase"
         >View Projects</RouterLink>
     <Socials class="pt-20 max-md:hidden"/>
     <div class="flex items-center gap-6 sm:hidden">

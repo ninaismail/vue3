@@ -173,7 +173,7 @@ const handleSubmit = () => {
                 <!-- Submit -->
                 <div class="flex flex-wrap items-center w-full gap-2">
                     <button aria-label="send your message" 
-                    class="w-fit cursor-pointer px-4 py-3 font-[400] text-center rounded-[2px] bg-gold hover:bg-olive hover:text-white uppercase"
+                    class="w-fit cursor-pointer px-4 py-3 font-[400] text-center rounded-[2px] bg-gold hover:bg-olive transition-all duration-400  hover:text-white uppercase"
                     >
                     {{loading === true ?  'Sending...' : 'Send Message'}}
                     </button>            

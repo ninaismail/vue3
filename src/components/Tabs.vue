@@ -92,7 +92,7 @@ filterData('All');
         @click="loadMore()"
         id="load-more-projects"
         aria-label="load more projects"
-        class="w-fit cursor-pointer px-4 py-3 font-[400] text-center rounded-[2px] bg-gold hover:bg-olive hover:text-white uppercase"
+        class="w-fit cursor-pointer px-4 py-3 font-[400] text-center rounded-[2px] bg-gold hover:bg-olive transition-all duration-400  hover:text-white uppercase"
         >Load More</button>
     </section>
 </template>
