@@ -21,7 +21,7 @@ const filteredData = computed(() => {
     <h1 class="lg:text-[36px] text-[28px] md:text-[32px] font-[700]">
       Related Projects
     </h1>
-    <div v-if="filteredData.length > 0" class="grid w-full grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-3 md:grid-cols-2">
+    <div v-if="filteredData.length > 0" class="grid w-full grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-3 sm:grid-cols-2">
       <RouterLink v-for="(item, key) in filteredData" :key="key"
           @mouseenter="isHover = key"
           @mouseleave="isHover = null"

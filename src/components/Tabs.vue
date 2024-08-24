@@ -63,7 +63,7 @@ filterData('All');
                     {{ item }}
                 </button>
             </nav>
-            <div class="grid w-full h-full grid-cols-1 pb-10 gap-x-6 gap-y-10 lg:grid-cols-3 md:grid-cols-2">
+            <div class="grid w-full h-full grid-cols-1 pb-10 gap-x-6 gap-y-10 lg:grid-cols-3 sm:grid-cols-2">
                 <RouterLink v-for="(item, key) in filteredData" :key="key" 
                 :id="item.title + (isClicked === item.type ? '-active' : '')" 
                 :aria-label="'go to ' + item.title" :to="`${$route.path}/${item.slug}`"
