@@ -10,7 +10,7 @@ import Socials from '../components/Socials.vue'
         <h1 class="text-white uppercase lg:text-[48px] md:text-[18px] text-[12px] font-[700] leading-tight">
           Home <br/>of Luxury
         </h1>
-        <p class="tracking-wide text-white font-[600] sm:block hidden max-nd:text-[10px] lg:w-1/4 w-1/3 italic">
+        <p class="tracking-wide text-white font-[600] md:block hidden max-md:text-[10px] lg:w-1/4 w-1/3 italic">
           "Luxury is when it seems flawless, when you reach the right balance between all elements. Understated theatricality – that is what my luxury is all about."<br/> Jean-Louis Deniot</p>          
       </div>
       <RouterLink
