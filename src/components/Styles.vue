@@ -7,7 +7,7 @@ const isHover = ref(null)
 
 </script>
 <template>
-    <section class="relative flex flex-wrap items-center justify-center w-full h-full pb-20 mx-auto 2xl:min-h-screen">
+    <section class="relative flex flex-wrap items-center justify-center w-full h-full mb-[32px] mx-auto 2xl:min-h-screen">
         <div v-for="(item, key) in data" :key="key" class="relative lg:w-1/3 md:w-1/2 wfull"
         @mouseenter="isHover = key" @mouseleave="isHover = false">
             <img :src="item.image" :alt="item.name" center cover responsive loading="lazy" class="w-full h-full aspect-0.68/1"/>
@@ -22,7 +22,7 @@ const isHover = ref(null)
                 </div>
             </Transition>
         </div>
-        <svg width="5" height="116" viewBox="0 0 5 116" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute mx-auto transform translate-x-1/2 top-[90%] left-1/2 z-[2]">
+        <svg width="5" height="116" viewBox="0 0 5 116" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute mx-auto transform translate-x-1/2 lg:top-[90%] top-[96%] left-1/2 z-[2]">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M1.66675 0.85498H2.77786V114.86H1.66675V0.85498Z" fill="#CCBB99" stroke="#CCBB99"/>
         </svg>
     </section>
