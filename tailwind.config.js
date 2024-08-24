@@ -37,7 +37,7 @@ export default {
         'hero':'url(/images/hero/hero_v1.webp)',
       }, 
       screens: {
-        'xs': '475px',
+        xs: '475px',
         ...defaultTheme.screens,
       }
     }
