@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink } from 'vue-router'
-import { ref } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 import BackgroundTitle from './BackgroundTitle.vue'
 
 const props = defineProps({
@@ -37,6 +37,24 @@ const loadMore = () => {
 
 // Initial filtering
 filterData('All');
+
+// Create a reactive reference to store the screen width
+const screenWidth = ref(window.innerWidth);
+
+// Function to update the screen width
+const updateScreenWidth = () => {
+  screenWidth.value = window.innerWidth;
+};
+
+// Add the event listener when the component is mounted
+onMounted(() => {
+  window.addEventListener('resize', updateScreenWidth);
+});
+
+// Remove the event listener when the component is unmounted
+onUnmounted(() => {
+  window.removeEventListener('resize', updateScreenWidth);
+});
 </script>
 
 <template>
@@ -70,7 +88,14 @@ filterData('All');
                 class="relative mx-auto duration-600 transform bg-center bg-cover w-fit h-fit rounded-[2px]"
                 @mouseenter="isHover = key" @mouseleave="isHover = false">
                     <img :src="item.thumbnail" :alt="item.title"  width="340" height="348" center cover responsive loading="lazy" class="aspect-0.98/1"/>              
-                    <div v-if="cat === 'portfolio'" 
+                    <div v-if="cat === 'portfolio' && screenWidth > 1024 && isHover === key" 
+                    class="h-full flex flex-col justify-center mx-auto gap-y-4 transition-all duration-500  absolute left-0 bottom-0 w-full z-1 bg-[#53554A] bg-opacity-77 px-6">
+                        <h1 class="relative text-white lg:text-[24px] font-[700] pb-2 before:absolute before:bottom-0 before:-left-6 before:w-full before:h-[4px] before:bg-gold">
+                            {{ item.title }}
+                        </h1>
+                        <h2 class="tracking-wide text-white font-[600]">{{ item.location }}&nbsp;{{ item.year }}</h2>   
+                    </div>
+                    <div v-else-if="cat === 'portfolio' && screenWidth < 1024" 
                     class="flex flex-col justify-center mx-auto gap-y-4 transition-all duration-500  absolute left-0 bottom-0 w-full z-1 bg-[#53554A] bg-opacity-77 px-6"
                     :class="isHover === key ? 'h-full' : 'h-[35%]'">
                         <h1 class="relative text-white lg:text-[24px] font-[700] pb-2 before:absolute before:bottom-0 before:-left-6 before:w-full before:h-[4px] before:bg-gold">
