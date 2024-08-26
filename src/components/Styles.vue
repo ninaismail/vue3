@@ -14,11 +14,11 @@ const isHover = ref(null)
             <Transition>
                 <div class="flex flex-col justify-center items-center mx-auto gap-y-4 absolute z-[1] inset-0 w-full h-full p-2 duration-600 transition-opacity"
                 :class="{'bg-black/50' : isHover === key}">
-                    <h1 class="text-white 2xl:text-[36px] text-center text-[20px] font-[700]">
+                    <h1 class="text-white 2xl:text-[36px] text-center md:text-[20px] font-[700]">
                         {{ item.name }}
                     </h1>
-                    <h2 v-if="isHover === key" class="tracking-wide text-white font-[600] text-center w-2/3">{{ item.summary }}</h2>   
-                    <p v-if="isHover === key" class="tracking-wide text-white font-[600] text-center w-2/3">{{ item.description }}</p>          
+                    <h2 v-if="isHover === key" class="tracking-wide text-white font-[600] max-sm:text-[12px] text-center w-2/3">{{ item.summary }}</h2>   
+                    <p v-if="isHover === key" class="tracking-wide text-white font-[600] max-sm:text-[12px]  text-center w-2/3">{{ item.description }}</p>          
                 </div>
             </Transition>
         </div>
