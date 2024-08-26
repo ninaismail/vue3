@@ -64,7 +64,7 @@ onUnmounted(() => {
 
 <template>
   <div class="fixed inset-0 z-[2] w-full h-screen" @click="isOpen = false"/>
-    <div @mouseover="handleMouseOver" @mouseleave="handleMouseLeave" class="fixed inset-0 w-full h-[64px] z-[3]">
+    <div @mouseover="handleMouseOver" @mouseleave="handleMouseLeave" class="fixed inset-0 w-full lg:h-[64px] z-[3]">
       <header v-show="!isHidden || isMouseOver" role="header" class="py-6 transition-all bg-white shadow-md duration-600 max-sm:px-6"
       :class="{'h-fit' : isOpen}">
       <div class="items-center justify-between w-11/12 mx-auto lg:w-10/12 lg:flex">
@@ -130,6 +130,7 @@ onUnmounted(() => {
         </form>
         </nav>
       </div>
-      </header>  
-    </div>  
+      </header>        
+    </div>
+
 </template>
