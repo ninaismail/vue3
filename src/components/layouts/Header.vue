@@ -112,6 +112,7 @@ onUnmounted(() => {
           :id="item.name + (isClicked === item.id ? '-active' : '')" 
           :aria-label="'go to ' + item.name" 
           :to="item.to" 
+          @click="isOpen = false"
           :activeClass="'font-[700] before:absolute before:bottom-0 before:left-1/2 before:w-12 before:h-[2px] before:bg-gold before:transform before:-translate-x-1/2'"
           :exactActiveClass="'font-[700] before:absolute before:bottom-0 before:left-1/2 before:w-12 before:h-[2px] before:bg-gold before:transform before:-translate-x-1/2'"
           class="relative uppercase cursor-pointer font-[600] hover:font-[700] py-2 flex flex-col before:w-0 before:h-0 before:bg-gold before:transition-all before:duration-600 before:absolute before:bottom-0 before:left-10 before:transform before:-translate-x-10 hover:before:w-12 hover:before:h-[2px]"
