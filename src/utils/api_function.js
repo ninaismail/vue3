@@ -8,7 +8,7 @@ export function getProtfolioProjects() {
       year: 2022,
       location: 'Riyadh',
       description : `One of the first assignments for us is to set the inspiration for the project; we invest a tremendous amount of time seeking inspiration from our client’s lifestyle and personal tastes. Aware of our client’s interest in fine art, we have selected masterpieces from the most prestigious galleries in the world. The warm and textured wooden high walls has created the perfect background for these art pieces.
-This project with fortunate high ceilings was transformed into a hidden museum in a private home.`,      
+      This project with fortunate high ceilings was transformed into a hidden museum in a private home.`,      
       banner:'/images/projects/portfolio/the_collector_private_residence/banners/banner1.webp',
       thumbnail: '/images/projects/portfolio/the_collector_private_residence/thumbnails/works1.webp',
       images: [
@@ -49,7 +49,7 @@ This project with fortunate high ceilings was transformed into a hidden museum i
       year: 2020,
       location: 'Riyadh',
       description : `This gorgeous 1270 m² project in Riyadh is the family reception villa that makes part of an extensive private complex.
-    It is a beautiful example of a luxury contemporary home, infused with Islamic influences that resonate with its vibrant heritage. Original orientalism paintings, crafted antiques, Islamic patterns and intricate noble materials accentuate the identity of the place.`,
+      It is a beautiful example of a luxury contemporary home, infused with Islamic influences that resonate with its vibrant heritage. Original orientalism paintings, crafted antiques, Islamic patterns and intricate noble materials accentuate the identity of the place.`,
       banner:'/images/projects/portfolio/al_rawda_reception_villa/banners/banner2.webp',
       thumbnail: '/images/projects/portfolio/al_rawda_reception_villa/thumbnails/works2.webp',
       images: [

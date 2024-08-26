@@ -3,7 +3,7 @@ import Socials from '../components/Socials.vue'
 
 </script>
 <template>
-  <section class="relative flex items-center justify-center mt-[86px] h-full bg-cover bg-center aspect-2/1 bg-hero">
+  <section class="relative flex items-center justify-center lg:mt-[86px] mt-[74px] h-full bg-cover bg-center aspect-2/1 bg-hero">
     <!-- <img src="/images/hero/hero.webp" alt="Bissar Concepts" loading="eager" class="aspect-[2/1] absolute inset-0 z-[-1] w-full h-full"/> -->
     <div class="relative top-0 flex flex-col justify-between w-11/12 mx-auto space-y-3 transform sm:space-y-3 lg:w-10/12">
       <div class="w-full space-y-3 2xl:mb-[64px] lg:mb-[32px]">
@@ -44,10 +44,10 @@ import Socials from '../components/Socials.vue'
         </a>
     </div>
     </div>       
-
- </section>
-     <svg width="5" height="116" viewBox="0 0 5 116" fill="none" xmlns="http://www.w3.org/2000/svg" class="sm:block absolute mx-auto transform -translate-x-1/2 2xl:top-[93%] md:top-[75%] hidden left-1/2 z-[2]">
+     <svg width="5" height="116" viewBox="0 0 5 116" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute mx-auto transform -translate-x-1/2 sm:top-[93%] top-[75%] left-1/2 z-[1]">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M1.66675 0.85498H2.77786V114.86H1.66675V0.85498Z" fill="#CCBB99" stroke="#CCBB99"/>
       </svg>
+ </section>
+
 </template>
   
