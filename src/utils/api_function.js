@@ -134,7 +134,7 @@ export function getProtfolioProjects() {
       year: 2021,
       location: 'Riyadh',
       description: 'This luxury private suite combines exquisite, complex detail work with statement prints and muted walls for a modern Asian inspired aesthetic. Three different wallpapers by “De Gournay” are the catchiest elements in this project. Once again, we went in search of the top furniture brands and unique pieces from different European Galleries. A rich color palette is used throughout, giving a sense of depth to the contemporary space; while accent colors and gold hues add a warm splash of color into the design.',
-      banner:'/images/projects/portfolio/al_rawda_private_residence/banners/banner2.webp',
+      banner:'/images/projects/portfolio/al_rawda_private_residence/banners/banner2.jpg',
       thumbnail: '/images/projects/portfolio/al_rawda_private_residence/thumbnails/works4.webp',
       images: [
         '/images/projects/portfolio/al_rawda_private_residence/images/Rectangle 43.webp',
@@ -309,7 +309,7 @@ export function getCollabsProjects() {
       year: 2020,
       location: 'Riyadh',
       banner:'/images/projects/collaborations/de_gournay/banners/banner1.webp',
-      thumbnail: '/images/projects/collaborations/de_gournay/thumbnails/collabs1.webp',
+      thumbnail: '/images/projects/collaborations/de_gournay/thumbnails/collabs1.png',
       images: [
         '/images/projects/collaborations/de_gournay/images/Rectangle 68.webp',
         '/images/projects/collaborations/de_gournay/images/Rectangle 77.webp',
@@ -358,7 +358,7 @@ export function getCollabsProjects() {
       architects: ['Zaher Bissar', 'Others'],
       year: 2019,
       location: 'Riyadh',
-      banner:'/images/projects/collaborations/baccarat/banners/banner2.webp',
+      banner:'/images/projects/collaborations/baccarat/banners/banner2.jpg',
       thumbnail: '/images/projects/collaborations/baccarat/thumbnails/collabs2.webp',
       images: [
         '/images/projects/collaborations/baccarat/images/Rectangle 83.webp',
