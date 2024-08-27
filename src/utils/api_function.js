@@ -2,7 +2,7 @@ export function getProtfolioProjects() {
   return [
     { 
       id: 1, 
-      title: 'The Art Collector Private Residence', 
+      title: 'The Art Collector', subtitle: 'Private Residence', 
       type: 'Private Residence',
       architects: ['Zaher Bissar'],
       year: 2022,
@@ -43,7 +43,7 @@ export function getProtfolioProjects() {
     },
     { 
       id: 2, 
-      title: 'Al Rawda Reception Villa', 
+      title: 'Al Rawda', subtitle:'Reception Villa', 
       type: 'Family Home',
       architects: ['Zaher Bissar'],
       year: 2020,
@@ -88,7 +88,7 @@ export function getProtfolioProjects() {
     },
     { 
       id: 3, 
-      title: 'Al Ghadir Villa', 
+      title: 'Al Ghadir', subtitle:'Villa', 
       type: 'Family Home',
       architects: ['Zaher Bissar'],
       year: 2019,
@@ -128,7 +128,7 @@ export function getProtfolioProjects() {
     },
     { 
       id: 4, 
-      title: 'Al Rawda Private Residence', 
+      title: 'Al Rawda', subtitle: 'Private Residence', 
       type: 'Family Home',
       architects: ['Zaher Bissar'],
       year: 2021,
@@ -160,7 +160,7 @@ export function getProtfolioProjects() {
     },
     { 
       id: 5, 
-      title: 'The Sisters Villa', 
+      title: 'The Sisters', subtitle: 'Villa', 
       type: 'Design',
       architects: ['Zaher Bissar'],
       year: 2018,
@@ -193,7 +193,7 @@ export function getProtfolioProjects() {
     },
     { 
       id: 6, 
-      title: 'Jenadriah Ranch', 
+      title: 'Jenadriah', subtitle:'Ranch', 
       type: 'Pool House',
       architects: ['Zaher Bissar'],
       year: 2022,
