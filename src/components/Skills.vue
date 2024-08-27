@@ -37,7 +37,7 @@ defineProps({
             <div class="flex flex-col items-center justify-center gap-2 border-4 border-accent2 max-w-[340px] max-h-[348px] aspect-square rounded-[2px] mx-auto">
                 <div class="flex flex-col items-center justify-center gap-3 px-6 mx-auto space-y-3 text-center">
                     <h1 class="lg:text-[24px] md:text-[20px] text-[18px] font-[700]">
-                        Luxury Homes Contract
+                        Luxury Fit-Out
                     </h1>
                     <p class="tracking-wide hyphens font-[600] text-center">Adding the last touches to your home with an eye for detail and high-end finishing. </p>          
               </div>
