@@ -307,8 +307,8 @@ export function getCollabsProjects() {
       title: 'De Gournay', 
       type: 'Design',
       architects: ['Zaher Bissar', 'Others'],
-      year: 2023,
-      location: 'Dubai, UAE',
+      year: 2020,
+      location: 'Riyadth',
       banner:'/images/projects/collaborations/de_gournay/banners/banner1.webp',
       thumbnail: '/images/projects/collaborations/de_gournay/thumbnails/collabs1.webp',
       images: [
@@ -332,8 +332,8 @@ export function getCollabsProjects() {
       title: 'Preciosa', 
       type: 'Interior',
       architects: ['Zaher Bissar', 'Others'],
-      year: 2021,
-      location: 'Dubai, UAE',
+      year: 2022,
+      location: 'Riyadth',
       banner:'/images/projects/collaborations/preciosa/banners/banner3.webp',
       thumbnail: '/images/projects/collaborations/preciosa/thumbnails/collabs3.webp',
       images: [
@@ -357,8 +357,8 @@ export function getCollabsProjects() {
       title: 'Baccarat', 
       type: 'Houses',
       architects: ['Zaher Bissar', 'Others'],
-      year: 2022,
-      location: 'Dubai, UAE',
+      year: 2019,
+      location: 'Riyadth',
       banner:'/images/projects/collaborations/baccarat/banners/banner2.webp',
       thumbnail: '/images/projects/collaborations/baccarat/thumbnails/collabs2.webp',
       images: [
@@ -382,8 +382,8 @@ export function getCollabsProjects() {
       title: 'Italamp', 
       type: 'Living',
       architects: ['Zaher Bissar', 'Others'],
-      year: 2020,
-      location: 'London, UK',
+      year: 2022,
+      location: 'Riyadth',
       banner:'/images/projects/collaborations/italamp/banners/banner4.webp',
       thumbnail: '/images/projects/collaborations/italamp/thumbnails/collabs4.webp',
       images: [

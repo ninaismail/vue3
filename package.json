@@ -9,7 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.4.29"
+    "install": "^0.13.0",
+    "npm": "^10.8.2",
+    "vue": "^3.4.29",
+    "vue-social-sharing": "^4.0.0-alpha4"
   },
   "devDependencies": {
     "@unhead/vue": "^1.9.16",

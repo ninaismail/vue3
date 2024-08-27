@@ -14,24 +14,6 @@ const isHover = ref(false);
 const filteredData = computed(() => {
   return props.data.filter(item => item.type === props.filter && item.id !== props.currentId);
 });
-
-// Create a reactive reference to store the screen width
-const screenWidth = ref(window.innerWidth);
-
-// Function to update the screen width
-const updateScreenWidth = () => {
-  screenWidth.value = window.innerWidth;
-};
-
-// Add the event listener when the component is mounted
-onMounted(() => {
-  window.addEventListener('resize', updateScreenWidth);
-});
-
-// Remove the event listener when the component is unmounted
-onUnmounted(() => {
-  window.removeEventListener('resize', updateScreenWidth);
-});
 </script>
 
 <template>
@@ -56,28 +38,20 @@ onUnmounted(() => {
               class="aspect-0.98/1"
               loading="lazy"
             />
-            <div v-if="cat === 'portfolio' && screenWidth > 1024 && isHover === key" 
-                    class="h-full flex flex-col justify-center mx-auto gap-y-4 transition-all duration-500  absolute left-0 bottom-0 w-full z-1 bg-[#53554A] bg-opacity-77 px-6">
-                        <h1 class="relative text-white lg:text-[24px] font-[700] pb-2 before:absolute before:bottom-0 before:-left-6 before:w-full before:h-[4px] before:bg-gold">
-                            {{ item.title }}
-                        </h1>
-                        <h2 class="tracking-wide text-white font-[600]">{{ item.location }}&nbsp;{{ item.year }}</h2>   
-                    </div>
-                    <div v-else-if="cat === 'portfolio' && screenWidth < 1024" 
-                    class="flex flex-col justify-center mx-auto gap-y-4 transition-all duration-500  absolute left-0 bottom-0 w-full z-1 bg-[#53554A] bg-opacity-77 px-6"
-                    :class="isHover === key ? 'h-full' : 'h-[35%]'">
-                        <h1 class="relative text-white lg:text-[24px] font-[700] pb-2 before:absolute before:bottom-0 before:-left-6 before:w-full before:h-[4px] before:bg-gold">
-                            {{ item.title }}
-                        </h1>
-                        <h2 class="tracking-wide text-white font-[600]">{{ item.location }}&nbsp;{{ item.year }}</h2>   
-                    </div>
-          <div v-else-if="cat === 'collabs'" class="absolute flex flex-col justify-center w-3/4 text-center transform -translate-x-1/2 bg-white border -bottom-6 h-fit border-gold left-1/2">
-            <h1 class="lg:text-[20px] p-2 font-[700] border-b border-gold">
-              {{ item.title }}
-            </h1>
-            <h2 class="tracking-wide font-[600]">{{ item.location }}&nbsp;{{ item.year }}</h2>
-          </div>
-        </RouterLink>
+            <div v-if="cat === 'portfolio'" 
+            class="flex flex-col justify-center mx-auto gap-y-4 h-[35%] absolute left-0 bottom-0 w-full z-1 bg-[#53554A] bg-opacity-77 px-6">
+                <h1 class="relative text-white lg:text-[24px] font-[700] pb-2 before:absolute before:bottom-0 before:-left-6 before:w-full before:h-[4px] before:bg-gold">
+                    {{ item.title }}
+                </h1>
+                <h2 class="tracking-wide text-white font-[600]">{{ item.subtitle }}</h2>   
+            </div>
+            <div v-else-if="cat === 'collabs'" class="absolute flex flex-col justify-center w-3/4 text-center transform -translate-x-1/2 bg-white border -bottom-6 h-fit border-gold left-1/2">
+              <h1 class="lg:text-[20px] p-2 font-[700] border-b border-gold">
+                {{ item.title }}
+              </h1>
+              <h2 class="tracking-wide font-[600]">{{ item.location }}&nbsp;{{ item.year }}</h2>
+            </div>
+      </RouterLink>
     </div>
     <h1 v-else class="lg:text-[20px] p-2 font-[700] border-b border-gold">
         No related projects...

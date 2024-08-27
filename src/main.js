@@ -2,6 +2,7 @@ import './assets/css/main.css'
 
 import { createApp } from 'vue'
 import { createHead } from '@unhead/vue'
+import VueSocialSharing from 'vue-social-sharing'
 
 import App from './App.vue'
 import router from './router'
@@ -15,7 +16,8 @@ app.use(VueRecaptchaPlugin, {
 })
 
 const head = createHead()
- 
+
+app.use(VueSocialSharing);
 app.use(head)
 app.use(router)
 

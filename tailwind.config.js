@@ -25,6 +25,7 @@ export default {
         '0.98/1': '0.98 / 1',
         '1.68/1':'1.68 / 1',
         '1.07/1':'1.07 / 1',
+         '4/3': '4 / 3'
       },      
       transitionProperty: {
         'width': 'width',

@@ -4,7 +4,6 @@ import { RouterLink } from 'vue-router'
 </script>
 <template>
     <section class="relative flex flex-col items-center justify-center w-11/12 py-20 mx-auto 2xl:w-8/12 lg:w-10/12 sm:py-40">
-        <img src="/images/backgrounds/about.webp" alt="About Bissar Concepts" width="1214" height="152" center cover responsive loading="lazy" class="absolute top-14"/>
         <div class="flex flex-wrap items-center justify-between w-full h-full gap-6 mx-auto lg:gap-0">
             <div class="flex flex-col justify-between w-full lg:w-7/12">
                 <div class="space-y-3 2xl:mb-[64px] mb-[32px] ">

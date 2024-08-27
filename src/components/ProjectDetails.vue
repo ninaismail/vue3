@@ -1,5 +1,6 @@
 <script setup>
 import ExpandingCarousel from './ExpandingCarousel.vue';
+import SocialSharing from './SocialSharing.vue';
 
  defineProps({
   item: Object,
@@ -45,7 +46,11 @@ import ExpandingCarousel from './ExpandingCarousel.vue';
                         <h2  v-for="(architect, key) in item.architects" :key="key" class="tracking-wide font-[700]">{{ architect }}</h2>
                     </div> -->
                     <hr class="h-[2px] mx-auto bg-gold w-full"/>
-                    <h2 class="tracking-wide font-[700]">Share</h2>
+                    <SocialSharing
+                    :url="`https://bissarconcepts-test.netlify.app/${$route.fullPath}`"
+                    :title="item.title"
+                    :description="item.description"
+                    />
                 </div>
             </div>
         </div>
