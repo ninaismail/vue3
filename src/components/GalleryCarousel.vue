@@ -13,7 +13,8 @@ defineProps({
     ariaGallery
     :transition="600">
         <Slide v-for="(item, key) in images" :key="key" class="relative w-full h-full">
-            <img :src="item.image" :alt="'Bissar Concepts - ' + item.title" width="1226" height="728" center cover responsive loading="eager" class="w-full h-full aspect-1.68/1"/>
+            <img :src="item.image" :alt="'Bissar Concepts - ' + item.title" width="1226" height="728" center cover responsive loading="eager" class="w-full h-full aspect-1.68/1"
+            :style="{ imageRendering: 'crisp-edges' }"/>
         </Slide>
         <template #addons>
             <Navigation />

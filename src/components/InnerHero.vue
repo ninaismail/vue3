@@ -8,7 +8,7 @@ defineProps({
 
 <template>
 <section class="relative flex items-center justify-center lg:mt-[86px] mt-[74px] aspect-2.25/1"
-  :style="{ backgroundImage: 'url(' + pagebanner + ')', backgroundPosition: 'center', backgroundSize: 'cover' }">
+  :style="{ backgroundImage: 'url(' + pagebanner + ')', backgroundPosition: 'center', backgroundSize: 'cover', imageRendering: 'crisp-edges' }">
     <div class="flex flex-col items-center justify-center w-11/12 h-full mx-auto space-y-3 text-center sm:space-y-3 2xl:w-8/12 lg:w-10/12">
       <h1 class="text-white uppercase lg:text-[48px] md:text-[32px] text-[12px] font-[700] leading-tight">
         {{ pagetitle }}

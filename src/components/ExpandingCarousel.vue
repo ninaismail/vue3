@@ -38,7 +38,8 @@ onMounted(() => {
     :transition="false"
     :itemsToShow="getItemsToShow()">
         <Slide v-for="(item, key) in images" :key="key">
-          <img :src="item" :alt="'Bissar Concepts - ' + alt" responsive class="object-none object-left w-full h-full max-sm:object-cover max-sm:object-center" loading="eager"/>
+          <img :src="item" :alt="'Bissar Concepts - ' + alt" loading="eager" responsive class="object-none object-left w-full h-full max-sm:object-cover max-sm:object-center"
+          :style="{ imageRendering: 'crisp-edges' }"/>
         </Slide>
         <template #addons>
             <Navigation />
