@@ -15,13 +15,13 @@ const errors = {
   NameRequired: 'Name is required.',
   EmailRequired: 'Email is required.',
   EmailInvalid: 'Please specify a real email.',
-  MessageRequired: 'Please enter your message.'
+  ContentRequired: 'Please enter your message.'
 };
 
 const ErrorMessages = ref({
     name: '',
     email: '',
-    message: ''
+    Content: ''
 })
 console.log('ErrorMessages',ErrorMessages)
 
@@ -41,8 +41,8 @@ const formData = reactive({
             validationMessage: "",
             required: true,            
         },            
-        Message : {
-            name: 'Message',
+        Content : {
+            name: 'Content',
             value : '',
             isValid: null,
             validationMessage: "",
@@ -98,7 +98,7 @@ const handleSubmit = () => {
         const data = {
             name: formData.data.Name.value,
             email: formData.data.Email.value,
-            message: formData.data.Message.value
+            content: formData.data.Content.value
         };
         // Submit the data
         axios.post('http://localhost:8000/api/v1/contact_submissions', data, {
@@ -111,7 +111,7 @@ const handleSubmit = () => {
             formData.data.value = {
                 Name: '',
                 Email: '',
-                Message: ''
+                Content: ''
             };
             
         loading.value = false;
@@ -153,14 +153,14 @@ const handleSubmit = () => {
                     <p v-show="!formData.data.Email.isValid" className="ms-2 mb-2 font-[700] text-[12px] text-red-500">{{formData.data.Email.validationMessage}}</p>
                 </div>      
                 <div class="w-full space-y-2">
-                    <label for="Message" class="font-[400]">Message</label>
-                    <textarea id="Message" name="Message" rows="2" aria-labelledby="Message"
-                    v-model="formData.data.Message.value" 
-                    :required="formData.data.Message.required" 
+                    <label for="Content" class="font-[400]">Message</label>
+                    <textarea id="Content" name="Content" rows="2" aria-labelledby="Message"
+                    v-model="formData.data.Content.value" 
+                    :required="formData.data.Content.required" 
                     style="min-height: 40px;"
                     class="w-full block px-4 py-3 bg-transparent appearance-none border-b-[1px] border-gold focus:outline-none focus:border-b-[2px] focus:ring-0 peer"
-                    :class="{'border-red-500 focus:border-red-500' : formData.data.Message.isValid===false}"></textarea>
-                    <p v-show="!formData.data.Message.isValid" className="ms-2 mb-2 font-[700] text-[12px] text-red-500">{{formData.data.Message.validationMessage}}</p>
+                    :class="{'border-red-500 focus:border-red-500' : formData.data.Content.isValid===false}"></textarea>
+                    <p v-show="!formData.data.Content.isValid" className="ms-2 mb-2 font-[700] text-[12px] text-red-500">{{formData.data.Content.validationMessage}}</p>
                 </div>
                 <!-- Recaptcha -->
                 <div class="w-full space-y-2">
@@ -171,12 +171,12 @@ const handleSubmit = () => {
                 </div>
                 <!-- Submit -->
                 <div class="flex flex-wrap items-center w-full gap-2">
-                    <button aria-label="send your message" 
+                    <button aria-label="send your Content" 
                     class="w-fit cursor-pointer px-4 py-3 font-[400] text-center rounded-[2px] bg-gold hover:bg-olive transition-all duration-400  hover:text-white uppercase"
                     >
                     {{loading === true ?  'Sending...' : 'Send Message'}}
                     </button>            
-                    <p v-if="loading === false && hasErrorMessages === false" class="text-green-500">Thank you for your message, we'll get back to you soon.</p>                
+                    <p v-if="loading === false && hasErrorMessages === false" class="text-green-500">Thank you for your Content, we'll get back to you soon.</p>                
                 </div>
 
                 <!-- Errors after submit -->
