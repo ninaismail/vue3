@@ -14,7 +14,7 @@ let uniqueTypes = [...new Set(projects.map(project => project.type))];
 console.log(uniqueTypes);
 </script>
 <template>
-    <InnerHero :pagebanner="banner" pagetitle="Bringing our vision to life" 
+    <InnerHero :pagebanner="banner" pagetitle="Bringing our vision to life" collabs
     pagedescription="We have collaborated with talented designers, merging our creative visions to design something truly exquisite."/>
     <Tabs :data="projects" :uniqueTypes="uniqueTypes" :bg="collaborations" title="Where Vision Takes Form." description="We have collaborated with global talented craftsmen to breathe life into our designs." :limit="4" cat="collabs"/>
 </template>
