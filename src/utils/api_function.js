@@ -69,7 +69,7 @@ export function getProtfolioProjects() {
         '/images/projects/portfolio/al_rawda_reception_villa/images/Rectangle 198.webp',
         '/images/projects/portfolio/al_rawda_reception_villa/images/Rectangle 199.webp',
         '/images/projects/portfolio/al_rawda_reception_villa/images/Rectangle 21.webp',
-        '/images/projects/portfolio/al_rawda_reception_villa/images/Rectangle 24.webp',
+        '/images/projects/portfolio/al_rawda_reception_villa/images/Rectangle 24.png',
         '/images/projects/portfolio/al_rawda_reception_villa/images/Rectangle 20.webp',
         '/images/projects/portfolio/al_rawda_reception_villa/images/Rectangle 22.webp',
         '/images/projects/portfolio/al_rawda_reception_villa/images/Rectangle 137.webp',
