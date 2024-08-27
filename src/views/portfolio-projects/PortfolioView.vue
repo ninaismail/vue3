@@ -1,6 +1,6 @@
 <script setup>
 import InnerHero from '../../components/InnerHero.vue'
-import banner from '/images/innerhero/portfolio.webp'
+import banner from '/images/innerhero/100.jpg'
 import works from '/images/backgrounds/works.webp'
 import Tabs from '../../components/Tabs.vue';
 import { getProtfolioProjects } from '../../utils/api_function';
