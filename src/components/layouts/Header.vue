@@ -68,7 +68,7 @@ onUnmounted(() => {
       <header v-show="!isHidden || isMouseOver" role="header" class="py-6 transition-all bg-white shadow-md duration-600 max-sm:px-6"
       :class="{'h-fit' : isOpen}">
       <div class="items-center justify-between w-11/12 mx-auto lg:w-10/12 lg:flex">
-        <RouterLink id="Home" aria-label="go to home" to="/" class="w-auto">
+        <RouterLink id="Home" aria-label="go to home" to="/" class="relative z-[3] w-auto">
           <img :src="logo" alt="Bissar Concepts logo" width="147" height="37" cover center responsive loading="eager" class="aspect-3.97/1 max-lg:w-24"/>    
         </RouterLink>
         <!-- Descktop -->
