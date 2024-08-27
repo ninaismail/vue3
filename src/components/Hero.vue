@@ -4,7 +4,7 @@ import Socials from '../components/Socials.vue'
 </script>
 <template>
   <section class="relative flex items-center justify-center lg:mt-[86px] mt-[74px] w-full h-full aspect-2/1"
-  :style="{ backgroundImage: 'url(/images/hero/Option_1.jpg)', backgroundPosition: 'center', backgroundSize: 'cover', imageRendering: 'crisp-edges' }">
+  :style="{ backgroundImage: 'url(/images/hero/Option_1.jpg)', backgroundPosition: 'center', backgroundSize: 'cover', imageRendering: 'crisp-edges' , imageResolution: '300dpi' }">
     <!-- <img src="/images/hero/hero.webp" alt="Bissar Concepts" loading="eager" class="aspect-[2/1] absolute inset-0 z-[-1] w-full h-full"/> -->
     <div class="relative top-0 flex flex-col justify-between w-11/12 mx-auto space-y-3 transform sm:space-y-3 lg:w-10/12">
       <div class="w-full space-y-3 2xl:mb-[64px] lg:mb-[32px]">

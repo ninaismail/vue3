@@ -41,7 +41,7 @@ onMounted(() => {
           <img :src="item" :alt="'Bissar Concepts - ' + alt" loading="eager" decoding="async"
           width="2000" height="748" 
           responsive class="object-none object-left w-full h-full max-sm:object-cover max-sm:object-center"
-          :style="{ imageRendering: 'crisp-edges', imageResolution: 'from-image' }"/>
+          :style="{ imageRendering: 'crisp-edges', imageResolution: '300dpi' }"/>
         </Slide>
         <template #addons>
             <Navigation />
