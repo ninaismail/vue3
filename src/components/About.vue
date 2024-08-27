@@ -23,8 +23,8 @@ import { RouterLink } from 'vue-router'
                 class="w-fit cursor-pointer px-4 py-3 font-[400] text-center rounded-[2px] bg-gold hover:bg-olive transition-all duration-400  hover:text-white uppercase"
                 >discover more</RouterLink>
             </div>
-            <div class="w-full lg:w-5/12">
-                <img src="/images/about/self_portrait.webp" alt="Bissar Concepts" width="367" height="441" center cover responsive loading="lazy" class="relative mx-auto md:ms-auto md:me-0 z-1"/>
+            <div class="relative w-full lg:w-5/12">
+                <img src="/images/about/self_portrait.webp" alt="Bissar Concepts" width="367" height="441" center cover responsive loading="lazy" class="relative mx-auto md:ms-auto md:me-0 z-1 aspect-0.83/1"/>
             </div>
         </div>
     </section>
