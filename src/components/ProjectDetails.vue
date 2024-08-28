@@ -7,14 +7,14 @@ import { useRoute } from 'vue-router';
   item: Object,
 });
 const route = useRoute();
-console.log(`https://bissarconcepts.com${route.fullPath}`)
+console.log(`https://bissarconcepts-test.netlify.app${route.fullPath}`)
 </script>
 <template>
     <head>
     <meta property="og:title" :content="item.title">
     <meta property="og:description" :content="item.description">
-    <meta property="og:image" content="https://bissarconcepts.com/Framee.jpg">
-    <meta property="og:url" :content="`https://bissarconcepts.com${route.fullPath}`">
+    <meta property="og:image" content="https://bissarconcepts-test.netlify.app/Framee.jpg">
+    <meta property="og:url" :content="`https://bissarconcepts-test.netlify.app${route.fullPath}`">
     <meta property="og:type" content="website">
     </head>
     <section class="flex flex-col items-center justify-center w-11/12 h-full pt-20 mx-auto lg:w-10/12 2xl:w-8/12">
