@@ -2,6 +2,14 @@
 import logo from '/Bissar_Logo_V1.webp'
 import { RouterLink } from 'vue-router'
 import { ref, onMounted, onUnmounted } from 'vue';
+import { useRouter, useRoute } from 'vue-router';
+import { getAllProjects } from '../../utils/api_function';
+
+const searchQuery = ref('');
+const router = useRouter();
+const route = useRoute();
+
+const projects = getAllProjects();
 
 const navlinks = [
   { id: 1, name: 'Home', to: '/' },
@@ -60,6 +68,23 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener("scroll", showHeader);
 });
+const handleSearch = () => {
+  const query = searchQuery.value.trim().toLowerCase();
+  console.log('Search Query:', query); // Log the search query
+
+  const project = projects.find(p => 
+    p.title.trim().toLowerCase().includes(query)
+  );
+
+  if (project) {
+    console.log('Found Project:', project); // Log the found project
+    router.replace(`/${project.category.toLowerCase()}/${project.slug}`);
+  } else {
+    console.error('Project not found');
+  }
+};
+
+
 </script>
 
 <template>
@@ -86,8 +111,13 @@ onUnmounted(() => {
           {{ item.name }}
         </RouterLink>
         </nav>
-        <form id="search-bar" class="w-auto relative hidden lg:flex items-center h-[42px] transition-all duration-600" :class="isClicked ? 'border border-offwhite ' : 'border-0'">
-          <input type="text" 
+        <form id="search-bar"
+        @submit.prevent="handleSearch" 
+        class="w-auto relative hidden lg:flex items-center h-[42px] transition-all duration-600" 
+        :class="isClicked ? 'border border-offwhite ' : 'border-0'">
+          <input type="text"
+           v-model="searchQuery" 
+          
           placeholder="Search..." 
           class="relative px-5 py-3 font-[200] rounded-[2px] h-full outline-none duration-600 transition-[width]"
           :class="isClicked ? 'w-52' : 'w-0'">
