@@ -117,7 +117,6 @@ const handleSearch = () => {
         :class="isClicked ? 'border border-offwhite ' : 'border-0'">
           <input type="text"
            v-model="searchQuery" 
-          
           placeholder="Search..." 
           class="relative px-5 py-3 font-[200] rounded-[2px] h-full outline-none duration-600 transition-[width]"
           :class="isClicked ? 'w-52' : 'w-0'">
@@ -149,8 +148,11 @@ const handleSearch = () => {
         >
           {{ item.name }}
         </RouterLink>
-        <form id="search-bar" class="relative flex items-center border border-offwhite h-[42px]">
+        <form id="search-bar" 
+        @submit.prevent="handleSearch" 
+        class="relative flex items-center border border-offwhite h-[42px]">
           <input type="text" 
+          v-model="searchQuery" 
           placeholder="Search..." 
           class="relative px-5 py-3 font-[200] rounded-[2px] h-full outline-none"
           :class="isClicked ? 'w-52' : 'w-0'">
