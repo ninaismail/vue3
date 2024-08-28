@@ -7,7 +7,7 @@ import { useRoute } from 'vue-router';
   item: Object,
 });
 const route = useRoute();
-console.log(`https://bissarconcepts-test.netlify.app${route.fullPath}`)
+console.log(`https://bissarconcepts.com/${route.fullPath}`)
 </script>
 <template>
     <section class="flex flex-col items-center justify-center w-11/12 h-full pt-20 mx-auto lg:w-10/12 2xl:w-8/12">
