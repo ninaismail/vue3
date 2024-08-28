@@ -22,7 +22,7 @@ console.log(`https://bissarconcepts-test.netlify.app${route.fullPath}`)
         <div class="flex flex-wrap items-center justify-between w-full h-full gap-6 mt-[32px] lg:gap-0">
             <div class="space-y-3 2xl:mb-[64px] mb-[32px] w-full lg:w-8/12">
                 <h1 class="lg:text-[36px] text-[28px] md:text-[32px] font-[700]">
-                    {{ item.title }}&nbsp;{{  item.subtitle }}
+                    {{ item.title }}
                 </h1>
                 <h2 class="lg:text-[24px] md:text-[20px] text-[18px] font-[100]">{{ item.location }}&nbsp;{{ item.year }}</h2>
                 <p v-if="item.description" class="tracking-wide font-[400]">{{ item.description }}</p>
