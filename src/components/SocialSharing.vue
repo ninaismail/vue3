@@ -40,10 +40,8 @@ defineProps({
     </button>
     <button>
         <ShareNetwork
-            network="linkedin"
-            :url="url"
-            :title="title"
-            :description="description">
+            network="linkedIn"
+            :url="url">
             <svg width="13" height="13" xmlns="http://www.w3.org/2000/svg" fill="black">
             <path d="M2.75591 4.15417H0.240723V12.4468H2.75591V4.15417Z"/>
             <path d="M1.48555 3.06592C2.30516 3.06592 2.9711 2.38054 2.9711 1.53296C2.9711 0.685385 2.30516 0 1.48555 0C0.665936 0 0 0.685385 0 1.53296C0 2.38054 0.665936 3.06592 1.48555 3.06592Z"  fill="black"/>
