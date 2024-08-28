@@ -1,11 +1,13 @@
 <script setup>
 import ExpandingCarousel from './ExpandingCarousel.vue';
 import SocialSharing from './SocialSharing.vue';
+import { useRoute } from 'vue-router';
 
  defineProps({
   item: Object,
 });
-
+const route = useRoute();
+console.log(`https://bissarconcepts-test.netlify.app${route.fullPath}`)
 </script>
 <template>
     <section class="flex flex-col items-center justify-center w-11/12 h-full pt-20 mx-auto lg:w-10/12 2xl:w-8/12">
@@ -49,10 +51,10 @@ import SocialSharing from './SocialSharing.vue';
                     <div class="flex items-center justify-between">
                         <h2 class="tracking-wide font-[700]">Share:</h2>
                         <SocialSharing
-                    :url="`https://bissarconcepts-test.netlify.app/${$route.fullPath}`"
+                    :url="`https://bissarconcepts-test.netlify.app${route.fullPath}`"
                     :title="item.title"
                     :description="item.description"
-                    />                    </div>     
+                    /></div>     
 
                 </div>
             </div>
