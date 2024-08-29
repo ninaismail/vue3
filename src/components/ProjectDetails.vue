@@ -11,6 +11,7 @@ console.log(`https://bissarconcepts.com${route.fullPath}`)
 </script>
 <template>
     <head>
+    <title>Bissar Consepts - {{item.title}}</title>
         <meta property="og:title" :content="item.title">
         <meta property="og:description" :content="item.description">
         <meta property="og:url" :content="`https://bissarconcepts.com${route.fullPath}`">

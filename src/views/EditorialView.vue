@@ -9,8 +9,8 @@ const accordion = getAccordion();
 </script>
 <template>
       <head>  
-        <title>Bissar Consepts - Editorial</title>
-        <!-- Facebook Meta Tags -->
+    <title>Bissar Consepts - Editorial</title>
+    <!-- Facebook Meta Tags -->
       <meta property="og:title" content="Bissar Consepts - Editorial">
 
       <!-- Twitter Meta Tags -->

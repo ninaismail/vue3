@@ -5,7 +5,7 @@ import Contact from '../components/Contact.vue'
 
 <template>
   <head>  
-    <title>Bissar Consepts - Contact</title>
+      <title>Bissar Consepts - Contact</title>
       <!-- Facebook Meta Tags -->
       <meta property="og:title" content="Bissar Consepts - Contact">
 

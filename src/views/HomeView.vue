@@ -16,6 +16,7 @@ const styles = [
 
 <template>
   <head>  
+      <title>Bissar Consepts</title>
       <!-- Facebook Meta Tags -->
       <meta property="og:title" content="Bissar Consepts">
 
