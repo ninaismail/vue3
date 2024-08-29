@@ -1,53 +1,74 @@
-<script setup>
+<script setup lang="ts">
+import { ShareNetwork } from "vue3-social-sharing";
 
 defineProps({
-    url: String,
-    title: String,
-    description: String
+  url: String,
+  title: String,
+  description: String
 });
 </script>
+
 <template>
-<div class="flex flex-wrap gap-4">
-    <button>
-        <ShareNetwork
-            network="facebook"
-            :url="url"
-            :title="title"
-            :description="description">
-            <svg width="7" height="15" xmlns="http://www.w3.org/2000/svg" fill="black">
-            <path d="M1.53677 15H4.4925V7.4346H6.5569L6.77717 4.90234H4.4925V3.45832C4.4925 2.86188 4.61032 2.62644 5.1738 2.62644H6.77205V0H4.72301C2.53055 0 1.53677 0.988839 1.53677 2.8828V4.90234H0V7.46599H1.53677V14.9948V15Z" fill="black"/>
-            </svg>        
-        </ShareNetwork>
-    </button>
-    <button>
-        <ShareNetwork
-            network="whatsapp"
-            :url="url"
-            :title="title"
-            :description="description">
-            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_1864_886)">
+  <div class="flex flex-wrap gap-4">
+    <!-- Facebook Share Button -->
+    <ShareNetwork
+      network="facebook"
+      :url="url"
+      :title="title"
+      :description="description"
+      v-slot="{ share }"
+    >
+      <button @click="share">
+        <svg width="7" height="15" xmlns="http://www.w3.org/2000/svg" fill="black">
+          <path d="M1.53677 15H4.4925V7.4346H6.5569L6.77717 4.90234H4.4925V3.45832C4.4925 2.86188 4.61032 2.62644 5.1738 2.62644H6.77205V0H4.72301C2.53055 0 1.53677 0.988839 1.53677 2.8828V4.90234H0V7.46599H1.53677V14.9948V15Z" fill="black"/>
+        </svg>
+      </button>
+    </ShareNetwork>
+
+    <!-- WhatsApp Share Button -->
+    <ShareNetwork
+      network="whatsapp"
+      :url="url"
+      :title="title"
+      :description="description"
+      v-slot="{ share }"
+    >
+      <button @click="share">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_1864_886)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M6.651 0.791992C3.54484 0.791992 1.01904 3.29872 1.01904 6.38035C1.01904 7.60238 1.4173 8.7354 2.09167 9.65681L1.38824 11.7317L3.55211 11.0441C4.44127 11.6277 5.50617 11.9678 6.651 11.9678C9.7558 11.9678 12.2825 9.46108 12.2825 6.3799C12.2825 3.29872 9.7558 0.791992 6.651 0.791992Z" fill="white"/>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M13 6.33266C13 9.82936 10.1427 12.6649 6.6183 12.6649C5.4989 12.6649 4.44762 12.3792 3.53348 11.877L0 13L1.15164 9.60275C0.570371 8.6482 0.236141 7.52926 0.236141 6.33311C0.236141 2.83505 3.09344 0 6.6183 0C10.1432 0 13 2.83505 13 6.33266ZM6.6183 1.00859C3.65882 1.00859 1.25245 3.39679 1.25245 6.33266C1.25245 7.49701 1.63164 8.576 2.27422 9.45426L1.60439 11.431L3.66608 10.7762C4.51301 11.332 5.52796 11.6563 6.6183 11.6563C9.57641 11.6563 11.9837 9.26807 11.9837 6.33266C11.9837 3.39725 9.57641 1.00859 6.6183 1.00859ZM9.84071 7.79128C9.8012 7.72634 9.69676 7.68774 9.54099 7.61009C9.38432 7.53243 8.61505 7.15688 8.47155 7.10511C8.3285 7.05334 8.22315 7.02746 8.11961 7.18276C8.01516 7.33807 7.71544 7.68774 7.62371 7.79128C7.53289 7.89527 7.44161 7.90754 7.28539 7.82988C7.12872 7.75223 6.6242 7.58784 6.02704 7.0597C5.56248 6.64782 5.24823 6.14011 5.1565 5.9848C5.06567 5.8295 5.14741 5.74594 5.22507 5.66829C5.29546 5.59835 5.38174 5.48709 5.45985 5.39672C5.53841 5.3059 5.56429 5.24051 5.61652 5.13697C5.66874 5.03343 5.64285 4.94306 5.60335 4.86541C5.56475 4.78775 5.25141 4.02393 5.12107 3.71286C4.99165 3.4027 4.86087 3.41405 4.76913 3.41405C4.6774 3.41405 4.50938 3.4413 4.50938 3.4413C4.50938 3.4413 4.19558 3.4799 4.05254 3.6352C3.90949 3.79051 3.50533 4.16607 3.50533 4.92944C3.50533 5.69281 4.06525 6.43166 4.14382 6.53474C4.22238 6.63873 5.22552 8.25721 6.81629 8.87844C8.40661 9.49967 8.40661 9.29259 8.69361 9.26625C8.98016 9.24082 9.6191 8.89115 9.74943 8.52831C9.87976 8.16593 9.87976 7.85486 9.84116 7.79037L9.84071 7.79128Z" fill="black"/>
-            </g>
-            <defs>
+          </g>
+          <defs>
             <clipPath id="clip0_1864_886">
-            <rect width="13" height="13" fill="white"/>
+              <rect width="13" height="13" fill="white"/>
             </clipPath>
-            </defs>
-            </svg>    
-        </ShareNetwork>
-    </button>
-    <button>
-        <ShareNetwork
-            network="linkedIn"
-            :url="url">
-            <svg width="13" height="13" xmlns="http://www.w3.org/2000/svg" fill="black">
-            <path d="M2.75591 4.15417H0.240723V12.4468H2.75591V4.15417Z"/>
-            <path d="M1.48555 3.06592C2.30516 3.06592 2.9711 2.38054 2.9711 1.53296C2.9711 0.685385 2.30516 0 1.48555 0C0.665936 0 0 0.685385 0 1.53296C0 2.38054 0.665936 3.06592 1.48555 3.06592Z"  fill="black"/>
-            <path d="M6.77186 8.09385C6.77186 6.92713 7.29948 6.23128 8.30351 6.23128C9.22557 6.23128 9.67124 6.89573 9.67124 8.09385V12.4468H12.1711V7.19396C12.1711 4.97038 10.9365 3.89783 9.21533 3.89783C7.49414 3.89783 6.76674 5.2686 6.76674 5.2686V4.14896H4.354V12.4416H6.76674V8.08862L6.77186 8.09385Z" fill="black"/>
-            </svg>       
-        </ShareNetwork>
-    </button>    
-</div>
+          </defs>
+        </svg>
+      </button>
+    </ShareNetwork>
+
+    <!-- LinkedIn Share Button -->
+    <ShareNetwork
+      network="linkedin"
+      :url="url"
+      v-slot="{ share }"
+    >
+      <button @click="share">
+        <svg width="13" height="13" xmlns="http://www.w3.org/2000/svg" fill="black">
+          <path d="M2.75591 4.15417H0.240723V12.4468H2.75591V4.15417Z"/>
+          <path d="M1.48555 3.06592C2.30516 3.06592 2.9711 2.38054 2.9711 1.53296C2.9711 0.685385 2.30516 0 1.48555 0C0.665936 0 0 0.685385 0 1.53296C0 2.38054 0.665936 3.06592 1.48555 3.06592Z" fill="black"/>
+          <path d="M6.77186 8.09385C6.77186 6.92713 7.29948 6.23128 8.30351 6.23128C9.22557 6.23128 9.67124 6.89573 9.67124 8.09385V12.4468H12.1711V7.19396C12.1711 4.97038 10.9792 4.15417 9.60895 4.15417C8.36477 4.15417 7.78394 4.87746 7.49649 5.36014H7.4442V4.34443H5.07385V12.4468H7.58861V8.09385H6.77186Z" fill="black"/>
+        </svg>
+      </button>
+    </ShareNetwork>
+  </div>
 </template>
+
+<style scoped>
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+</style>
