@@ -161,7 +161,7 @@ export function getProtfolioProjects() {
     { 
       id: 5, 
       title: 'The Sisters Villa', 
-      type: 'Design',
+      type: 'Family Home',
       architects: ['Zaher Bissar'],
       year: 2018,
       location: 'Riyadh',
@@ -704,7 +704,7 @@ export function getAllProjects() {
     },
     { 
       title: 'The Sisters Villa', 
-      type: 'Design',
+      type: 'Family Home',
       architects: ['Zaher Bissar'],
       year: 2018,
       location: 'Riyadh',
