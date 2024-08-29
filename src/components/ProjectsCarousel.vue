@@ -78,7 +78,7 @@ const nextSlideTitle = computed(() => {
           </span>
         </button>
       </div>
-      <RelatedProjects :data="data" :filter="item.type" :cat="cat" :currentId="item.id"/>
+      <RelatedProjects :data="data" :filter="item.category" :cat="cat" :currentId="item.id"/>
     </Slide>
   </Carousel>
 

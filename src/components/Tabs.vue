@@ -8,7 +8,7 @@ const props = defineProps({
     title: String,
     subtitle: String,
     bg: String,
-    uniqueTypes: Array,
+    uniquecategorys: Array,
     limit: Number,
     cat: String
 })
@@ -18,25 +18,31 @@ const isClicked = ref('All');
 const filteredData = ref([]);
 const visibleData = ref(props.data);
 const itemsToShow = ref(props.limit);
+const filterData = (category) => {
+  isClicked.value = category;
 
-const filterData = (type) => {
-  isClicked.value = type;
-  
-  // Update the filtered data based on the type and apply the initial slice
-  if (type === 'All') {
-    filteredData.value = visibleData.value.slice(0, itemsToShow.value);
+  // Check if visibleData.value is an array before filtering and slicing
+  if (Array.isArray(visibleData.value)) {
+    if (category === 'All') {
+      filteredData.value = visibleData.value.slice(0, itemsToShow.value);
+    } else {
+      filteredData.value = visibleData.value.filter(item => item.category === category).slice(0, itemsToShow.value);
+    }
   } else {
-    filteredData.value = visibleData.value.filter(item => item.type === type).slice(0, itemsToShow.value);
+    // Handle case where visibleData.value is not an array
+    filteredData.value = [];
+    console.error('visibleData is not an array:', visibleData.value);
   }
 };
 
 const loadMore = () => {
-  itemsToShow.value += props.limit; 
-  filterData(isClicked.value); 
+  itemsToShow.value += props.limit;
+  filterData(isClicked.value);
 };
 
 // Initial filtering
 filterData('All');
+
 </script>
 
 <template>
@@ -53,7 +59,7 @@ filterData('All');
                 >
                  All
                 </button>
-                <button role="tab" v-for="(item, key) in props.uniqueTypes" :key="key"
+                <button role="tab" v-for="(item, key) in props.uniquecategorys" :key="key"
                 :id="item + (isClicked === item ? '-active' : '')" 
                 :aria-label="'show ' + item"
                 :class="{'font-[700] before:absolute before:bottom-0 before:left-1/2 before:w-12 before:h-[2px] before:bg-gold before:transform before:-translate-x-1/2' : isClicked === item}"
@@ -65,7 +71,7 @@ filterData('All');
             </nav>
             <div class="grid w-full h-full grid-cols-1 pb-10 gap-x-6 gap-y-10 lg:grid-cols-3 sm:grid-cols-2">
                 <RouterLink v-for="(item, key) in filteredData" :key="key" 
-                :id="item.title + (isClicked === item.type ? '-active' : '')" 
+                :id="item.title + (isClicked === item.category ? '-active' : '')" 
                 :aria-label="'go to ' + item.title" :to="`${$route.path}/${item.slug}`"
                 class="relative mx-auto duration-600 transform bg-center bg-cover w-fit h-fit rounded-[2px]"
                 @mouseenter="isHover = key" @mouseleave="isHover = false">

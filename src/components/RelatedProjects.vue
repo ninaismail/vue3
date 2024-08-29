@@ -12,7 +12,7 @@ const props = defineProps({
 const isHover = ref(false);
 
 const filteredData = computed(() => {
-  return props.data.filter(item => item.type === props.filter && item.id !== props.currentId);
+  return props.data.filter(item => item.category === props.filter && item.id !== props.currentId);
 });
 </script>
 
@@ -27,7 +27,7 @@ const filteredData = computed(() => {
           @mouseleave="isHover = null"
             :id="item.title + (isHover === key ? '-active' : '')"
             :aria-label="'go to ' + item.title"
-            :to="`/${item.category.toLowerCase()}/${item.slug}`"
+            :to="`/${item.type.toLowerCase()}/${item.slug}`"
             class="relative w-fit h-fit max-sm:mx-auto rounded-[2px]"
           >
             <img

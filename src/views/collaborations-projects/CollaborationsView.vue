@@ -3,15 +3,25 @@ import InnerHero from '../../components/InnerHero.vue'
 import banner from '/images/innerhero/001.jpg'
 import collaborations from '/images/backgrounds/suppliers.webp'
 import Tabs from '../../components/Tabs.vue';
-import { getCollabsProjects } from '../../utils/api_function';
+import { ref, onMounted } from 'vue';
+import { getCollaborationProjects } from '../../utils/laravel_api_functions';
 
+const projects = ref();
+const uniqueTypes = ref([]);
 
-const projects = getCollabsProjects();
+const fetchData = async () => {
+  projects.value = await getCollaborationProjects(); // Fetching projects
+  if (projects.value.length > 0) {
+    uniqueTypes.value = [...new Set(projects.value.map(project => project.category))];
+  }
+};
 
-// Extract the categories from the projects and then create a Set to get unique categories
-let uniqueTypes = [...new Set(projects.map(project => project.type))];
+onMounted(() => {
+  fetchData();
+});
 
-console.log(uniqueTypes);
+console.log(projects.value);
+console.log(uniqueTypes.value);
 </script>
 <template>
         <head>  

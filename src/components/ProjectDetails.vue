@@ -47,7 +47,7 @@ console.log(`https://bissarconcepts.com${route.fullPath}`)
                     </div>                   
                     <div class="flex items-center justify-between">
                         <h2 class="tracking-wide font-[700]">Category:</h2>
-                        <h2 class="tracking-wide font-[700]">{{ item.type }}</h2>
+                        <h2 class="tracking-wide font-[700]">{{ item.category }}</h2>
                     </div>                    
                     <!-- <div class="flex flex-wrap items-center justify-between">
                         <h2 class="tracking-wide font-[700]">Architects:</h2>
