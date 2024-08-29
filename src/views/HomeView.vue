@@ -15,6 +15,13 @@ const styles = [
 </script>
 
 <template>
+  <head>  
+      <!-- Facebook Meta Tags -->
+      <meta property="og:title" content="Bissar Consepts">
+
+      <!-- Twitter Meta Tags -->
+      <meta name="twitter:title" content="Bissar Consepts">
+    </head>
   <main>
     <Hero/>
     <About/>
