@@ -1,13 +1,24 @@
 <script setup>
 import ProjectsCarousel from '../../components/ProjectsCarousel.vue'
-import {  getProtfolioProjects } from '../../utils/api_function'
+import {  getProtfolioProjectss } from '../../utils/laravel_api_functions'
 import { useRoute } from 'vue-router'
+import { ref, onMounted } from 'vue';
+
+const projects = ref([]);
+
+const fetchData = async () => {
+  projects.value = await getProtfolioProjectss(); // Fetching projects
+};
+console.log(projects.value);
+
+onMounted(() => {
+  fetchData();
+});
 
 const route = useRoute()
-
-const projects = getProtfolioProjects();
-console.log(projects)
 </script>
 <template>
-  <ProjectsCarousel :data="projects" :initialSlug="route.params.slug" cat="portfolio"/>
+<div v-if="projects.length > 0">
+  <ProjectsCarousel :route="route" :data="projects" :initialSlug="route.params.slug" cat="portfolio"/>
+</div>
 </template>

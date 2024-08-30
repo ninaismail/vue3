@@ -6,6 +6,7 @@ const props = defineProps({
   data: Array,
   filter: String,
   cat: String,
+  route: String,
   currentId: String
 });
 
@@ -27,8 +28,8 @@ const filteredData = computed(() => {
           @mouseleave="isHover = null"
             :id="item.title + (isHover === key ? '-active' : '')"
             :aria-label="'go to ' + item.title"
-            :to="`/${item.type.toLowerCase()}/${item.slug}`"
-            class="relative w-fit h-fit max-sm:mx-auto rounded-[2px]"
+            :to="`/${route.path}/${item.slug}`"
+            class="relative w-fit h-fit aspect-square max-sm:mx-auto rounded-[2px]"
           >
             <img
               :src="item.thumbnail"

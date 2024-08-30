@@ -1,13 +1,24 @@
 <script setup>
 import ProjectsCarousel from '../../components/ProjectsCarousel.vue'
-import { getCollabsProjects } from '../../utils/api_function'
+import { getCollaborationProjects } from '../../utils/laravel_api_functions';
 import { useRoute } from 'vue-router'
+import { ref, onMounted } from 'vue';
+
+const projects = ref([]);
+
+const fetchData = async () => {
+  projects.value = await getCollaborationProjects(); // Fetching projects
+};
+console.log(projects.value);
+
+onMounted(() => {
+  fetchData();
+});
 
 const route = useRoute()
-
-const projects = getCollabsProjects();
-console.log(projects)
 </script>
 <template>
-  <ProjectsCarousel :data="projects" :initialSlug="route.params.slug" cat="collabs"/>
+<div v-if="projects.length > 0">
+  <ProjectsCarousel :route="route" :data="projects" :initialSlug="route.params.slug" cat="collabs"/>
+</div>
 </template>

@@ -11,7 +11,8 @@ import 'vue3-carousel/dist/carousel.css';
 const props = defineProps({
   data: Array,
   initialSlug: String,
-  cat: String
+  cat: String,
+  route: String
 });
 
 const currentSlide = ref(0);
@@ -78,7 +79,7 @@ const nextSlideTitle = computed(() => {
           </span>
         </button>
       </div>
-      <RelatedProjects :data="data" :filter="item.category" :cat="cat" :currentId="item.id"/>
+      <RelatedProjects :route="route" :data="data" :filter="item.category" :cat="cat" :currentId="item.id"/>
     </Slide>
   </Carousel>
 
