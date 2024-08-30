@@ -24,7 +24,7 @@ import { RouterLink } from 'vue-router'
                 >discover more</RouterLink>
             </div>
             <div class="relative w-full lg:w-5/12">
-                <img src="/images/about/self_portrait.webp" alt="Bissar Concepts" width="367" height="441" center cover responsive loading="lazy" class="relative mx-auto md:ms-auto md:me-0 z-1 aspect-0.83/1"/>
+                <img src="/images_v1/about/image.jpg" alt="Bissar Concepts" width="367" height="441" center cover responsive loading="lazy" class="relative mx-auto md:ms-auto md:me-0 z-1 aspect-0.83/1"/>
             </div>
         </div>
     </section>

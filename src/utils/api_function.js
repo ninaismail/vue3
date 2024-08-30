@@ -9,8 +9,8 @@ export function getProtfolioProjects() {
       location: 'Riyadh',
       description : `One of the first assignments for us is to set the inspiration for the project; we invest a tremendous amount of time seeking inspiration from our client’s lifestyle and personal tastes. Aware of our client’s interest in fine art, we have selected masterpieces from the most prestigious galleries in the world. The warm and textured wooden high walls has created the perfect background for these art pieces.
       This project with fortunate high ceilings was transformed into a hidden museum in a private home.`,      
-      banner:'/images/projects/portfolio/the_collector_private_residence/banners/banner1.webp',
-      thumbnail: '/images/projects/portfolio/the_collector_private_residence/thumbnails/works1.webp',
+      banner:'/images/projects/portfolio/the_collector_private_residence/banners/banner1.jpg',
+      thumbnail: '/images/projects/portfolio/the_collector_private_residence/thumbnails/works1.jpg',
       images: [
         '/images/projects/portfolio/the_collector_private_residence/images/Rectangle 7.webp',
         '/images/projects/portfolio/the_collector_private_residence/images/Rectangle 113.webp',
@@ -50,8 +50,8 @@ export function getProtfolioProjects() {
       location: 'Riyadh',
       description : `This gorgeous 1270 m² project in Riyadh is the family reception villa that makes part of an extensive private complex.
       It is a beautiful example of a luxury contemporary home, infused with Islamic influences that resonate with its vibrant heritage. Original orientalism paintings, crafted antiques, Islamic patterns and intricate noble materials accentuate the identity of the place.`,
-      banner:'/images/projects/portfolio/al_rawda_reception_villa/banners/banner4.webp',
-      thumbnail: '/images/projects/portfolio/al_rawda_reception_villa/thumbnails/works2.webp',
+      banner:'/images/projects/portfolio/al_rawda_reception_villa/banners/banner4.jpg',
+      thumbnail: '/images/projects/portfolio/al_rawda_reception_villa/thumbnails/works2.jpg',
       images: [
         '/images/projects/portfolio/al_rawda_reception_villa/images/Rectangle 17.webp',
         '/images/projects/portfolio/al_rawda_reception_villa/images/Rectangle 194.webp',
@@ -94,8 +94,8 @@ export function getProtfolioProjects() {
       year: 2019,
       description:'The exclusive interior design of this spacious project that impresses with the elegance and splendor of the timeless furniture pieces is the reception area of this villa. The focal point of this project is a double height space, where a crystal light installation from floor to ceiling is stretching out from floor to ceiling. This piece is called the “Crystal Biosphere”',
       location: 'Riyadh',
-      banner:'/images/projects/portfolio/al_ghadir_villa/banners/banner3.webp',
-      thumbnail: '/images/projects/portfolio/al_ghadir_villa/thumbnails/works3.webp',
+      banner:'/images/projects/portfolio/al_ghadir_villa/banners/banner3.jpg',
+      thumbnail: '/images/projects/portfolio/al_ghadir_villa/thumbnails/works3.jpg',
       images: [
         '/images/projects/portfolio/al_ghadir_villa/images/Rectangle 27.webp',
         '/images/projects/portfolio/al_ghadir_villa/images/Rectangle 28.webp',
@@ -135,7 +135,7 @@ export function getProtfolioProjects() {
       location: 'Riyadh',
       description: 'This luxury private suite combines exquisite, complex detail work with statement prints and muted walls for a modern Asian inspired aesthetic. Three different wallpapers by “De Gournay” are the catchiest elements in this project. Once again, we went in search of the top furniture brands and unique pieces from different European Galleries. A rich color palette is used throughout, giving a sense of depth to the contemporary space; while accent colors and gold hues add a warm splash of color into the design.',
       banner:'/images/projects/portfolio/al_rawda_private_residence/banners/banner2.jpg',
-      thumbnail: '/images/projects/portfolio/al_rawda_private_residence/thumbnails/works4.webp',
+      thumbnail: '/images/projects/portfolio/al_rawda_private_residence/thumbnails/works4.jpg',
       images: [
         '/images/projects/portfolio/al_rawda_private_residence/images/Rectangle 43.webp',
         '/images/projects/portfolio/al_rawda_private_residence/images/Rectangle 40.webp',
@@ -166,8 +166,8 @@ export function getProtfolioProjects() {
       year: 2018,
       location: 'Riyadh',
       description:"From the first meeting the three sisters had a clear vision in mind: a stylish place that challenges the norms of residential design. The handsome style is a perfect blend of Luxury Contemporary and Urban Chic where plain walls and smart fabrics set the mood of the space. They are all tied together with one-of-a- kind furniture pieces and statement artworks. The ensemble aligns perfectly with the homeowner’s vision, taste and lifestyle. Have a look!",
-      banner:'/images/projects/portfolio/the_sisters_villa/banners/banner5.webp',
-      thumbnail: '/images/projects/portfolio/the_sisters_villa/thumbnails/works5.webp',
+      banner:'/images/projects/portfolio/the_sisters_villa/banners/banner5.jpg',
+      thumbnail: '/images/projects/portfolio/the_sisters_villa/thumbnails/works5.jpg',
       images: [
         '/images/projects/portfolio/the_sisters_villa/images/Rectangle 50.webp',
         '/images/projects/portfolio/the_sisters_villa/images/Rectangle 51.webp',
@@ -198,8 +198,8 @@ export function getProtfolioProjects() {
       year: 2022,
       location: 'Riyadh',
       description:'Layered Textures, earthy tones, hints of sleek patterns and crochet accents with a bold natural wood are just what you need for achieving a Boho-Chic look. The focal point is a wooden backdrop versus expansive glass walls overlooking the pool and its green surrounding. This pool house is a free-standing building in the middle of an extensive green area; This ranch is located in Jenadriah, a suburb of Riyadh city.',
-      banner:'/images/projects/portfolio/jenadriah_ranch/banners/banner6.webp',
-      thumbnail: '/images/projects/portfolio/jenadriah_ranch/thumbnails/works6.webp',
+      banner:'/images/projects/portfolio/jenadriah_ranch/banners/banner6.jpg',
+      thumbnail: '/images/projects/portfolio/jenadriah_ranch/thumbnails/works6.jpg',
       images: [
         '/images/projects/portfolio/jenadriah_ranch/images/Rectangle 62.webp',
         '/images/projects/portfolio/jenadriah_ranch/images/Rectangle 63.webp',
@@ -226,7 +226,7 @@ export function getProtfolioProjects() {
     //   location: 'Seattle, WA',
     //   description : `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.`,
     //   banner:'/images/innerhero/projectdetails.webp',
-    //   thumbnail: '/images/projects/portfolio/thumbnails/works1.webp',
+    //   thumbnail: '/images/projects/portfolio/thumbnails/works1.jpg',
     //   images: [
     //     '/images/projects/portfolio/images/image.webp',
     //     '/images/projects/portfolio/images/image.webp',
@@ -250,7 +250,7 @@ export function getProtfolioProjects() {
     //   location: 'Dubai, UAE',
     //   description : `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.`,
     //   banner:'/images/innerhero/projectdetails.webp',
-    //   thumbnail: '/images/projects/portfolio/thumbnails/works2.webp',
+    //   thumbnail: '/images/projects/portfolio/thumbnails/works2.jpg',
     //   images: [
     //     '/images/projects/portfolio/images/image.webp',
     //     '/images/projects/portfolio/images/image.webp',
@@ -275,7 +275,7 @@ export function getProtfolioProjects() {
     //   location: 'Dubai, UAE',
     //   description : `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.`,
     //   banner:'/images/innerhero/projectdetails.webp',
-    //   thumbnail: '/images/projects/portfolio/thumbnails/works3.webp',
+    //   thumbnail: '/images/projects/portfolio/thumbnails/works3.jpg',
     //   images: [
     //     '/images/projects/portfolio/images/image.webp',
     //     '/images/projects/portfolio/images/image.webp',
@@ -308,7 +308,7 @@ export function getCollabsProjects() {
       architects: ['Zaher Bissar', 'Others'],
       year: 2020,
       location: 'Riyadh',
-      banner:'/images/projects/collaborations/de_gournay/banners/banner1.webp',
+      banner:'/images/projects/collaborations/de_gournay/banners/banner1.jpg',
       thumbnail: '/images/projects/collaborations/de_gournay/thumbnails/collabs1.png',
       images: [
         '/images/projects/collaborations/de_gournay/images/Rectangle 68.webp',
@@ -333,8 +333,8 @@ export function getCollabsProjects() {
       architects: ['Zaher Bissar', 'Others'],
       year: 2022,
       location: 'Riyadh',
-      banner:'/images/projects/collaborations/preciosa/banners/banner3.webp',
-      thumbnail: '/images/projects/collaborations/preciosa/thumbnails/collabs3.webp',
+      banner:'/images/projects/collaborations/preciosa/banners/banner3.jpg',
+      thumbnail: '/images/projects/collaborations/preciosa/thumbnails/collabs3.jpg',
       images: [
         '/images/projects/collaborations/preciosa/images/Rectangle 82.webp',
         '/images/projects/collaborations/preciosa/images/Rectangle 77.webp',
@@ -359,7 +359,7 @@ export function getCollabsProjects() {
       year: 2019,
       location: 'Riyadh',
       banner:'/images/projects/collaborations/baccarat/banners/banner2.jpg',
-      thumbnail: '/images/projects/collaborations/baccarat/thumbnails/collabs2.webp',
+      thumbnail: '/images/projects/collaborations/baccarat/thumbnails/collabs2.jpg',
       images: [
         '/images/projects/collaborations/baccarat/images/Rectangle 83.webp',
         '/images/projects/collaborations/baccarat/images/Rectangle 84.webp',
@@ -383,8 +383,8 @@ export function getCollabsProjects() {
       architects: ['Zaher Bissar', 'Others'],
       year: 2022,
       location: 'Riyadh',
-      banner:'/images/projects/collaborations/italamp/banners/banner4.webp',
-      thumbnail: '/images/projects/collaborations/italamp/thumbnails/collabs4.webp',
+      banner:'/images/projects/collaborations/italamp/banners/banner4.jpg',
+      thumbnail: '/images/projects/collaborations/italamp/thumbnails/collabs4.jpg',
       images: [
         '/images/projects/collaborations/italamp/images/Rectangle 92.webp',
         '/images/projects/collaborations/italamp/images/Rectangle 112.webp',
@@ -406,7 +406,7 @@ export function getCollabsProjects() {
     //   location: 'Berlin, Germany',
     //   description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
     //    banner:'/images/innerhero/projectdetails.webp',
-    //   thumbnail: '/images/projects/collaborations/thumbnails/collabs1.webp',
+    //   thumbnail: '/images/projects/collaborations/thumbnails/collabs1.jpg',
     //   images: [
     //     '/images/projects/collaborations/images/image.webp',
     //     '/images/projects/collaborations/images/image.webp',
@@ -430,7 +430,7 @@ export function getCollabsProjects() {
     //   location: 'Tokyo, Japan',
     //   description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
     //    banner:'/images/innerhero/projectdetails.webp',
-    //   thumbnail: '/images/projects/collaborations/thumbnails/collabs2.webp',
+    //   thumbnail: '/images/projects/collaborations/thumbnails/collabs2.jpg',
     //   images: [
     //     '/images/projects/collaborations/images/image.webp',
     //     '/images/projects/collaborations/images/image.webp',
@@ -456,19 +456,19 @@ export function getEditorial() {
   return [
     { 
       title: 'Editorial Art Gallery', 
-      image:'/images/editorial/images/Rectangle 183.webp',
+      image:'/images_v1/editorial/images/01 Main Photo.jpg',
     },         
     { 
       title: 'Editorial Art Gallery', 
-      image:'/images/editorial/images/Rectangle 180.webp',
+      image:'/images_v1/editorial/images/01_Resized.jpg',
     },
     { 
       title: 'Editorial Art Gallery', 
-      image:'/images/editorial/images/Rectangle 181.webp',
+      image:'/images_v1/editorial/images/02_Resized.jpg',
     },    
     { 
       title: 'Editorial Art Gallery', 
-      image:'/images/editorial/images/Rectangle 182.webp',
+      image:'/images_v1/editorial/images/03_Resized.jpg',
     },    
     // { 
     //   title: 'Editorial Art Gallery', 
@@ -476,49 +476,57 @@ export function getEditorial() {
     // },  
     { 
       title: 'Editorial Art Gallery', 
-      image:'/images/editorial/images/Rectangle 184.webp',
+      image:'/images_v1/editorial/images/03.jpg',
     },     
     { 
       title: 'Editorial Art Gallery', 
-      image:'/images/editorial/images/Rectangle 185.webp',
+      image:'/images_v1/editorial/images/04_Resized.jpg',
     },      
     { 
       title: 'Editorial Art Gallery', 
-      image:'/images/editorial/images/Rectangle 186.webp',
+      image:'/images_v1/editorial/images/05_Resized.jpg',
     },     
     { 
       title: 'Editorial Art Gallery', 
-      image:'/images/editorial/images/Rectangle 187.webp',
+      image:'/images_v1/editorial/images/06_Resized.jpg',
     }, 
     { 
       title: 'Editorial Art Gallery', 
-      image:'/images/editorial/images/Rectangle 188.webp',
+      image:'/images_v1/editorial/images/07_Resized.jpg',
     },     
     { 
       id: 10, 
       title: 'Editorial Art Gallery', 
-      image:'/images/editorial/images/Rectangle 189.webp',
+      image:'/images_v1/editorial/images/08_Resized.jpg',
     },    
     { 
       title: 'Editorial Art Gallery', 
-      image:'/images/editorial/images/Rectangle 190.webp',
+      image:'/images_v1/editorial/images/09_Resized.jpg',
     },   
     { 
       title: 'Editorial Art Gallery', 
-      image:'/images/editorial/images/Rectangle 191.webp',
+      image:'/images_v1/editorial/images/11_Resized.jpg',
     },     
     { 
       title: 'Editorial Art Gallery', 
-      image:'/images/editorial/images/Rectangle 192.webp',
+      image:'/images_v1/editorial/images/12_Resized.jpg',
     },     
     { 
       title: 'Editorial Art Gallery', 
-      image:'/images/editorial/images/Rectangle 193.webp',
+      image:'/images_v1/editorial/images/13_Resized.jpg',
     },
-    // { 
-    //   title: 'Editorial Art Gallery', 
-    //   image:'/images/editorial/images/Rectangle 16_Resized.webp',
-    // },
+    { 
+      title: 'Editorial Art Gallery', 
+      image:'/images_v1/editorial/images/14_Resized.jpg',
+    },
+    { 
+      title: 'Editorial Art Gallery', 
+      image:'/images_v1/editorial/images/15_Resized.jpg',
+    },    
+    { 
+      title: 'Editorial Art Gallery', 
+      image:'/images_v1/editorial/images/16_Resized.jpg',
+    },
   ]
 }
 
@@ -556,8 +564,8 @@ export function getAllProjects() {
       location: 'Riyadh',
       description : `One of the first assignments for us is to set the inspiration for the project; we invest a tremendous amount of time seeking inspiration from our client’s lifestyle and personal tastes. Aware of our client’s interest in fine art, we have selected masterpieces from the most prestigious galleries in the world. The warm and textured wooden high walls has created the perfect background for these art pieces.
       This project with fortunate high ceilings was transformed into a hidden museum in a private home.`,      
-      banner:'/images/projects/portfolio/the_collector_private_residence/banners/banner1.webp',
-      thumbnail: '/images/projects/portfolio/the_collector_private_residence/thumbnails/works1.webp',
+      banner:'/images/projects/portfolio/the_collector_private_residence/banners/banner1.jpg',
+      thumbnail: '/images/projects/portfolio/the_collector_private_residence/thumbnails/works1.jpg',
       images: [
         '/images/projects/portfolio/the_collector_private_residence/images/Rectangle 7.webp',
         '/images/projects/portfolio/the_collector_private_residence/images/Rectangle 113.webp',
@@ -596,8 +604,8 @@ export function getAllProjects() {
       location: 'Riyadh',
       description : `This gorgeous 1270 m² project in Riyadh is the family reception villa that makes part of an extensive private complex.
       It is a beautiful example of a luxury contemporary home, infused with Islamic influences that resonate with its vibrant heritage. Original orientalism paintings, crafted antiques, Islamic patterns and intricate noble materials accentuate the identity of the place.`,
-      banner:'/images/projects/portfolio/al_rawda_reception_villa/banners/banner4.webp',
-      thumbnail: '/images/projects/portfolio/al_rawda_reception_villa/thumbnails/works2.webp',
+      banner:'/images/projects/portfolio/al_rawda_reception_villa/banners/banner4.jpg',
+      thumbnail: '/images/projects/portfolio/al_rawda_reception_villa/thumbnails/works2.jpg',
       images: [
         '/images/projects/portfolio/al_rawda_reception_villa/images/Rectangle 17.webp',
         '/images/projects/portfolio/al_rawda_reception_villa/images/Rectangle 194.webp',
@@ -639,8 +647,8 @@ export function getAllProjects() {
       year: 2019,
       description:'The exclusive interior design of this spacious project that impresses with the elegance and splendor of the timeless furniture pieces is the reception area of this villa. The focal point of this project is a double height space, where a crystal light installation from floor to ceiling is stretching out from floor to ceiling. This piece is called the “Crystal Biosphere”',
       location: 'Riyadh',
-      banner:'/images/projects/portfolio/al_ghadir_villa/banners/banner3.webp',
-      thumbnail: '/images/projects/portfolio/al_ghadir_villa/thumbnails/works3.webp',
+      banner:'/images/projects/portfolio/al_ghadir_villa/banners/banner3.jpg',
+      thumbnail: '/images/projects/portfolio/al_ghadir_villa/thumbnails/works3.jpg',
       images: [
         '/images/projects/portfolio/al_ghadir_villa/images/Rectangle 27.webp',
         '/images/projects/portfolio/al_ghadir_villa/images/Rectangle 28.webp',
@@ -679,7 +687,7 @@ export function getAllProjects() {
       location: 'Riyadh',
       description: 'This luxury private suite combines exquisite, complex detail work with statement prints and muted walls for a modern Asian inspired aesthetic. Three different wallpapers by “De Gournay” are the catchiest elements in this project. Once again, we went in search of the top furniture brands and unique pieces from different European Galleries. A rich color palette is used throughout, giving a sense of depth to the contemporary space; while accent colors and gold hues add a warm splash of color into the design.',
       banner:'/images/projects/portfolio/al_rawda_private_residence/banners/banner2.jpg',
-      thumbnail: '/images/projects/portfolio/al_rawda_private_residence/thumbnails/works4.webp',
+      thumbnail: '/images/projects/portfolio/al_rawda_private_residence/thumbnails/works4.jpg',
       images: [
         '/images/projects/portfolio/al_rawda_private_residence/images/Rectangle 43.webp',
         '/images/projects/portfolio/al_rawda_private_residence/images/Rectangle 40.webp',
@@ -709,8 +717,8 @@ export function getAllProjects() {
       year: 2018,
       location: 'Riyadh',
       description:"From the first meeting the three sisters had a clear vision in mind: a stylish place that challenges the norms of residential design. The handsome style is a perfect blend of Luxury Contemporary and Urban Chic where plain walls and smart fabrics set the mood of the space. They are all tied together with one-of-a- kind furniture pieces and statement artworks. The ensemble aligns perfectly with the homeowner’s vision, taste and lifestyle. Have a look!",
-      banner:'/images/projects/portfolio/the_sisters_villa/banners/banner5.webp',
-      thumbnail: '/images/projects/portfolio/the_sisters_villa/thumbnails/works5.webp',
+      banner:'/images/projects/portfolio/the_sisters_villa/banners/banner5.jpg',
+      thumbnail: '/images/projects/portfolio/the_sisters_villa/thumbnails/works5.jpg',
       images: [
         '/images/projects/portfolio/the_sisters_villa/images/Rectangle 50.webp',
         '/images/projects/portfolio/the_sisters_villa/images/Rectangle 51.webp',
@@ -740,8 +748,8 @@ export function getAllProjects() {
       year: 2022,
       location: 'Riyadh',
       description:'Layered Textures, earthy tones, hints of sleek patterns and crochet accents with a bold natural wood are just what you need for achieving a Boho-Chic look. The focal point is a wooden backdrop versus expansive glass walls overlooking the pool and its green surrounding. This pool house is a free-standing building in the middle of an extensive green area; This ranch is located in Jenadriah, a suburb of Riyadh city.',
-      banner:'/images/projects/portfolio/jenadriah_ranch/banners/banner6.webp',
-      thumbnail: '/images/projects/portfolio/jenadriah_ranch/thumbnails/works6.webp',
+      banner:'/images/projects/portfolio/jenadriah_ranch/banners/banner6.jpg',
+      thumbnail: '/images/projects/portfolio/jenadriah_ranch/thumbnails/works6.jpg',
       images: [
         '/images/projects/portfolio/jenadriah_ranch/images/Rectangle 62.webp',
         '/images/projects/portfolio/jenadriah_ranch/images/Rectangle 63.webp',
@@ -764,7 +772,7 @@ export function getAllProjects() {
       architects: ['Zaher Bissar', 'Others'],
       year: 2020,
       location: 'Riyadh',
-      banner:'/images/projects/collaborations/de_gournay/banners/banner1.webp',
+      banner:'/images/projects/collaborations/de_gournay/banners/banner1.jpg',
       thumbnail: '/images/projects/collaborations/de_gournay/thumbnails/collabs1.png',
       images: [
         '/images/projects/collaborations/de_gournay/images/Rectangle 68.webp',
@@ -788,8 +796,8 @@ export function getAllProjects() {
       architects: ['Zaher Bissar', 'Others'],
       year: 2022,
       location: 'Riyadh',
-      banner:'/images/projects/collaborations/preciosa/banners/banner3.webp',
-      thumbnail: '/images/projects/collaborations/preciosa/thumbnails/collabs3.webp',
+      banner:'/images/projects/collaborations/preciosa/banners/banner3.jpg',
+      thumbnail: '/images/projects/collaborations/preciosa/thumbnails/collabs3.jpg',
       images: [
         '/images/projects/collaborations/preciosa/images/Rectangle 82.webp',
         '/images/projects/collaborations/preciosa/images/Rectangle 77.webp',
@@ -813,7 +821,7 @@ export function getAllProjects() {
       year: 2019,
       location: 'Riyadh',
       banner:'/images/projects/collaborations/baccarat/banners/banner2.jpg',
-      thumbnail: '/images/projects/collaborations/baccarat/thumbnails/collabs2.webp',
+      thumbnail: '/images/projects/collaborations/baccarat/thumbnails/collabs2.jpg',
       images: [
         '/images/projects/collaborations/baccarat/images/Rectangle 83.webp',
         '/images/projects/collaborations/baccarat/images/Rectangle 84.webp',
@@ -836,8 +844,8 @@ export function getAllProjects() {
       architects: ['Zaher Bissar', 'Others'],
       year: 2022,
       location: 'Riyadh',
-      banner:'/images/projects/collaborations/italamp/banners/banner4.webp',
-      thumbnail: '/images/projects/collaborations/italamp/thumbnails/collabs4.webp',
+      banner:'/images/projects/collaborations/italamp/banners/banner4.jpg',
+      thumbnail: '/images/projects/collaborations/italamp/thumbnails/collabs4.jpg',
       images: [
         '/images/projects/collaborations/italamp/images/Rectangle 92.webp',
         '/images/projects/collaborations/italamp/images/Rectangle 112.webp',
@@ -858,7 +866,7 @@ export function getAllProjects() {
     //   location: 'Berlin, Germany',
     //   description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
     //    banner:'/images/innerhero/projectdetails.webp',
-    //   thumbnail: '/images/projects/collaborations/thumbnails/collabs1.webp',
+    //   thumbnail: '/images/projects/collaborations/thumbnails/collabs1.jpg',
     //   images: [
     //     '/images/projects/collaborations/images/image.webp',
     //     '/images/projects/collaborations/images/image.webp',
@@ -881,7 +889,7 @@ export function getAllProjects() {
     //   location: 'Tokyo, Japan',
     //   description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
     //    banner:'/images/innerhero/projectdetails.webp',
-    //   thumbnail: '/images/projects/collaborations/thumbnails/collabs2.webp',
+    //   thumbnail: '/images/projects/collaborations/thumbnails/collabs2.jpg',
     //   images: [
     //     '/images/projects/collaborations/images/image.webp',
     //     '/images/projects/collaborations/images/image.webp',
@@ -904,7 +912,7 @@ export function getAllProjects() {
     //   location: 'Seattle, WA',
     //   description : `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.`,
     //   banner:'/images/innerhero/projectdetails.webp',
-    //   thumbnail: '/images/projects/portfolio/thumbnails/works1.webp',
+    //   thumbnail: '/images/projects/portfolio/thumbnails/works1.jpg',
     //   images: [
     //     '/images/projects/portfolio/images/image.webp',
     //     '/images/projects/portfolio/images/image.webp',
@@ -927,7 +935,7 @@ export function getAllProjects() {
     //   location: 'Dubai, UAE',
     //   description : `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.`,
     //   banner:'/images/innerhero/projectdetails.webp',
-    //   thumbnail: '/images/projects/portfolio/thumbnails/works2.webp',
+    //   thumbnail: '/images/projects/portfolio/thumbnails/works2.jpg',
     //   images: [
     //     '/images/projects/portfolio/images/image.webp',
     //     '/images/projects/portfolio/images/image.webp',
@@ -952,7 +960,7 @@ export function getAllProjects() {
     //   location: 'Dubai, UAE',
     //   description : `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.`,
     //   banner:'/images/innerhero/projectdetails.webp',
-    //   thumbnail: '/images/projects/portfolio/thumbnails/works3.webp',
+    //   thumbnail: '/images/projects/portfolio/thumbnails/works3.jpg',
     //   images: [
     //     '/images/projects/portfolio/images/image.webp',
     //     '/images/projects/portfolio/images/image.webp',

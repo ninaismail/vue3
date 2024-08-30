@@ -3,9 +3,9 @@ import Hero from '../components/Hero.vue'
 import About from '../components/About.vue'
 import Styles from '../components/Styles.vue'
 import Skills from '../components/Skills.vue'
-import style1 from '/images/styles/styles1.webp'
-import style2 from '/images/styles/styles2.webp'
-import style3 from '/images/styles/styles3.webp'
+import style1 from '/images_v1/styles/03_Resized.jpg'
+import style2 from '/images_v1/styles/Option 1.jpg'
+import style3 from '/images_v1/styles/OPtion 2.jpg'
 import bg from '/images/backgrounds/skills.webp'
 const styles = [
 { id: 1, name:'Contemporary Design', image:style1, summary:'Modern flair with a classical spin', description:'Step into a world that mirrors your bold and unrestrained creativity. A captivating fusion of freeform style with luxurious materials and a touch of traditional craftsmanship, resulting in spaces that defy convention and evoke a sense of unparalleled distinction.' },

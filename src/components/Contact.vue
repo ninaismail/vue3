@@ -186,7 +186,7 @@ const handleSubmit = () => {
             </form>
         </div>
         <div class="w-full lg:w-5/12">
-            <img src="/images/contact/contact.webp" alt="Bissar Concepts" width="557" height="558" center cover responsive loading="lazy" class="relative mx-auto md:ms-auto md:me-0 z-1"/>
+            <img src="/images_v1/contact/004 1.jpg" alt="Bissar Concepts" width="557" height="558" center cover responsive loading="lazy" class="relative mx-auto md:ms-auto md:me-0 z-1"/>
         </div>
     </section>
 </template>
