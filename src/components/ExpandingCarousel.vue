@@ -1,48 +1,33 @@
 <script setup>
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
 import 'vue3-carousel/dist/carousel.css';
-import { onMounted } from 'vue';
 
-defineProps({
+const props = defineProps({
   images: Array,
   alt: String,
 });
 
-const getItemsToShow = () => {
-  if (typeof window !== 'undefined') {
-    const screenWidth = window.innerWidth;
-    if (screenWidth >= 1280) {
-      return 5; // Desktop
-    } else if (screenWidth >= 1024) {
-      return 3;  // Smaller Desktop
-    } else if (screenWidth >= 768) {
-      return 3; // Tablet
-    } else if (screenWidth >= 640) {
-      return 1; // Big Mobile
-    } else if (screenWidth < 640) {
-      return 1; // Mobile
-    }
-  }
-};
-
-onMounted(() => {
-  window.addEventListener('resize', () => {
-    getItemsToShow();
-  });
-});
 </script>
 
 <template>
-  <Carousel class="my-20 mx-auto rounded-[2px]" 
+  <Carousel 
+    class="w-full h-full mx-auto rounded-[2px]" 
     :wrapAround="true"
-    :mouseDrag="false"   
+    :mouseDrag="false"     
     ariaGallery 
-    :transition="false"
-    :itemsToShow="getItemsToShow()">
-    <Slide v-for="(item, key) in images" :key="key">
+    :transition="600"
+    :itemsToShow="1">
+    <Slide v-for="(item, key) in props.images" :key="key">
+      <img 
+        :src="item"
+        :alt="'Bissar Concepts - ' + props.alt" 
+        loading="eager" 
+        decoding="async"        
+        class="carousel-image-blurry" 
+      />
       <img 
         :src="item" 
-        :alt="'Bissar Concepts - ' + alt" 
+        :alt="'Bissar Concepts - ' + props.alt" 
         loading="eager" 
         decoding="async"
         class="carousel-image"
@@ -56,15 +41,30 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.carousel__slide--sliding {
-  transition: width 0.6s ease-in-out;
+.carousel__slide {
+  height: auto !important;
+  max-height: 1200px !important;
 }
 
-.carousel__slide--visible.carousel__slide--active {
-  width: fit-content !important;
-  opacity: 1 !important;
+.carousel-image {
+  width: 75%;
+  height: auto;
+  object-fit: contain; /* Display image with full content */
+  position: relative;
+  z-index: 1; /* Ensure image is above the blurry background */
 }
 
+.carousel-image-blurry {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px); /* Adjust blur intensity as needed */
+  z-index: 0; /* Place background behind the image */
+}
 .carousel__pagination {
   position: absolute;
   bottom: 1%;
@@ -72,47 +72,5 @@ onMounted(() => {
   transform: translateX(-50%);
 }
 
-.carousel__slide--visible {
-  width: 13% !important;
-}
 
-.carousel__slide {
-  position: relative !important;
-  height: auto !important;
-  transition: width 0.4s ease-in-out;
-  overflow: hidden !important;
-}
-
-.carousel-image {
-  width: 105% !important;
-  height: 100% !important;
-  transform: scale(1.05) !important;
-  object-fit: cover !important;
-  transition: transform 0.4s ease-in-out;
-}
-
-.carousel__slide::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
-  z-index: 1;
-}
-
-.carousel__slide--active .carousel-image {
-  transform: scale(1) !important;
-}
-
-.carousel__slide--active::before {
-  display: none;
-}
-
-@media only screen and (max-width: 640px) { 
-  .carousel__slide {
-    max-height: 350px!important;
-  }  
-}
 </style>

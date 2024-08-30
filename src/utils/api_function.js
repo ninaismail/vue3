@@ -368,8 +368,8 @@ export function getCollabsProjects() {
       banner:'/images_v1/projects/collaborations/baccarat/banners/banner2.jpg',
       thumbnail: '/images_v1/projects/collaborations/baccarat/thumbnails/collabs2.jpg',
       images: [
-        '/images_v1/projects/collaborations/baccarat/images/1 Swipe 1.jpg',
         '/images_v1/projects/collaborations/baccarat/images/001.jpg',
+        '/images_v1/projects/collaborations/baccarat/images/1 Swipe 1.jpg',
         '/images_v1/projects/collaborations/baccarat/images/2 Swipe 2.jpg',
         '/images_v1/projects/collaborations/baccarat/images/002.jpg',
         '/images_v1/projects/collaborations/baccarat/images/003.jpg',
@@ -844,8 +844,8 @@ export function getAllProjects() {
       banner:'/images_v1/projects/collaborations/baccarat/banners/banner2.jpg',
       thumbnail: '/images_v1/projects/collaborations/baccarat/thumbnails/collabs2.jpg',
       images: [
-        '/images_v1/projects/collaborations/baccarat/images/1 Swipe 1.jpg',
         '/images_v1/projects/collaborations/baccarat/images/001.jpg',
+        '/images_v1/projects/collaborations/baccarat/images/1 Swipe 1.jpg',
         '/images_v1/projects/collaborations/baccarat/images/2 Swipe 2.jpg',
         '/images_v1/projects/collaborations/baccarat/images/002.jpg',
         '/images_v1/projects/collaborations/baccarat/images/003.jpg',

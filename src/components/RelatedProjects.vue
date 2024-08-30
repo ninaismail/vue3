@@ -17,7 +17,7 @@ const filteredData = computed(() => {
 </script>
 
 <template>
-  <section class="w-11/12 mx-auto space-y-3 lg:w-10/12 2xl:w-8/12">
+  <section class="w-11/12 pb-20 mx-auto space-y-3 lg:w-10/12 2xl:w-8/12">
     <h1 class="lg:text-[36px] text-[28px] md:text-[32px] font-[700]">
       Related Projects
     </h1>
@@ -43,7 +43,7 @@ const filteredData = computed(() => {
                 <h1 class="relative flex flex-col justify-center text-white lg:text-[18px] min-h-[62px] font-[700] pb-2 before:absolute before:bottom-0 before:-left-6 before:w-full before:h-[4px] before:bg-gold">
                     {{ item.title }}
                 </h1>
-                <h2 class="tracking-wide text-white max-sm:text-[12px] font-[600]">{{ item.location }}&nbsp;{{ item.year }}</h2>   
+                <h2 class="tracking-wide flex flex-col justify-center text-white max-sm:text-[12px] font-[600]">{{ item.location }}&nbsp;{{ item.year }}</h2>   
               </div>
             <div v-else-if="cat === 'collabs'" class="absolute flex flex-col justify-center w-3/4 text-center transform -translate-x-1/2 bg-white border -bottom-6 h-fit border-gold left-1/2">
               <h1 class="lg:text-[18px] p-2 font-[700] border-b border-gold">
@@ -53,8 +53,8 @@ const filteredData = computed(() => {
             </div>
       </RouterLink>
     </div>
-    <h1 v-else class="lg:text-[20px] p-2 font-[700] border-b border-gold">
+    <h1 v-else class="lg:text-[20px] p-2 font-[700] border-b border-gold ">
         No related projects...
-      </h1>
+    </h1>
   </section>
 </template>

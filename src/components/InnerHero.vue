@@ -17,7 +17,7 @@ loading="eager" decoding="async"
       <h1 class="text-white uppercase lg:text-[48px] md:text-[32px] text-[12px] font-[700] leading-tight">
         {{ pagetitle }}
       </h1>
-      <p class="tracking-wide text-white font-[600] max-sm:text-[10px] w-3/4 mx-auto 2xl:w-1/2">
+      <p class="tracking-wide text-white font-[600] max-md:text-[10px] w-3/4 mx-auto 2xl:w-1/2">
         {{ pagedescription }}
       </p>
     </div>
