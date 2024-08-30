@@ -33,13 +33,13 @@ onMounted(() => {
 </script>
 
 <template>
-  <Carousel class="absolute inset-0 w-full h-full my-20 mx-auto rounded-[2px]" 
+  <Carousel class="my-20 mx-auto rounded-[2px]" 
     :wrapAround="true"
-    :mouseDrag="false"     
+    :mouseDrag="false"   
     ariaGallery 
     :transition="false"
     :itemsToShow="getItemsToShow()">
-    <Slide v-for="(item, key) in images" :key="key" >
+    <Slide v-for="(item, key) in images" :key="key">
       <img 
         :src="item" 
         :alt="'Bissar Concepts - ' + alt" 
