@@ -61,7 +61,7 @@ export function getProtfolioProjects() {
         '/images_v1/projects/portfolio/al_rawda_reception_villa/images/09 (1).jpg',
         '/images_v1/projects/portfolio/al_rawda_reception_villa/images/09.jpg',
         '/images_v1/projects/portfolio/al_rawda_reception_villa/images/10 (1).jpg',
-        '/images_v1/projects/portfolio/al_rawda_reception_villa/images/10 (2).jpg',
+        '/images_v1/projects/portfolio/al_rawda_reception_villa/images/10 (3).jpg',
         '/images_v1/projects/portfolio/al_rawda_reception_villa/images/15.jpg',
         '/images_v1/projects/portfolio/al_rawda_reception_villa/images/16.jpg',
         '/images_v1/projects/portfolio/al_rawda_reception_villa/images/20.jpg',
@@ -622,7 +622,7 @@ export function getAllProjects() {
         '/images_v1/projects/portfolio/al_rawda_reception_villa/images/09 (1).jpg',
         '/images_v1/projects/portfolio/al_rawda_reception_villa/images/09.jpg',
         '/images_v1/projects/portfolio/al_rawda_reception_villa/images/10 (1).jpg',
-        '/images_v1/projects/portfolio/al_rawda_reception_villa/images/10 (2).jpg',
+        '/images_v1/projects/portfolio/al_rawda_reception_villa/images/10 (3).jpg',
         '/images_v1/projects/portfolio/al_rawda_reception_villa/images/15.jpg',
         '/images_v1/projects/portfolio/al_rawda_reception_villa/images/16.jpg',
         '/images_v1/projects/portfolio/al_rawda_reception_villa/images/20.jpg',
@@ -789,7 +789,7 @@ export function getAllProjects() {
       category: 'Portfolio'
     },
     { 
-      id: 1, 
+      id: 7, 
       title: 'De Gournay', 
       type: 'Design',
       year: 2020,
@@ -812,10 +812,9 @@ export function getAllProjects() {
       category: 'Collaborations'
     },
     { 
-      id: 2, 
+      id: 8, 
       title: 'Preciosa', 
       type: 'Interior',
-      architects: ['Zaher Bissar', 'Others'],
       year: 2022,
       location: 'Riyadh',
       banner:'/images_v1/projects/collaborations/preciosa/banners/banner3.jpg',
@@ -837,7 +836,7 @@ export function getAllProjects() {
       category: 'Collaborations'
     },    
     { 
-      id: 3, 
+      id: 9, 
       title: 'Baccarat', 
       type: 'Houses',
       year: 2019,
@@ -861,7 +860,7 @@ export function getAllProjects() {
       category: 'Collaborations'
     },
     { 
-      id: 4, 
+      id: 10, 
       title: 'Italamp', 
       type: 'Living',
       year: 2022,
