@@ -6,7 +6,7 @@ defineProps({
 })
 </script>
 <template>
-    <div class="relative mx-auto lg:min-h-[152px] w-full h-full">
+    <div class="relative w-full h-full mx-auto">
         <div class="space-y-3 absolute w-full -bottom-5 left-1/2 transform -translate-x-1/2 z-[2]">
             <h1 v-if="title" class="lg:text-[36px] text-center text-[28px] md:text-[32px] font-[700] mx-auto lg:w-2/3">
                 {{ title }}
