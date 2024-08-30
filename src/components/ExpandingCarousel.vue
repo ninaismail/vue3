@@ -31,16 +31,16 @@ onMounted(() => {
 </script>
 
 <template>
-    <Carousel class="w-full h-full mx-auto rounded-[2px]" 
+    <Carousel class="absolute inset-0 w-full h-full py-20 mx-auto rounded-[2px]" 
     :wrapAround="true"
     :mouseDrag="false"     
     ariaGallery 
     :transition="false"
     :itemsToShow="getItemsToShow()">
-        <Slide v-for="(item, key) in images" :key="key">
+        <Slide v-for="(item, key) in images" :key="key" >
           <img :src="item" :alt="'Bissar Concepts - ' + alt" loading="eager" decoding="async"
-          width="2000" height="748" 
-          responsive class="object-none object-left w-full h-full max-sm:object-cover max-sm:object-center"
+          width="100%" height="100%" 
+          responsive cover center
           :style="{ imageRendering: 'crisp-edges', imageResolution: '300dpi' }"/>
         </Slide>
         <template #addons>
