@@ -14,14 +14,8 @@ let uniqueTypes = [...new Set(projects.map(project => project.type))];
 console.log(uniqueTypes);
 </script>
 <template>
-        <head>  
+    <head>  
         <title>Bissar Consepts - Collaborations</title>
-        <!-- Facebook Meta Tags -->
-      <meta property="og:title" content="Bissar Consepts - Collaborations">
-
-      <!-- Twitter Meta Tags -->
-      <meta name="twitter:title" content="Bissar Consepts - Collaborations">
-  
     </head>
     <InnerHero :pagebanner="banner" pagetitle="Bringing our vision to life" collabs
     pagedescription="We have collaborated with talented designers, merging our creative visions to design something truly exquisite."/>

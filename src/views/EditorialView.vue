@@ -8,14 +8,8 @@ const images = getEditorial();
 const accordion = getAccordion();
 </script>
 <template>
-      <head>  
+    <head>  
     <title>Bissar Consepts - Editorial</title>
-    <!-- Facebook Meta Tags -->
-      <meta property="og:title" content="Bissar Consepts - Editorial">
-
-      <!-- Twitter Meta Tags -->
-      <meta name="twitter:title" content="Bissar Consepts - Editorial">
-  
     </head>
     <section class="w-11/12 pt-40 mx-auto space-y-3 2xl:w-8/12 lg:w-10/12">
         <h1 class="lg:text-[36px] text-[28px] md:text-[32px] font-[700] text-center lg:w-2/3 mx-auto pb-20">
