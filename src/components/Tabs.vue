@@ -8,7 +8,7 @@ const props = defineProps({
     title: String,
     subtitle: String,
     bg: String,
-    uniquecategorys: Array,
+    categories: Array,
     limit: Number,
     cat: String
 })
@@ -18,6 +18,7 @@ const isClicked = ref('All');
 const filteredData = ref([]);
 const visibleData = ref(props.data);
 const itemsToShow = ref(props.limit);
+
 const filterData = (category) => {
   isClicked.value = category;
 
@@ -59,7 +60,7 @@ filterData('All');
                 >
                  All
                 </button>
-                <button role="tab" v-for="(item, key) in props.uniquecategorys" :key="key"
+                <button role="tab" v-for="(item, key) in props.categories" :key="key"
                 :id="item + (isClicked === item ? '-active' : '')" 
                 :aria-label="'show ' + item"
                 :class="{'font-[700] before:absolute before:bottom-0 before:left-1/2 before:w-12 before:h-[2px] before:bg-gold before:transform before:-translate-x-1/2' : isClicked === item}"

@@ -6,22 +6,22 @@ import Tabs from '../../components/Tabs.vue';
 import { ref, onMounted } from 'vue';
 import { getCollaborationProjects } from '../../utils/laravel_api_functions';
 
-const projects = ref();
-const uniqueTypes = ref([]);
+const projects = ref([]);
+const uniqueCategories = ref([]);
 
 const fetchData = async () => {
   projects.value = await getCollaborationProjects(); // Fetching projects
   if (projects.value.length > 0) {
-    uniqueTypes.value = [...new Set(projects.value.map(project => project.category))];
+    uniqueCategories.value = [...new Set(projects.value.map(project => project.category))];
   }
 };
+console.log(projects.value);
+console.log(uniqueCategories.value);
 
 onMounted(() => {
   fetchData();
 });
 
-console.log(projects.value);
-console.log(uniqueTypes.value);
 </script>
 <template>
         <head>  
@@ -35,6 +35,9 @@ console.log(uniqueTypes.value);
     </head>
     <InnerHero :pagebanner="banner" pagetitle="Bringing our vision to life" collabs
     pagedescription="We have collaborated with talented designers, merging our creative visions to design something truly exquisite."/>
-    <Tabs :data="projects" :uniqueTypes="uniqueTypes" :bg="collaborations" title="Where Vision Takes Form." description="We have collaborated with global talented craftsmen to breathe life into our designs." :limit="4" cat="collabs"/>
+  <!-- Conditional rendering to ensure data is loaded -->
+  <div v-if="projects.length > 0 && uniqueCategories.length > 0">
+    <Tabs :data="projects" :categories="uniqueCategories" :bg="collaborations" title="Where Vision Takes Form." description="We have collaborated with global talented craftsmen to breathe life into our designs." :limit="4" cat="collabs"/>
+  </div>
 </template>
 
