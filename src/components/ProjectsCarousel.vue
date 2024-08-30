@@ -56,7 +56,7 @@ const nextSlideTitle = computed(() => {
     :touchDrag="false"
     class="w-full mx-auto h-fit">
     <Slide v-for="(item, key) in props.data" :key="key" class="w-full h-fit">
-      <InnerHero :pagebanner="item.banner" :pagetitle="item.title" :collabs="item.slug === 'baccarat' ? true :false"
+      <InnerHero :pagebanner="item.banner" :pagetitle="item.title" :collabs="item.slug === 'baccarat' ? true :false"  :italamp="item.slug === 'italamp' ? true :false"
       :pagedescription="item.location + ' ' + item.year"/>
       <ProjectDetails :item="item" />
       <!-- Custom Navigation Buttons with Slide Titles -->

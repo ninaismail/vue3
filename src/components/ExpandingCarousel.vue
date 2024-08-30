@@ -12,11 +12,11 @@ const getItemsToShow = () => {
   if (typeof window !== 'undefined') {
     const screenWidth = window.innerWidth;
     if (screenWidth >= 1280) {
-      return 5; // Desktop
+      return 1; // Desktop
     } else if (screenWidth >= 1024) {
-      return 3;  // Smaller Desktop
+      return 1;  // Smaller Desktop
     } else if (screenWidth >= 768) {
-      return 3; // Tablet
+      return 1; // Tablet
     } else if (screenWidth >= 640) {
       return 1; // Big Mobile
     } else if (screenWidth < 640) {
@@ -56,12 +56,29 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.carousel__slide {
+  position: relative !important;
+  height: auto !important;
+  transition: width 0.4s ease-in-out;
+  overflow: hidden !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-image {
+  width: 100%; /* Ensure image takes full width of slide */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure image covers slide area without distortion */
+  object-position: center; /* Center image within slide */
+  transition: opacity 0.4s ease-in-out;
+}
+
 .carousel__slide--sliding {
   transition: width 0.6s ease-in-out;
 }
 
 .carousel__slide--visible.carousel__slide--active {
-  width: fit-content !important;
   opacity: 1 !important;
 }
 
@@ -70,25 +87,6 @@ onMounted(() => {
   bottom: 1%;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.carousel__slide--visible {
-  width: 13% !important;
-}
-
-.carousel__slide {
-  position: relative !important;
-  height: auto !important;
-  transition: width 0.4s ease-in-out;
-  overflow: hidden !important;
-}
-
-.carousel-image {
-  width: 105% !important;
-  height: 100% !important;
-  transform: scale(1.05) !important;
-  object-fit: cover !important;
-  transition: transform 0.4s ease-in-out;
 }
 
 .carousel__slide::before {
@@ -102,10 +100,6 @@ onMounted(() => {
   z-index: 1;
 }
 
-.carousel__slide--active .carousel-image {
-  transform: scale(1) !important;
-}
-
 .carousel__slide--active::before {
   display: none;
 }
@@ -113,6 +107,7 @@ onMounted(() => {
 @media only screen and (max-width: 640px) { 
   .carousel__slide {
     max-height: 350px!important;
-  }  
+  }
 }
+
 </style>
