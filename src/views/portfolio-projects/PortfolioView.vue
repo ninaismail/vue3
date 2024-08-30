@@ -26,12 +26,6 @@ onMounted(() => {
 <template>
     <head>  
         <title>Bissar Consepts - Portfolio</title>
-        <!-- Facebook Meta Tags -->
-      <meta property="og:title" content="Bissar Consepts - Portfolio">
-
-      <!-- Twitter Meta Tags -->
-      <meta name="twitter:title" content="Bissar Consepts - Portfolio">
-  
     </head>
     <InnerHero :pagebanner="banner" pagetitle="Your sanctuary. Your vision." 
     pagedescription="We design your dream house to your vision and design palette, ultimately creating a space that reflects your character."/>
