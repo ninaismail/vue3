@@ -316,7 +316,6 @@ export function getCollabsProjects() {
       id: 1, 
       title: 'De Gournay', 
       type: 'Design',
-      architects: ['Zaher Bissar', 'Others'],
       year: 2020,
       location: 'Riyadh',
       banner:'/images_v1/projects/collaborations/de_gournay/banners/banner1.jpg',
@@ -333,7 +332,6 @@ export function getCollabsProjects() {
         '/images_v1/projects/collaborations/de_gournay/images/DG2 (2).jpg',
         '/images_v1/projects/collaborations/de_gournay/images/DG2 (3).jpg',
       ],
-      client: 'Art & Co.',
       slug: 'de-gournay',
       category: 'Collaborations'
     },
@@ -341,7 +339,6 @@ export function getCollabsProjects() {
       id: 2, 
       title: 'Preciosa', 
       type: 'Interior',
-      architects: ['Zaher Bissar', 'Others'],
       year: 2022,
       location: 'Riyadh',
       banner:'/images_v1/projects/collaborations/preciosa/banners/banner3.jpg',
@@ -359,7 +356,6 @@ export function getCollabsProjects() {
         '/images_v1/projects/collaborations/preciosa/images/PR31.jpg',
 
       ],
-      client: 'Luxury Stays',
       slug: 'preciosa',
       category: 'Collaborations'
     },    
@@ -367,7 +363,6 @@ export function getCollabsProjects() {
       id: 3, 
       title: 'Baccarat', 
       type: 'Houses',
-      architects: ['Zaher Bissar', 'Others'],
       year: 2019,
       location: 'Riyadh',
       banner:'/images_v1/projects/collaborations/baccarat/banners/banner2.jpg',
@@ -385,7 +380,6 @@ export function getCollabsProjects() {
         '/images_v1/projects/collaborations/baccarat/images/Optional.jpg',
 
       ],
-      client: 'Business Solutions Ltd.',
       slug: 'baccarat',
       category: 'Collaborations'
     },
@@ -393,7 +387,6 @@ export function getCollabsProjects() {
       id: 4, 
       title: 'Italamp', 
       type: 'Living',
-      architects: ['Zaher Bissar', 'Others'],
       year: 2022,
       location: 'Riyadh',
       banner:'/images_v1/projects/collaborations/italamp/banners/banner4.jpg',
@@ -405,7 +398,6 @@ export function getCollabsProjects() {
         '/images_v1/projects/collaborations/italamp/images/IMG_6656.jpg',
         '/images_v1/projects/collaborations/italamp/images/IMG_6665.jpg',
       ],
-      client: 'Urban Developments',
       slug: 'italamp',
       category: 'Collaborations'
     },
@@ -800,7 +792,6 @@ export function getAllProjects() {
       id: 1, 
       title: 'De Gournay', 
       type: 'Design',
-      architects: ['Zaher Bissar', 'Others'],
       year: 2020,
       location: 'Riyadh',
       banner:'/images_v1/projects/collaborations/de_gournay/banners/banner1.jpg',
@@ -817,7 +808,6 @@ export function getAllProjects() {
         '/images_v1/projects/collaborations/de_gournay/images/DG2 (2).jpg',
         '/images_v1/projects/collaborations/de_gournay/images/DG2 (3).jpg',
       ],
-      client: 'Art & Co.',
       slug: 'de-gournay',
       category: 'Collaborations'
     },
@@ -843,7 +833,6 @@ export function getAllProjects() {
         '/images_v1/projects/collaborations/preciosa/images/PR31.jpg',
 
       ],
-      client: 'Luxury Stays',
       slug: 'preciosa',
       category: 'Collaborations'
     },    
@@ -851,7 +840,6 @@ export function getAllProjects() {
       id: 3, 
       title: 'Baccarat', 
       type: 'Houses',
-      architects: ['Zaher Bissar', 'Others'],
       year: 2019,
       location: 'Riyadh',
       banner:'/images_v1/projects/collaborations/baccarat/banners/banner2.jpg',
@@ -869,7 +857,6 @@ export function getAllProjects() {
         '/images_v1/projects/collaborations/baccarat/images/Optional.jpg',
 
       ],
-      client: 'Business Solutions Ltd.',
       slug: 'baccarat',
       category: 'Collaborations'
     },
@@ -877,7 +864,6 @@ export function getAllProjects() {
       id: 4, 
       title: 'Italamp', 
       type: 'Living',
-      architects: ['Zaher Bissar', 'Others'],
       year: 2022,
       location: 'Riyadh',
       banner:'/images_v1/projects/collaborations/italamp/banners/banner4.jpg',
@@ -889,7 +875,6 @@ export function getAllProjects() {
         '/images_v1/projects/collaborations/italamp/images/IMG_6656.jpg',
         '/images_v1/projects/collaborations/italamp/images/IMG_6665.jpg',
       ],
-      client: 'Urban Developments',
       slug: 'italamp',
       category: 'Collaborations'
     },

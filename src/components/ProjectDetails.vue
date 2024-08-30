@@ -37,7 +37,7 @@ console.log(`https://bissarconcepts.com${route.fullPath}`)
             </div>
             <div class="w-full h-full lg:w-3/12">
                 <div class="border-[2px] border-gold flex flex-col gap-3 px-4 py-10 h-full w-full">
-                    <div class="flex items-center justify-between">
+                    <div v-if="item.client" class="flex items-center justify-between">
                         <h2 class="tracking-wide font-[700]">Client:</h2>
                         <h2 class="tracking-wide font-[700]">{{ item.client }}</h2>
                     </div>                   
