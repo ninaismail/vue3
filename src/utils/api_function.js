@@ -461,6 +461,9 @@ export function getEditorial() {
   return [
     { 
       title: 'Editorial Art Gallery', 
+      image:'/images_v1/editorial/images/03.jpg',
+    },         { 
+      title: 'Editorial Art Gallery', 
       image:'/images_v1/editorial/images/01 Main Photo.jpg',
     },         
     { 
@@ -479,10 +482,7 @@ export function getEditorial() {
     //   title: 'Editorial Art Gallery', 
     //   image:'/images/editorial/images/Rectangle 03_Resized.webp',
     // },  
-    { 
-      title: 'Editorial Art Gallery', 
-      image:'/images_v1/editorial/images/03.jpg',
-    },     
+
     { 
       title: 'Editorial Art Gallery', 
       image:'/images_v1/editorial/images/04_Resized.jpg',
