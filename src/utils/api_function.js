@@ -499,12 +499,7 @@ export function getEditorial() {
     { 
       title: 'Editorial Art Gallery', 
       image:'/images_v1/editorial/images/07_Resized.jpg',
-    },     
-    { 
-      id: 10, 
-      title: 'Editorial Art Gallery', 
-      image:'/images_v1/editorial/images/08_Resized.jpg',
-    },    
+    },      
     { 
       title: 'Editorial Art Gallery', 
       image:'/images_v1/editorial/images/09_Resized.jpg',
