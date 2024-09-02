@@ -40,12 +40,12 @@ const filteredData = computed(() => {
             />
             <div v-if="cat === 'portfolio'" 
             class="flex flex-col justify-center mx-auto gap-y-4 h-[35%] absolute left-0 bottom-0 w-full z-1 bg-[#53554A] bg-opacity-77 px-6">
-                <h1 class="relative flex flex-col justify-center text-white lg:text-[18px] min-h-[62px] font-[500] pb-2 before:absolute before:bottom-0 before:-left-6 before:w-full before:h-[4px] before:bg-gold">
+                <h1 class="relative flex flex-col justify-center text-white lg:text-[18px] min-h-[62px] font-[600] pb-2 before:absolute before:bottom-0 before:-left-6 before:w-full before:h-[2px] before:bg-gold">
                     {{ item.title }}
                 </h1>
-                <h2 class="tracking-wide flex flex-col justify-center text-white max-sm:text-[12px] font-[400]">{{ item.location }}&nbsp;{{ item.year }}</h2>   
+                <h2 class="tracking-wide flex flex-col justify-center text-white max-sm:text-[12px] font-[500]">{{ item.location }}&nbsp;{{ item.year }}</h2>   
               </div>
-            <div v-else-if="cat === 'collabs'" class="absolute flex flex-col justify-center w-3/4 text-center transform -translate-x-1/2 bg-white border -bottom-6 h-fit border-gold left-1/2">
+            <div v-else-if="cat === 'collabs'" class="absolute flex flex-col justify-center w-3/4 text-center transform -translate-x-1/2 bg-white border -bottom-5 h-fit border-gold left-1/2">
               <h1 class="lg:text-[18px] p-2 font-[700] border-b border-gold">
                 {{ item.title }}
               </h1>
