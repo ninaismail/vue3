@@ -10,9 +10,8 @@ const route = useRoute();
 console.log(`https://bissarconcepts.com${route.fullPath}`)
 </script>
 <template>
-      <link  v-for="(image, index) in item.images" rel="preload" :href="iimage" as="image"  type="image/jpg">
+      <link  v-for="(image, index) in item.images" rel="preload" :href="iimage" as="image" type="image/jpg">
       <link rel="preload" :href="item.banner" as="image" type="image/jpg">
-
     <head>
         <title>Bissar Consepts - {{item.title}}</title>
         <meta property="og:title" :content="item.title">
