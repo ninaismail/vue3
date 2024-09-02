@@ -40,6 +40,7 @@ filterData('All');
 </script>
 
 <template>
+    <link  v-for="(item, index) in filteredData" rel="preload" :href="item.thumbnail" as="image"  type="image/jpg">
     <section class="relative flex flex-col items-center justify-center w-11/12 py-20 mx-auto 2xl:w-8/12 lg:w-10/12">
         <BackgroundTitle :bg="bg" :title="title"/>
         <div class="my-[32px] w-full mx-auto">

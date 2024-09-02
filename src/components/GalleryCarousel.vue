@@ -8,6 +8,7 @@ defineProps({
 </script>
 
 <template>
+    <link  v-for="(item, index) in images" rel="preload" :href="item.image" as="image"  type="image/jpg">
     <Carousel class="relative w-full h-full mx-auto rounded-[2px]" 
     :wrapAround="true"     
     ariaGallery
