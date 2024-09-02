@@ -9,7 +9,7 @@ defineProps({
 </script>
 
 <template>
-<section class="relative w-full h-full flex items-center justify-center lg:mt-[86px] mt-[74px] aspect-2.25/1" 
+<section class="relative w-full h-full flex items-center justify-center lg:mt-[86px] mt-[74px] aspect-2/1" 
 loading="eager" decoding="async"
   :style="{ backgroundImage: 'url(' + pagebanner + ')', backgroundSize:'cover', backgroundPosition: collabs ?  'bottom' : italamp ? 'center 65%'  : 'center', backgroundSize: 'cover', imageRendering: 'crisp-edges', imageResolution: '300dpi' }">
    <div class="w-full h-full absolute inset-0 bg-[#000000]/50 z-1"/>

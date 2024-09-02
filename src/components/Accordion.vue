@@ -16,7 +16,7 @@ console.log('selected accordion', isClicked.value)
     <section id="beihind-the-brand" class="relative w-full h-full py-20 mx-auto lg:py-40">
         <div class="w-11/12 2xl:w-8/12 mx-auto lg:w-10/12 flex flex-wrap items-center justify-end gap-3 mb-[32px] h-full">
             <div class="w-full lg:left-0 lg:top-40 lg:absolute 2xl:w-6/12 lg:w-5/12">
-                <img src="/images_v1/editorial/60.jpg" alt="Bissar Concepts" width="644" height="691" center cover responsive loading="lazy" class="aspect-0.93/1 max-lg:ms-auto max-lg:me-0"/>
+                <img src="/images_v1/editorial/60 1.jpg" alt="Bissar Concepts" width="644" height="691" center cover responsive loading="lazy" class="aspect-0.93/1 max-lg:ms-auto max-lg:me-0"/>
             </div>
             <div class="w-full h-full space-y-3 2xl:w-7/12 lg:w-6/12 lg:min-h-[603px]">
                 <h1 class="lg:text-[36px] text-[28px] md:text-[32px] font-[700]">
