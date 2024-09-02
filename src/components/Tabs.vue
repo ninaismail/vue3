@@ -77,7 +77,7 @@ filterData('All');
                         </h1>
                         <h2 class="tracking-wide flex flex-col justify-center text-white max-sm:text-[12px] font-[500]">{{ item.location }}&nbsp;{{ item.year }}</h2>   
                     </div>
-                    <div v-else-if="cat === 'collabs'" class="absolute flex flex-col justify-center w-3/4 text-center transform -translate-x-1/2 bg-white border -bottom-5 h-fit border-gold left-1/2">
+                    <div v-else-if="cat === 'collabs'" class="absolute flex flex-col justify-center w-3/4 text-center transform -translate-x-1/2 bg-white border -bottom-[25px] h-fit border-gold left-1/2">
                         <h1 class="lg:text-[18px] p-2 font-[700] border-b border-gold">
                             {{ item.title }}
                         </h1>

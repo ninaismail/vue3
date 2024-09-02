@@ -21,7 +21,7 @@ const filteredData = computed(() => {
     <h1 class="lg:text-[36px] text-[28px] md:text-[32px] font-[700]">
       Related Projects
     </h1>
-    <div v-if="filteredData.length > 0" class="grid w-full grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3 sm:grid-cols-2">
+    <div v-if="filteredData.length > 0" class="grid w-full grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-3 sm:grid-cols-2">
       <RouterLink v-for="(item, key) in filteredData" :key="key"
           @mouseenter="isHover = key"
           @mouseleave="isHover = null"
@@ -45,7 +45,7 @@ const filteredData = computed(() => {
                 </h1>
                 <h2 class="tracking-wide flex flex-col justify-center text-white max-sm:text-[12px] font-[500]">{{ item.location }}&nbsp;{{ item.year }}</h2>   
               </div>
-            <div v-else-if="cat === 'collabs'" class="absolute flex flex-col justify-center w-3/4 text-center transform -translate-x-1/2 bg-white border -bottom-5 h-fit border-gold left-1/2">
+            <div v-else-if="cat === 'collabs'" class="absolute flex flex-col justify-center w-3/4 text-center transform -translate-x-1/2 bg-white border -bottom-[25px] h-fit border-gold left-1/2">
               <h1 class="lg:text-[18px] p-2 font-[700] border-b border-gold">
                 {{ item.title }}
               </h1>
