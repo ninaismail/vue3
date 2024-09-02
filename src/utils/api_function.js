@@ -310,9 +310,10 @@ export function getCollabsProjects() {
     { 
       id: 1, 
       title: 'De Gournay', 
-      type: 'Design',
+      type: 'Residential',
       year: 2020,
       location: 'Riyadh',
+      description: 'Welcome to the alleys of Old Damascus… A custom-made wallpaper of a scenic panorama that conveys the charming atmosphere of the historical city, is designed by “Bissar Concepts”. Exquisitely detailed 24 hand-painted panels done over 6 months in collaboration with “De Gournay”',
       banner:'/images_v1/projects/collaborations/de_gournay/banners/banner1.jpg',
       thumbnail: '/images_v1/projects/collaborations/de_gournay/thumbnails/collabs1.jpg',
       images: [
@@ -333,9 +334,10 @@ export function getCollabsProjects() {
     { 
       id: 2, 
       title: 'Preciosa', 
-      type: 'Interior',
+      type: 'Residential',
       year: 2022,
       location: 'Riyadh',
+      description: "This is a substantial long-term collaboration. One of the highlights is “The Crystal Biosphere” Installation: Unfolding nature’s story by transforming this indoor double-height space into a dreamy escape with heavenly crystals of flying birds and falling leaves over the lush greenery.",
       banner:'/images_v1/projects/collaborations/preciosa/banners/banner3.jpg',
       thumbnail: '/images_v1/projects/collaborations/preciosa/thumbnails/collabs3.jpg',
       images: [
@@ -357,9 +359,10 @@ export function getCollabsProjects() {
     { 
       id: 3, 
       title: 'Baccarat', 
-      type: 'Houses',
+      type: 'Residential',
       year: 2019,
       location: 'Riyadh',
+      description: "Showcasing opulence and grandeur with custom-size masterpieces from “Baccarat”.",
       banner:'/images_v1/projects/collaborations/baccarat/banners/banner2.jpg',
       thumbnail: '/images_v1/projects/collaborations/baccarat/thumbnails/collabs2.jpg',
       images: [
@@ -381,9 +384,10 @@ export function getCollabsProjects() {
     { 
       id: 4, 
       title: 'Italamp', 
-      type: 'Living',
+      type: 'Residential',
       year: 2022,
       location: 'Riyadh',
+      description:"Another long-term collaboration where some custom-size chandeliers were tailored for some of our projects.",
       banner:'/images_v1/projects/collaborations/italamp/banners/banner4.jpg',
       thumbnail: '/images_v1/projects/collaborations/italamp/thumbnails/collabs4.jpg',
       images: [
@@ -777,9 +781,10 @@ export function getAllProjects() {
     { 
       id: 7, 
       title: 'De Gournay', 
-      type: 'Design',
+      type: 'Residential',
       year: 2020,
       location: 'Riyadh',
+      description: 'Welcome to the alleys of Old Damascus… A custom-made wallpaper of a scenic panorama that conveys the charming atmosphere of the historical city, is designed by “Bissar Concepts”. Exquisitely detailed 24 hand-painted panels done over 6 months in collaboration with “De Gournay”',
       banner:'/images_v1/projects/collaborations/de_gournay/banners/banner1.jpg',
       thumbnail: '/images_v1/projects/collaborations/de_gournay/thumbnails/collabs1.jpg',
       images: [
@@ -800,9 +805,10 @@ export function getAllProjects() {
     { 
       id: 8, 
       title: 'Preciosa', 
-      type: 'Interior',
+      type: 'Residential',
       year: 2022,
       location: 'Riyadh',
+      description: "This is a substantial long-term collaboration. One of the highlights is “The Crystal Biosphere” Installation: Unfolding nature’s story by transforming this indoor double-height space into a dreamy escape with heavenly crystals of flying birds and falling leaves over the lush greenery.",
       banner:'/images_v1/projects/collaborations/preciosa/banners/banner3.jpg',
       thumbnail: '/images_v1/projects/collaborations/preciosa/thumbnails/collabs3.jpg',
       images: [
@@ -824,9 +830,10 @@ export function getAllProjects() {
     { 
       id: 9, 
       title: 'Baccarat', 
-      type: 'Houses',
+      type: 'Residential',
       year: 2019,
       location: 'Riyadh',
+      description: "Showcasing opulence and grandeur with custom-size masterpieces from “Baccarat”.",
       banner:'/images_v1/projects/collaborations/baccarat/banners/banner2.jpg',
       thumbnail: '/images_v1/projects/collaborations/baccarat/thumbnails/collabs2.jpg',
       images: [
@@ -848,9 +855,10 @@ export function getAllProjects() {
     { 
       id: 10, 
       title: 'Italamp', 
-      type: 'Living',
+      type: 'Residential',
       year: 2022,
       location: 'Riyadh',
+      description:"Another long-term collaboration where some custom-size chandeliers were tailored for some of our projects.",
       banner:'/images_v1/projects/collaborations/italamp/banners/banner4.jpg',
       thumbnail: '/images_v1/projects/collaborations/italamp/thumbnails/collabs4.jpg',
       images: [

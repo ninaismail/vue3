@@ -46,6 +46,7 @@ const nextSlideTitle = computed(() => {
 </script>
 
 <template>
+  <link rel="preload" :href="item.banner" as="image" type="image/jpg">
   <Carousel
     ref="carousel" 
     v-model="currentSlide"

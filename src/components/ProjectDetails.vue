@@ -11,6 +11,7 @@ console.log(`https://bissarconcepts.com${route.fullPath}`)
 </script>
 <template>
     <head>
+    <link  v-for="(image, index) in item.images" rel="preload" :href="image" as="image"  type="image/jpg">
     <title>Bissar Consepts - {{item.title}}</title>
         <meta property="og:title" :content="item.title">
         <meta property="og:description" :content="item.description">
