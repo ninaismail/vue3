@@ -315,7 +315,7 @@ export function getCollabsProjects() {
       location: 'Riyadh',
       description: 'Welcome to the alleys of Old Damascus… A custom-made wallpaper of a scenic panorama that conveys the charming atmosphere of the historical city, is designed by “Bissar Concepts”. Exquisitely detailed 24 hand-painted panels done over 6 months in collaboration with “De Gournay”',
       banner:'/images_v1/projects/collaborations/de_gournay/banners/banner1.jpg',
-      thumbnail: '/images_v1/projects/collaborations/de_gournay/thumbnails/collabs1.jpg',
+      thumbnail: '/images_v1/projects/collaborations/de_gournay/thumbnails/DG1 (1).jpg',
       images: [
         '/images_v1/projects/collaborations/de_gournay/images/DG1 (1).jpg',
         '/images_v1/projects/collaborations/de_gournay/images/DG1 (3).jpg',
@@ -786,7 +786,7 @@ export function getAllProjects() {
       location: 'Riyadh',
       description: 'Welcome to the alleys of Old Damascus… A custom-made wallpaper of a scenic panorama that conveys the charming atmosphere of the historical city, is designed by “Bissar Concepts”. Exquisitely detailed 24 hand-painted panels done over 6 months in collaboration with “De Gournay”',
       banner:'/images_v1/projects/collaborations/de_gournay/banners/banner1.jpg',
-      thumbnail: '/images_v1/projects/collaborations/de_gournay/thumbnails/collabs1.jpg',
+      thumbnail: '/images_v1/projects/collaborations/de_gournay/thumbnails/DG1 (1).jpg',
       images: [
         '/images_v1/projects/collaborations/de_gournay/images/DG1 (1).jpg',
         '/images_v1/projects/collaborations/de_gournay/images/DG1 (3).jpg',
