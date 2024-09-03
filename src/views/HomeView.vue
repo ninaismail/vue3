@@ -6,7 +6,6 @@ import Skills from '../components/Skills.vue'
 import style1 from '/images_v1/styles/OPtion 2.jpg'
 import style2 from '/images_v1/styles/Option 1.jpg'
 import style3 from '/images_v1/styles/03_Resized.jpg'
-import bg from '/images/backgrounds/skills.webp'
 const styles = [
 { id: 1, name:'Contemporary Design', image:style1, summary:'Modern flair with a classical spin', description:'Step into a world that mirrors your bold and unrestrained creativity. A captivating fusion of freeform style with luxurious materials and a touch of traditional craftsmanship, resulting in spaces that defy convention and evoke a sense of unparalleled distinction.' },
 { id: 2, name:'Modern Home', image:style2, summary:'Where sleek meets chic', description:'Your sanctuary of sophistication, where minimalist elegant and clean finishes take center stage. An open-concept layout flooded with natural light, featuring a sleek surface and uncluttered design, and reflecting simplicity and functionality.' },
