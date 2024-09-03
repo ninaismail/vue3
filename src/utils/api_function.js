@@ -317,7 +317,7 @@ export function getCollabsProjects() {
       banner:'/images_v1/projects/collaborations/de_gournay/banners/banner1.jpg',
       thumbnail: '/images_v1/projects/collaborations/de_gournay/thumbnails/DG1 (1).jpg',
       images: [
-        '/images_v1/projects/collaborations/de_gournay/images/DG1 (1).jpg',
+        '/images_v1/projects/collaborations/de_gournay/thumbnails/DG1 (1).jpg',
         '/images_v1/projects/collaborations/de_gournay/images/DG1 (3).jpg',
         '/images_v1/projects/collaborations/de_gournay/images/DG1 (3a).jpg',
         '/images_v1/projects/collaborations/de_gournay/images/DG1 (4).jpg',
@@ -788,7 +788,7 @@ export function getAllProjects() {
       banner:'/images_v1/projects/collaborations/de_gournay/banners/banner1.jpg',
       thumbnail: '/images_v1/projects/collaborations/de_gournay/thumbnails/DG1 (1).jpg',
       images: [
-        '/images_v1/projects/collaborations/de_gournay/images/DG1 (1).jpg',
+       '/images_v1/projects/collaborations/de_gournay/thumbnails/DG1 (1).jpg',
         '/images_v1/projects/collaborations/de_gournay/images/DG1 (3).jpg',
         '/images_v1/projects/collaborations/de_gournay/images/DG1 (3a).jpg',
         '/images_v1/projects/collaborations/de_gournay/images/DG1 (4).jpg',
