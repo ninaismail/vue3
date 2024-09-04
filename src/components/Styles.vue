@@ -10,14 +10,14 @@ const isHover = ref(null)
   <section class="relative flex flex-wrap items-center justify-center w-full h-full mb-[32px] mx-auto 2xl:min-h-screen">
         <div v-for="(item, key) in data" :key="key" class="relative w-full lg:w-1/3 md:w-1/2 max-md:flex-[1_1_auto]"
         @mouseenter="isHover = key" @mouseleave="isHover = false">
-            <img :src="item.image" :alt="item.name" center cover responsive loading="lazy" class="w-full h-full aspect-0.68/1"/>
+            <img :src="item.image" :alt="item.title" center cover responsive loading="lazy" class="w-full h-full aspect-0.68/1"/>
             <Transition>
                 <div class="flex flex-col justify-center items-center mx-auto gap-y-4 absolute z-[1] inset-0 w-full h-full p-2 duration-600 transition-opacity"
                 :class="{'bg-black/50' : isHover === key}">
                     <h1 class="text-white 2xl:text-[36px] text-center md:text-[20px] font-[700]">
-                        {{ item.name }}
+                        {{ item.title }}
                     </h1>
-                    <h2 v-if="isHover === key" class="tracking-wide text-white font-[600] max-sm:text-[12px] text-center w-2/3">{{ item.summary }}</h2>   
+                    <h2 v-if="isHover === key" class="tracking-wide text-white font-[600] max-sm:text-[12px] text-center w-2/3">{{ item.subtitle }}</h2>   
                     <p v-if="isHover === key" class="tracking-wide text-white font-[600] max-sm:text-[12px]  text-center w-2/3">{{ item.description }}</p>          
                 </div>
             </Transition>
