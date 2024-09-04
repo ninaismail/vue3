@@ -16,7 +16,7 @@ const props = defineProps({
     :mouseDrag="false"     
     ariaGallery 
     :transition="600"
-    :itemsToShow="1">
+    :itemsToShow="1"> 
     <Slide v-for="(item, key) in props.images" :key="key">
       <img 
         :src="item"
