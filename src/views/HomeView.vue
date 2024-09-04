@@ -3,10 +3,9 @@ import Hero from '../components/Hero.vue'
 import About from '../components/About.vue'
 import Styles from '../components/Styles.vue'
 import Skills from '../components/Skills.vue'
-import style1 from '/images/styles/styles1.webp'
-import style2 from '/images/styles/styles2.webp'
-import style3 from '/images/styles/styles3.webp'
-import bg from '/images/backgrounds/skills.webp'
+import style1 from '/images_v1/styles/OPtion 2.jpg'
+import style2 from '/images_v1/styles/Option 1.jpg'
+import style3 from '/images_v1/styles/03_Resized.jpg'
 import { ref, onMounted } from 'vue';
 import { getHomePageBanner } from '../utils/laravel_api_functions';
 const styles = [

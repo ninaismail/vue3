@@ -3,6 +3,8 @@ defineProps({
     item:Array,
     isProject: Boolean,
     collabs: Boolean,
+    italamp: Boolean,
+    preciosa: Boolean,
 })
 </script>
 

@@ -1,7 +1,6 @@
 <script setup>
 import InnerHero from '../../components/InnerHero.vue'
-// import banner from '/images/innerhero/001.jpg'
-import collaborations from '/images/backgrounds/suppliers.webp'
+import banner from '/images_v1/innerhero/001.jpg'
 import Tabs from '../../components/Tabs.vue';
 import { ref, onMounted } from 'vue';
 import { getCollaborationProjects, getCollaborationPageBanner } from '../../utils/laravel_api_functions';

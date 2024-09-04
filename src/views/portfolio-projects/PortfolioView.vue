@@ -1,7 +1,6 @@
 <script setup>
 import InnerHero from '../../components/InnerHero.vue'
-// import banner from '/images/innerhero/100.jpg'
-import works from '/images/backgrounds/works.webp'
+import banner from '/images_v1/innerhero/100.jpg'
 import Tabs from '../../components/Tabs.vue';
 import { ref, onMounted } from 'vue';
 import { getProtfolioProjectss, getPortfolioPageBanner } from '../../utils/laravel_api_functions'; // Fixed function name

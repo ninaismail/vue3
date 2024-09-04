@@ -55,12 +55,13 @@ const nextSlideTitle = computed(() => {
     :showDots="false"
     :mouseDrag="false"
     :touchDrag="false"
-    class="w-full h-full mx-auto">
-    <Slide v-for="(item, key) in props.data" :key="key" class="w-full h-full">
-      <InnerHero :item="item" :isProject="true"/>
+    class="w-full mx-auto h-fit">
+    <Slide v-for="(item, key) in props.data" :key="key" class="w-full h-fit">
+      <InnerHero :pagebanner="item.banner" :pagetitle="item.title" :collabs="item.slug === 'baccarat' ? true :false"  :italamp="item.slug === 'italamp' ? true :false" :preciosa="item.slug === 'preciosa' ? true :false"
+      :pagedescription="item.location + ' ' + item.year"/>
       <ProjectDetails :item="item" />
       <!-- Custom Navigation Buttons with Slide Titles -->
-      <div class="flex items-center justify-between w-11/12 h-full gap-2 mx-auto my-3 border-t border-black lg:w-10/12 2xl:w-8/12">
+      <div class="flex items-center justify-between w-11/12 gap-2 mx-auto my-3 border-t border-black h-fit lg:w-10/12 2xl:w-8/12">
         <button @click="goPrev" class="flex items-center gap-2 group">
           <span class="p-3 bg-gold group-hover:bg-olive focuse:bg-olive">
             <svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg" class=" group-hover:text-white focus:text-white">
