@@ -9,7 +9,7 @@ export function getProtfolioProjects() {
       location: 'Riyadh',
       description : `One of the first assignments for us is to set the inspiration for the project; we invest a tremendous amount of time seeking inspiration from our client’s lifestyle and personal tastes. Aware of our client’s interest in fine art, we have selected masterpieces from the most prestigious galleries in the world. The warm and textured wooden high walls has created the perfect background for these art pieces.
       This project with fortunate high ceilings was transformed into a hidden museum in a private home.`,      
-      banner:'/images_v1/projects/portfolio/the_collector_private_residence/banners/banner1.jpg',
+      banner:'/images_v1/projects/portfolio/the_collector_private_residence/banners/022.jpg',
       thumbnail: '/images_v1/projects/portfolio/the_collector_private_residence/thumbnails/works1.jpg',
       images: [
         '/images_v1/projects/portfolio/the_collector_private_residence/images/001.jpg',
@@ -565,7 +565,7 @@ export function getAllProjects() {
       location: 'Riyadh',
       description : `One of the first assignments for us is to set the inspiration for the project; we invest a tremendous amount of time seeking inspiration from our client’s lifestyle and personal tastes. Aware of our client’s interest in fine art, we have selected masterpieces from the most prestigious galleries in the world. The warm and textured wooden high walls has created the perfect background for these art pieces.
       This project with fortunate high ceilings was transformed into a hidden museum in a private home.`,      
-      banner:'/images_v1/projects/portfolio/the_collector_private_residence/banners/banner1.jpg',
+      banner:'/images_v1/projects/portfolio/the_collector_private_residence/banners/022.jpg',
       thumbnail: '/images_v1/projects/portfolio/the_collector_private_residence/thumbnails/works1.jpg',
       images: [
         '/images_v1/projects/portfolio/the_collector_private_residence/images/001.jpg',
